@@ -1,6 +1,8 @@
 // app/layout.tsx
 import type { Metadata } from 'next'
 import { JetBrains_Mono, Inter } from 'next/font/google'
+import { Toaster } from '@/components/ui/sonner'
+import { MyPlanWidget } from '@/components/MyPlanWidget'
 import './globals.css'
 
 const jetbrainsMono = JetBrains_Mono({
@@ -34,6 +36,15 @@ export default function RootLayout({
     >
       <body className="bg-[#0A0A0A] text-[#FAFAFA] font-sans antialiased min-h-screen">
         {children}
+        <MyPlanWidget />
+        <Toaster
+          theme="dark"
+          toastOptions={{
+            classNames: {
+              toast: 'bg-[#111111] border border-[#2A2A2A] text-[#FAFAFA] font-mono text-sm',
+            },
+          }}
+        />
       </body>
     </html>
   )
