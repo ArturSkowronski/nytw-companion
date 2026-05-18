@@ -1,15 +1,18 @@
 // components/MyPlanWidget.tsx
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePlanStore } from '@/lib/plan-store'
 
 export function MyPlanWidget() {
   const [open, setOpen] = useState(false)
+  const [mounted, setMounted] = useState(false)
   const { items } = usePlanStore()
 
-  if (items.length === 0) return null
+  useEffect(() => setMounted(true), [])
+
+  if (!mounted || items.length === 0) return null
 
   const recentItems = [...items].reverse().slice(0, 5)
 
