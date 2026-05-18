@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { createClient } from '@/lib/supabase/server'
 import { EventList } from '@/components/EventList'
 import type { Event } from '@/lib/types'
+import seedEvents from '@/data/seed-events.json' with { type: 'json' }
 
 export const metadata: Metadata = {
   title: "Browse Events — NYTW Engineer's Companion",
@@ -12,15 +13,27 @@ export const metadata: Metadata = {
 // Revalidate every hour; Supabase data doesn't change frequently
 export const revalidate = 3600
 
+async function fetchEvents(): Promise<Event[]> {
+  // Dev fallback: when Supabase env is unset, load from local seed JSON
+  // so the UI is demo-able without a real database.
+  if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
+    return seedEvents as Event[]
+  }
+  try {
+    const supabase = await createClient()
+    const { data, error } = await supabase
+      .from('events')
+      .select('*')
+      .order('starts_at', { ascending: true })
+    if (error || !data) return []
+    return data as Event[]
+  } catch {
+    return []
+  }
+}
+
 export default async function EventsPage() {
-  const supabase = await createClient()
-
-  const { data, error } = await supabase
-    .from('events')
-    .select('*')
-    .order('starts_at', { ascending: true })
-
-  const events: Event[] = error || !data ? [] : data
+  const events = await fetchEvents()
 
   return (
     <main className="min-h-screen bg-[#0A0A0A] text-[#FAFAFA]">
