@@ -40,7 +40,8 @@ export function EventMap({ events, initialDay }: EventMapProps) {
   const urlDay = params.get('day') as DayKey | null
   const day = urlDay ?? initialDay
 
-  const planItemIds = usePlanStore((s) => s.items.map((i) => i.event_id))
+  const planItems = usePlanStore((s) => s.items)
+  const planItemIds = useMemo(() => planItems.map((i) => i.event_id), [planItems])
 
   const eventsByDay = useMemo(() => {
     const grouped: Record<DayKey, Event[]> = {
