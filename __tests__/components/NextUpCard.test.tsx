@@ -45,7 +45,8 @@ describe('NextUpCard', () => {
   it('"Open in Maps" link points to a maps URL containing the address', () => {
     render(<NextUpCard event={event} now={new Date('2026-06-03T22:00:00Z')} geo={null} />)
     const link = screen.getByRole('link', { name: /Open in Maps/i })
-    expect(link.getAttribute('href')).toMatch(/123 Main St/)
+    const href = link.getAttribute('href') ?? ''
+    expect(decodeURIComponent(href)).toContain('123 Main St')
   })
 
   it('"Skip this event" sets status to declined', () => {

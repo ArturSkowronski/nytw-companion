@@ -18,7 +18,7 @@ interface NextUpCardProps {
 
 function mapsHref(event: Event): string {
   const query = event.address ?? event.venue_name ?? `${event.lat},${event.lng}`
-  return `https://maps.google.com/?q=${query}`
+  return `https://maps.google.com/?q=${encodeURIComponent(query)}`
 }
 
 function untilLabel(now: Date, target: Date): string {
