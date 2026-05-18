@@ -35,7 +35,10 @@ export default function RootLayout({
       className={`${jetbrainsMono.variable} ${inter.variable} dark`}
       suppressHydrationWarning
     >
-      <body className="bg-[#0A0A0A] text-[#FAFAFA] font-sans antialiased min-h-screen">
+      <body
+        className="bg-[#0A0A0A] text-[#FAFAFA] font-sans antialiased min-h-screen"
+        suppressHydrationWarning
+      >
         <SiteNav />
         {children}
         <MyPlanWidget />
