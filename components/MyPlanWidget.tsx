@@ -10,6 +10,7 @@ export function MyPlanWidget() {
   const [mounted, setMounted] = useState(false)
   const { items } = usePlanStore()
 
+  // eslint-disable-next-line react-hooks/set-state-in-effect -- standard SSR hydration guard; single synchronous call on mount, no cascading risk
   useEffect(() => setMounted(true), [])
 
   if (!mounted || items.length === 0) return null
