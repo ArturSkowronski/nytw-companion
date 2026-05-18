@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { JetBrains_Mono, Inter } from 'next/font/google'
 import { Toaster } from '@/components/ui/sonner'
 import { MyPlanWidget } from '@/components/MyPlanWidget'
+import { SiteNav } from '@/components/SiteNav'
 import './globals.css'
 
 const jetbrainsMono = JetBrains_Mono({
@@ -35,6 +36,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="bg-[#0A0A0A] text-[#FAFAFA] font-sans antialiased min-h-screen">
+        <SiteNav />
         {children}
         <MyPlanWidget />
         <Toaster
