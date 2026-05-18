@@ -80,7 +80,7 @@ export function EventMap({ events, initialDay }: EventMapProps) {
   useEffect(() => {
     if (!token || !containerRef.current) return
     let cancelled = false
-    let mapInstance: { remove?: () => void; on?: (...args: unknown[]) => void } | null = null
+    let mapInstance: { remove?: () => void } | null = null
 
     import('mapbox-gl').then(async (mod) => {
       if (cancelled || !containerRef.current) return
