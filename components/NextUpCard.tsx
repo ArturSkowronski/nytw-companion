@@ -5,7 +5,7 @@ import { haversineKm, uberTimeMin, walkingTimeMin } from '@/lib/geo'
 import { msUntil } from '@/lib/time'
 import { usePlanStore } from '@/lib/plan-store'
 import { Button } from '@/components/ui/button'
-import { StatusPickerInline } from '@/components/StatusPickerInline'
+import { StatusToggle } from '@/components/StatusToggle'
 import { StaticMapImage } from '@/components/StaticMapImage'
 import type { Event } from '@/lib/types'
 import type { LatLng } from '@/lib/geo'
@@ -86,7 +86,7 @@ export function NextUpCard({ event, now, geo }: NextUpCardProps) {
         </Button>
       </div>
 
-      <StatusPickerInline eventId={event.id} />
+      <StatusToggle eventId={event.id} />
     </div>
   )
 }
