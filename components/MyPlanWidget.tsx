@@ -3,17 +3,19 @@
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { usePlanStore } from '@/lib/plan-store'
 
 export function MyPlanWidget() {
   const [open, setOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
+  const pathname = usePathname()
   const { items } = usePlanStore()
 
   // eslint-disable-next-line react-hooks/set-state-in-effect -- standard SSR hydration guard; single synchronous call on mount, no cascading risk
   useEffect(() => setMounted(true), [])
 
-  if (!mounted || items.length === 0) return null
+  if (!mounted || items.length === 0 || pathname === '/my-plan') return null
 
   const recentItems = [...items].reverse().slice(0, 5)
 

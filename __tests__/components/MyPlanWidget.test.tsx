@@ -1,12 +1,18 @@
 // __tests__/components/MyPlanWidget.test.tsx
-import { describe, it, expect, beforeEach } from 'vitest'
+import { describe, it, expect, beforeEach, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { MyPlanWidget } from '../../components/MyPlanWidget'
 import { usePlanStore } from '../../lib/plan-store'
 
+let currentPath = '/events'
+vi.mock('next/navigation', () => ({
+  usePathname: () => currentPath,
+}))
+
 describe('MyPlanWidget', () => {
   beforeEach(() => {
     usePlanStore.getState().clear()
+    currentPath = '/events'
   })
 
   it('is not rendered when the plan is empty', () => {
@@ -25,10 +31,15 @@ describe('MyPlanWidget', () => {
     usePlanStore.getState().addItem('event-1')
     render(<MyPlanWidget />)
     const buttons = screen.getAllByText(/My Plan \(1\)/)
-    // Initially collapsed (no "Open full plan" visible)
     expect(screen.queryByText(/Open full plan/)).toBeNull()
     fireEvent.click(buttons[0])
-    // Now expanded
     expect(screen.getAllByText(/Open full plan/).length).toBeGreaterThan(0)
+  })
+
+  it('is hidden when pathname is /my-plan', () => {
+    usePlanStore.getState().addItem('event-1')
+    currentPath = '/my-plan'
+    const { container } = render(<MyPlanWidget />)
+    expect(container.firstChild).toBeNull()
   })
 })
