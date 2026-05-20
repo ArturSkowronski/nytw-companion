@@ -13,7 +13,7 @@ const ITEMS: NavItem[] = [
   { label: 'Browse',       href: '/events',  live: true },
   { label: 'Now',          href: '/now',     live: true },
   { label: 'My Plan',      href: '/my-plan', live: false },
-  { label: 'Plan with AI', href: '/plan',    live: false },
+  { label: 'Plan with AI', href: '/plan',    live: true },
   { label: 'Beyond',       href: '/beyond',  live: false },
   { label: 'About',        href: '/about',   live: false },
 ]

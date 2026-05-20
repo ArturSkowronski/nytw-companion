@@ -1,3 +1,4 @@
+// components/MyPlanEmptyState.tsx
 import Link from 'next/link'
 
 export function MyPlanEmptyState() {
@@ -24,13 +25,13 @@ export function MyPlanEmptyState() {
           <p className="font-mono text-sm text-[#FAFAFA] font-bold mb-1">Editor&rsquo;s Picks →</p>
           <p className="text-xs text-[#A3A3A3]">5–7 must-attend events with a blurb each</p>
         </Link>
-        <div
-          aria-disabled="true"
-          className="bg-[#0F0F0F] border border-[#1A1A1A] rounded-md p-5 text-left cursor-not-allowed"
+        <Link
+          href="/plan"
+          className="bg-[#111111] border border-[#1A1A1A] rounded-md p-5 text-left hover:border-[#FF6B35] transition-colors"
         >
-          <p className="font-mono text-sm text-[#555555] font-bold mb-1">Plan with AI</p>
-          <p className="text-xs text-[#333333]">Coming soon</p>
-        </div>
+          <p className="font-mono text-sm text-[#FAFAFA] font-bold mb-1">Plan with AI →</p>
+          <p className="text-xs text-[#A3A3A3]">Describe yourself, get 5–8 picks</p>
+        </Link>
       </div>
     </div>
   )

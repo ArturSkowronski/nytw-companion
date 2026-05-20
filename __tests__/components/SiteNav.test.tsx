@@ -1,3 +1,4 @@
+// __tests__/components/SiteNav.test.tsx
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { SiteNav } from '../../components/SiteNav'
@@ -12,12 +13,12 @@ describe('SiteNav', () => {
     currentPath = '/'
   })
 
-  it('renders live routes as links and dead routes as disabled "Coming soon"', () => {
+  it('renders live routes as links (Browse, Now, Plan with AI) and dead routes as disabled', () => {
     render(<SiteNav />)
     expect(screen.getByRole('link', { name: /^Browse/i })).toHaveAttribute('href', '/events')
     expect(screen.getByRole('link', { name: /^Now/i })).toHaveAttribute('href', '/now')
-    const myPlan = screen.getAllByText(/My Plan/i)[0]
-    expect(myPlan.closest('a')).toBeNull()
+    expect(screen.getByRole('link', { name: /Plan with AI/i })).toHaveAttribute('href', '/plan')
+    // At least one dead route still exists (/my-plan, /beyond, /about)
     expect(screen.getAllByText(/Coming soon/i).length).toBeGreaterThanOrEqual(1)
   })
 

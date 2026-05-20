@@ -1,3 +1,4 @@
+// __tests__/components/MyPlanEmptyState.test.tsx
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { MyPlanEmptyState } from '../../components/MyPlanEmptyState'
@@ -16,10 +17,9 @@ describe('MyPlanEmptyState', () => {
     expect(picks).toHaveAttribute('href', '/events')
   })
 
-  it('renders Plan with AI as disabled with Coming soon', () => {
+  it('renders Plan with AI as a link to /plan', () => {
     render(<MyPlanEmptyState />)
-    const ai = screen.getByText(/Plan with AI/i)
-    expect(ai.closest('a')).toBeNull()
-    expect(screen.getByText(/Coming soon/i)).toBeInTheDocument()
+    const ai = screen.getByRole('link', { name: /Plan with AI/i })
+    expect(ai).toHaveAttribute('href', '/plan')
   })
 })
