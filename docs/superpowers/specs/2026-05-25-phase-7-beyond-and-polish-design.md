@@ -311,8 +311,15 @@ Sitemap: ${SITE_URL}/sitemap.xml
 
 ### 5.1 Sonner toasts
 
-- `sonner` is **already installed** (`package.json` ships `sonner@^2.0.7` and a wrapped `components/ui/sonner.tsx` that handles theme + custom icons). No new dependency.
-- Mount `<Toaster position="bottom-right" richColors />` once in `app/layout.tsx`, importing the wrapped Toaster from `@/components/ui/sonner`. (The wrapper reads theme via `next-themes`, which is also already installed; absent a `ThemeProvider` it defaults to `system` — fine for dark-only.)
+(Reconciliation with codebase, 2026-05-25:)
+
+- `sonner` is already installed and `<Toaster />` is **already mounted** in `app/layout.tsx`.
+- `EventCard`, `EventDetailModal`, `ConciergeClient`, and `EditorsPicksCarousel` already call `toast(...)` on Add/Remove flows.
+- `ConciergeForm` renders inline error UI; no toast needed for that error path.
+
+Only outstanding wiring:
+
+- `IcalDownloadButton` — `toast.success('Downloaded N events to your calendar')` after the download click fires.
 - Call sites:
   - `EventCard` / `EventDetailModal` `Add to plan` → `toast.success('Added to your plan')`
   - `IcalDownloadButton` copy button → `toast.success('iCal link copied')`
