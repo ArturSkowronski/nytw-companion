@@ -27,9 +27,10 @@ const FORMAT_ICONS: Record<string, string> = {
 
 interface EventCardProps {
   event: Event
+  onTagClick?: (tag: string) => void
 }
 
-export function EventCard({ event }: EventCardProps) {
+export function EventCard({ event, onTagClick }: EventCardProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const { items, addItem, removeItem } = usePlanStore()
   const isInPlan = items.some((i) => i.event_id === event.id)
@@ -129,15 +130,30 @@ export function EventCard({ event }: EventCardProps) {
 
         {/* Tags */}
         {event.tags.length > 0 && (
-          <div className="flex flex-wrap gap-1 mb-3">
-            {event.tags.slice(0, 4).map((tag) => (
-              <span
-                key={tag}
-                className="text-[10px] text-[#666666] bg-[#1A1A1A] px-1.5 py-0.5 rounded font-mono"
-              >
-                {tag}
-              </span>
-            ))}
+          <div
+            className="flex flex-wrap gap-1 mb-3"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {event.tags.slice(0, 4).map((tag) =>
+              onTagClick ? (
+                <button
+                  key={tag}
+                  type="button"
+                  onClick={() => onTagClick(tag)}
+                  aria-label={`Filter by tag ${tag}`}
+                  className="text-[10px] text-[#666666] bg-[#1A1A1A] hover:bg-[#FF6B35]/20 hover:text-[#FF6B35] px-1.5 py-0.5 rounded font-mono transition-colors"
+                >
+                  {tag}
+                </button>
+              ) : (
+                <span
+                  key={tag}
+                  className="text-[10px] text-[#666666] bg-[#1A1A1A] px-1.5 py-0.5 rounded font-mono"
+                >
+                  {tag}
+                </span>
+              )
+            )}
           </div>
         )}
 

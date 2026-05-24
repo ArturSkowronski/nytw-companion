@@ -1,5 +1,5 @@
 // __tests__/components/EventCard.test.tsx
-import { describe, it, expect, beforeEach } from 'vitest'
+import { describe, it, expect, beforeEach, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 import { EventCard } from '../../components/EventCard'
 import { usePlanStore } from '../../lib/plan-store'
@@ -77,5 +77,12 @@ describe('EventCard', () => {
   it('renders "Invite-only" badge when is_invite_only is true', () => {
     render(<EventCard event={{ ...mockEvent, is_invite_only: true }} />)
     expect(screen.getByText('Invite-only')).toBeTruthy()
+  })
+
+  it('invokes onTagClick when a tag chip is clicked', () => {
+    const onTagClick = vi.fn()
+    render(<EventCard event={mockEvent} onTagClick={onTagClick} />)
+    fireEvent.click(screen.getByRole('button', { name: /filter by tag ai-infra/i }))
+    expect(onTagClick).toHaveBeenCalledWith('ai-infra')
   })
 })
