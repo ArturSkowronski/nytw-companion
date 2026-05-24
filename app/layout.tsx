@@ -4,6 +4,7 @@ import { JetBrains_Mono, Inter } from 'next/font/google'
 import { Toaster } from '@/components/ui/sonner'
 import { MyPlanWidget } from '@/components/MyPlanWidget'
 import { SiteNav } from '@/components/SiteNav'
+import { SITE_URL } from '@/lib/site-url'
 import './globals.css'
 
 const jetbrainsMono = JetBrains_Mono({
@@ -19,6 +20,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "NYTW Engineer's Companion",
   description: "1,000+ events. 168 hours. Plan the week you actually want.",
   manifest: '/manifest.json',

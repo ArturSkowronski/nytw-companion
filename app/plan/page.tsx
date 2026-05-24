@@ -8,6 +8,7 @@ import seedEvents from '@/data/seed-events.json' with { type: 'json' }
 export const metadata: Metadata = {
   title: "Plan with AI — NYTW Engineer's Companion",
   description: 'Describe yourself; AI picks 5–8 events for you.',
+  alternates: { canonical: '/plan' },
 }
 
 export const revalidate = 3600

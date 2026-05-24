@@ -8,6 +8,7 @@ import seedEvents from '@/data/seed-events.json' with { type: 'json' }
 export const metadata: Metadata = {
   title: "Now — NYTW Engineer's Companion",
   description: "What's next in your Tech Week plan.",
+  alternates: { canonical: '/now' },
 }
 
 export const revalidate = 3600

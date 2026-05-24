@@ -12,6 +12,7 @@ import seedEvents from '@/data/seed-events.json' with { type: 'json' }
 export const metadata: Metadata = {
   title: "Browse Events — NYTW Engineer's Companion",
   description: '87 hand-curated engineering events for Tech Week NYC 2026. Day-grouped timeline with instant search.',
+  alternates: { canonical: '/events' },
 }
 
 export const revalidate = 3600

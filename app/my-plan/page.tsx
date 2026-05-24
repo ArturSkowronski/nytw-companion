@@ -10,6 +10,7 @@ import seedEvents from '@/data/seed-events.json' with { type: 'json' }
 export const metadata: Metadata = {
   title: "My Plan — NYTW Engineer's Companion",
   description: 'Your hand-picked schedule for Tech Week NYC 2026.',
+  alternates: { canonical: '/my-plan' },
 }
 
 export const revalidate = 3600
