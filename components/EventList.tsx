@@ -1,13 +1,19 @@
 // components/EventList.tsx
 'use client'
 
-import { useState, useMemo, useRef } from 'react'
+import { useState, useMemo, useRef, Suspense } from 'react'
 import Fuse from 'fuse.js'
 import { EventCard } from '@/components/EventCard'
 import { EventSearch } from '@/components/EventSearch'
 import { EditorsPicksCarousel } from '@/components/EditorsPicksCarousel'
 import { groupEventsByDay, formatDayHeading, formatDayShort, getTimePeriod, type TimePeriod } from '@/lib/events'
 import type { Event } from '@/lib/types'
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet'
+import { FiltersTrigger } from '@/components/filters/FiltersTrigger'
+import { ActiveFiltersBar } from '@/components/filters/ActiveFiltersBar'
+import { EventFilters } from '@/components/filters/EventFilters'
+import { useFilters } from '@/lib/use-filters'
+import { applyFilters, tagFrequency } from '@/lib/filters'
 
 interface EventListProps {
   events: Event[]
@@ -15,9 +21,19 @@ interface EventListProps {
 
 const TIME_PERIOD_ORDER: TimePeriod[] = ['EARLY', 'MID', 'LATE']
 
-export function EventList({ events }: EventListProps) {
+export function EventList(props: EventListProps) {
+  return (
+    <Suspense fallback={null}>
+      <EventListInner {...props} />
+    </Suspense>
+  )
+}
+
+function EventListInner({ events }: EventListProps) {
   const [query, setQuery] = useState('')
+  const [drawerOpen, setDrawerOpen] = useState(false)
   const dayRefs = useRef<Record<string, HTMLElement | null>>({})
+  const { filters, toggleTag, setFilter, reset, activeCount } = useFilters()
 
   const fuse = useMemo(
     () =>
@@ -29,10 +45,23 @@ export function EventList({ events }: EventListProps) {
     [events]
   )
 
+  const filtered = useMemo(() => applyFilters(events, filters), [events, filters])
+
   const filteredEvents = useMemo(() => {
-    if (!query.trim()) return events
-    return fuse.search(query).map((r) => r.item)
-  }, [query, fuse, events])
+    if (!query.trim()) return filtered
+    const ids = new Set(filtered.map((e) => e.id))
+    return fuse.search(query).map((r) => r.item).filter((e) => ids.has(e.id))
+  }, [query, fuse, filtered])
+
+  const tagPalette = useMemo(() => tagFrequency(events), [events])
+
+  function handleTagClick(tag: string) {
+    toggleTag(tag)
+    setDrawerOpen(true)
+    if (typeof window !== 'undefined') {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    }
+  }
 
   const editorsPicks = useMemo(
     () => events.filter((e) => e.is_editors_pick),
@@ -77,6 +106,40 @@ export function EventList({ events }: EventListProps) {
       )}
 
       <div className="flex-1 min-w-0">
+        {/* Filter toolbar */}
+        <div className="mb-4 flex items-center justify-between gap-3 flex-wrap">
+          <FiltersTrigger activeCount={activeCount} onClick={() => setDrawerOpen(true)} />
+          {filteredEvents.length !== events.length && (
+            <p className="font-mono text-xs text-[#A3A3A3]">
+              Showing {filteredEvents.length} of {events.length} events
+            </p>
+          )}
+        </div>
+
+        <ActiveFiltersBar
+          filters={filters}
+          onToggleTag={toggleTag}
+          onSetFilter={setFilter}
+          onReset={reset}
+        />
+
+        <Sheet open={drawerOpen} onOpenChange={setDrawerOpen}>
+          <SheetContent side="right" className="w-[360px] sm:w-[420px] p-6 overflow-y-auto">
+            <SheetHeader className="mb-6 p-0">
+              <SheetTitle className="font-mono text-base text-[#FAFAFA] text-left">
+                Filters
+              </SheetTitle>
+            </SheetHeader>
+            <EventFilters
+              filters={filters}
+              tagPalette={tagPalette}
+              onToggleTag={toggleTag}
+              onSetFilter={setFilter}
+              onReset={reset}
+            />
+          </SheetContent>
+        </Sheet>
+
         {/* Search */}
         <div className="mb-6">
           <EventSearch onSearch={setQuery} />
@@ -104,15 +167,18 @@ export function EventList({ events }: EventListProps) {
           <EditorsPicksCarousel picks={editorsPicks} />
         )}
 
-        {/* Search empty state */}
-        {query && filteredEvents.length === 0 && (
+        {/* Filter-aware empty state */}
+        {filteredEvents.length === 0 && (query || activeCount > 0) && (
           <div className="text-center py-16 text-[#A3A3A3]">
-            <p className="font-mono text-base mb-2">No matches for &ldquo;{query}&rdquo;</p>
+            {query ? (
+              <p className="font-mono text-base mb-2">
+                No matches for &ldquo;{query}&rdquo;{activeCount > 0 ? ' under current filters' : ''}.
+              </p>
+            ) : (
+              <p className="font-mono text-base mb-2">No matches under current filters.</p>
+            )}
             <p className="text-sm">
-              Try broader terms, or{' '}
-              <a href="/beyond" className="text-[#FF6B35] hover:underline">
-                browse other aggregators →
-              </a>
+              Try {activeCount > 0 ? 'removing filters' : 'broader terms'}, or browse other aggregators →
             </p>
           </div>
         )}
@@ -154,7 +220,7 @@ export function EventList({ events }: EventListProps) {
                   </p>
                   <div className="grid gap-3">
                     {byPeriod[period].map((event) => (
-                      <EventCard key={event.id} event={event} />
+                      <EventCard key={event.id} event={event} onTagClick={handleTagClick} />
                     ))}
                   </div>
                 </div>

@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { createClient } from '@/lib/supabase/server'
 import { EventList } from '@/components/EventList'
 import { ViewToggle } from '@/components/ViewToggle'
-import { EventMapLoader } from '@/components/EventMapLoader'
+import { EventsMapClient } from '@/components/EventsMapClient'
 import type { Event } from '@/lib/types'
 import type { DayKey } from '@/lib/time'
 import { dayKeyForDate, festivalMode, nowInNYC } from '@/lib/time'
@@ -66,7 +66,7 @@ export default async function EventsPage({ searchParams }: EventsPageProps) {
       </div>
       <div className="max-w-5xl mx-auto px-6 py-8">
         {view === 'map' ? (
-          <EventMapLoader events={events} initialDay={initialDay} />
+          <EventsMapClient events={events} initialDay={initialDay} />
         ) : (
           <EventList events={events} />
         )}
