@@ -146,11 +146,9 @@ Replace existing placeholder copy with real `<Link href="/beyond">` destinations
 <VirtusLabFooter />
 ```
 
-### Editor's Picks carousel — `variant` prop
+### Editor's Picks carousel — already renders full blurbs
 
-Existing `components/EditorsPicksCarousel.tsx` is reused on `/events`. There it shows a compact form. On landing it must show full blurbs.
-
-Add a discriminator: `variant?: 'compact' | 'full'` (default `'compact'` for backward compat). When `'full'`, each card additionally renders `editors_pick_blurb` in a dedicated paragraph beneath the title/host line. Existing call site on `/events` is untouched.
+(Reconciliation with codebase, 2026-05-25:) `components/EditorsPicksCarousel.tsx` already renders the `editors_pick_blurb` in a dedicated "Why we picked this" panel — no `variant` prop is needed. Landing just consumes the same component with the curated picks.
 
 ### `<VirtusLabFooter>`
 
@@ -167,7 +165,7 @@ Replaces today's inline footer in `app/(marketing)/page.tsx`. Reused on `/about`
 ### Tests
 
 - `__tests__/app/landing.test.tsx` — assert the 5 Editor's Picks render with full blurbs visible (use seed-events.json); assert VirtusLab disclosure text appears; assert "What we don't do" three bullets present; assert "or see /beyond" subtle link is rendered.
-- `__tests__/components/EditorsPicksCarousel.test.tsx` — add a `variant="full"` test asserting blurb text renders; keep existing tests green (default `'compact'` unchanged).
+- `__tests__/components/EditorsPicksCarousel.test.tsx` — no new test required (the carousel already shows blurbs and is covered by existing tests).
 - `__tests__/components/VirtusLabFooter.test.tsx` — render asserts "Made by VirtusLab" + "Not affiliated" both present, VirtusLab link has `target="_blank"`.
 
 ---
@@ -424,7 +422,7 @@ app/
 
 components/
 ├── SiteNav.tsx                      (+ HelpModal mount; flip Beyond+About live)
-├── EditorsPicksCarousel.tsx         (+ variant prop)
+├── EditorsPicksCarousel.tsx         (untouched — already renders blurbs)
 ├── VirtusLabFooter.tsx              NEW
 ├── HelpModal.tsx                    NEW
 ├── EventCard.tsx                    (+ toast)
