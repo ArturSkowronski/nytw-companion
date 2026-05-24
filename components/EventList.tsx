@@ -178,7 +178,10 @@ function EventListInner({ events }: EventListProps) {
               <p className="font-mono text-base mb-2">No matches under current filters.</p>
             )}
             <p className="text-sm">
-              Try {activeCount > 0 ? 'removing filters' : 'broader terms'}, or browse other aggregators →
+              Try {activeCount > 0 ? 'removing filters' : 'broader terms'}, or{' '}
+              <a href="/beyond" className="text-[#FF6B35] hover:underline">
+                browse other aggregators →
+              </a>
             </p>
           </div>
         )}

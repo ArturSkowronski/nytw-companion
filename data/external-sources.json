@@ -1,0 +1,65 @@
+[
+  {
+    "slug": "yorkseed",
+    "name": "Yorkseed",
+    "url": "https://nytw.yorkseed.co",
+    "tagline": "1,800+ events. Broader scope.",
+    "bestFor": "I want to see EVERYTHING."
+  },
+  {
+    "slug": "andrew-yeung",
+    "name": "Andrew Yeung Tech Week",
+    "url": "https://luma.com/AndrewTechWeek",
+    "tagline": "Mega-events from a known NYC operator.",
+    "bestFor": "Founder-heavy networking."
+  },
+  {
+    "slug": "garysguide",
+    "name": "GarysGuide",
+    "url": "https://garysguide.com/lists/h48w42m/NY-Tech-Week",
+    "tagline": "15+ year NYC tech newsletter.",
+    "bestFor": "Longer-term scene context."
+  },
+  {
+    "slug": "vibecal",
+    "name": "Vibecal",
+    "url": "https://vibecal.com/nytw",
+    "tagline": "Tag-based filtering by niche (#ai #founders).",
+    "bestFor": "I know exactly what I want."
+  },
+  {
+    "slug": "carly-ai",
+    "name": "Carly AI",
+    "url": "https://usecarly.com/nyc-tech-week-schedule",
+    "tagline": "Full iCal subscribe of ALL 1,000+ events.",
+    "bestFor": "Just sync everything to my calendar."
+  },
+  {
+    "slug": "build-week-nyc",
+    "name": "Build Week NYC",
+    "url": "https://techweeknyc.com",
+    "tagline": "Civic tech and public sector focus.",
+    "bestFor": "Govtech / civic tech audiences."
+  },
+  {
+    "slug": "partiful",
+    "name": "Partiful #NYTechWeek",
+    "url": "https://partiful.com/u/7DFu4rITofNzKIjA7hCx",
+    "tagline": "Native Partiful hub.",
+    "bestFor": "Discovering afterparties and rooftops."
+  },
+  {
+    "slug": "tech-week-official",
+    "name": "Tech Week Official",
+    "url": "https://tech-week.com/calendar/nyc",
+    "tagline": "The source of truth from a16z.",
+    "bestFor": "Official listings, weak filters."
+  },
+  {
+    "slug": "luma-nytw",
+    "name": "Luma /nytw",
+    "url": "https://lu.ma/nytw",
+    "tagline": "Luma's own NYTW calendar with map view.",
+    "bestFor": "Luma-native events with geo browse."
+  }
+]

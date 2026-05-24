@@ -14,7 +14,7 @@ const ITEMS: NavItem[] = [
   { label: 'Now',          href: '/now',     live: true },
   { label: 'My Plan',      href: '/my-plan', live: false },
   { label: 'Plan with AI', href: '/plan',    live: true },
-  { label: 'Beyond',       href: '/beyond',  live: false },
+  { label: 'Beyond',       href: '/beyond',  live: true },
   { label: 'About',        href: '/about',   live: false },
 ]
 
