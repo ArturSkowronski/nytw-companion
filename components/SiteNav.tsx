@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetHeader } from '@/components/ui/sheet'
 import { Button } from '@/components/ui/button'
+import { HelpModal } from '@/components/HelpModal'
 
 type NavItem = { label: string; href: string; live: boolean }
 
@@ -97,6 +98,7 @@ export function SiteNav() {
           </Sheet>
         </div>
       </div>
+      <HelpModal />
     </div>
   )
 }
