@@ -311,8 +311,8 @@ Sitemap: ${SITE_URL}/sitemap.xml
 
 ### 5.1 Sonner toasts
 
-- Add `sonner` to `package.json` (React 19 compatible).
-- Mount `<Toaster theme="dark" position="bottom-right" richColors />` once in `app/layout.tsx`.
+- `sonner` is **already installed** (`package.json` ships `sonner@^2.0.7` and a wrapped `components/ui/sonner.tsx` that handles theme + custom icons). No new dependency.
+- Mount `<Toaster position="bottom-right" richColors />` once in `app/layout.tsx`, importing the wrapped Toaster from `@/components/ui/sonner`. (The wrapper reads theme via `next-themes`, which is also already installed; absent a `ThemeProvider` it defaults to `system` — fine for dark-only.)
 - Call sites:
   - `EventCard` / `EventDetailModal` `Add to plan` → `toast.success('Added to your plan')`
   - `IcalDownloadButton` copy button → `toast.success('iCal link copied')`
@@ -338,7 +338,7 @@ Sitemap: ${SITE_URL}/sitemap.xml
 
 ### 5.4 `?` help modal
 
-- `components/HelpModal.tsx` — uses existing `Sheet` primitive (already in repo, already used by `SiteNav` mobile menu and the filter drawer).
+- `components/HelpModal.tsx` — uses the existing `Dialog` primitive at `components/ui/dialog.tsx` (centered modal — the right UX for a discoverable shortcut sheet; `Sheet` is the side drawer used elsewhere for navigation and filters).
 - Mount inside `SiteNav` so it's globally available without polluting `app/layout.tsx`.
 - Opens on `?` keypress (when not typing in an input).
 - Contents:
@@ -440,7 +440,7 @@ data/
 
 ## Risks & mitigations
 
-- **Risk:** Sonner React-19 compatibility. **Mitigation:** install latest, smoke-test in a unit test; fall back to react-hot-toast if it breaks.
+- **Risk:** ~~Sonner React-19 compatibility~~ — N/A; sonner is already installed and the wrapped Toaster lives at `components/ui/sonner.tsx`.
 - **Risk:** `next/og` `ImageResponse` requires a font; system mono varies by OS. **Mitigation:** use `system-ui, monospace` font stack and accept platform variance for a brand image; alternative is to commit a single woff2 (~30KB) and reference it from the OG handler.
 - **Risk:** `metadataBase` set globally could affect tests that didn't expect it. **Mitigation:** keep `SITE_URL` defaulting to localhost so test renders stay stable.
 - **Risk:** Landing tests assert text from `seed-events.json` blurbs — brittle if the seed changes. **Mitigation:** assert presence of a substring known to be stable (the VirtusLab disclosure has a stable opening phrase "Disclosure: VirtusLab").
