@@ -1,5 +1,4 @@
 import { describe, it, expect } from 'vitest'
-import OG from '../../app/opengraph-image'
 
 describe('opengraph-image', () => {
   it('can be imported', async () => {
