@@ -15,7 +15,7 @@ const ITEMS: NavItem[] = [
   { label: 'My Plan',      href: '/my-plan', live: false },
   { label: 'Plan with AI', href: '/plan',    live: true },
   { label: 'Beyond',       href: '/beyond',  live: true },
-  { label: 'About',        href: '/about',   live: false },
+  { label: 'About',        href: '/about',   live: true },
 ]
 
 function NavLink({ item, active }: { item: NavItem; active: boolean }) {
