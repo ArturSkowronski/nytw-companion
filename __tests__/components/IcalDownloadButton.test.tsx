@@ -1,5 +1,14 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
+
+const { toastSuccess } = vi.hoisted(() => ({
+  toastSuccess: vi.fn(),
+}))
+
+vi.mock('sonner', () => ({
+  toast: Object.assign(vi.fn(), { success: toastSuccess, error: vi.fn() }),
+}))
+
 import { IcalDownloadButton } from '../../components/IcalDownloadButton'
 import type { Event, PlanItem } from '../../lib/types'
 
@@ -55,5 +64,13 @@ describe('IcalDownloadButton', () => {
     expect(revokeObjectURL).toHaveBeenCalledTimes(1)
     const blob = createObjectURL.mock.calls[0][0] as Blob
     expect(blob.type).toBe('text/calendar')
+  })
+
+  it('fires a success toast when downloading', () => {
+    const events = [mkEvent('a')]
+    const items = [mkItem('a', 'confirmed')]
+    render(<IcalDownloadButton items={items} events={events} />)
+    fireEvent.click(screen.getByRole('button'))
+    expect(toastSuccess).toHaveBeenCalledWith(expect.stringContaining('Downloaded'))
   })
 })

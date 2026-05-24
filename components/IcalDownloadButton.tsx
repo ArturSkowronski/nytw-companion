@@ -3,6 +3,7 @@
 import { useMemo } from 'react'
 import { Button } from '@/components/ui/button'
 import { buildIcs } from '@/lib/ical'
+import { toast } from 'sonner'
 import type { Event, PlanItem } from '@/lib/types'
 
 const EXPORT_STATUSES = new Set<PlanItem['status']>(['confirmed', 'rsvp_pending', 'waitlist'])
@@ -29,6 +30,7 @@ export function IcalDownloadButton({ items, events }: IcalDownloadButtonProps) {
     a.click()
     document.body.removeChild(a)
     URL.revokeObjectURL(url)
+    toast.success(`Downloaded ${exportableCount} event${exportableCount !== 1 ? 's' : ''} to your calendar`)
   }
 
   if (exportableCount === 0) {
