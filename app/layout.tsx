@@ -5,6 +5,7 @@ import { Toaster } from '@/components/ui/sonner'
 import { Analytics } from '@vercel/analytics/next'
 import { MyPlanWidget } from '@/components/MyPlanWidget'
 import { SiteNav } from '@/components/SiteNav'
+import { StatusBar } from '@/components/StatusBar'
 import { SITE_URL } from '@/lib/site-url'
 import './globals.css'
 
@@ -42,6 +43,7 @@ export default function RootLayout({
         className="bg-[#000000] text-[#F5F5F5] font-sans antialiased min-h-screen"
         suppressHydrationWarning
       >
+        <StatusBar />
         <SiteNav />
         {children}
         <MyPlanWidget />
