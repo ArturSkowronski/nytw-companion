@@ -42,7 +42,7 @@ export function NextUpCard({ event, now, geo }: NextUpCardProps) {
   return (
     <div className="bg-[#111111] border border-[#1A1A1A] rounded-md p-6 space-y-5">
       <div>
-        <p className="text-xs font-mono text-[#666666] uppercase tracking-widest mb-1">
+        <p className="text-xs font-mono text-[#7A7A7A] uppercase tracking-widest mb-1">
           Next up
         </p>
         <p className="font-mono text-xl font-bold text-[#FAFAFA]">{event.title}</p>

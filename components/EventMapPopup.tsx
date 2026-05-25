@@ -32,7 +32,7 @@ export function EventMapPopup({ event, sameDayEvents, onOpenDetails }: EventMapP
         {event.host} · {formatEventTime(event.starts_at, event.ends_at)}
       </p>
       {event.neighborhood && (
-        <p className="text-xs text-[#666666] mb-3">📍 {event.neighborhood}</p>
+        <p className="text-xs text-[#7A7A7A] mb-3">📍 {event.neighborhood}</p>
       )}
       <button
         type="button"
@@ -44,7 +44,7 @@ export function EventMapPopup({ event, sameDayEvents, onOpenDetails }: EventMapP
 
       {nearest.length > 0 && (
         <div className="mt-3 pt-3 border-t border-[#1A1A1A]">
-          <p className="text-[10px] text-[#555555] uppercase tracking-widest mb-1.5">
+          <p className="text-[10px] text-[#737373] uppercase tracking-widest mb-1.5">
             5 nearest same day
           </p>
           <ul className="space-y-1">
@@ -56,7 +56,7 @@ export function EventMapPopup({ event, sameDayEvents, onOpenDetails }: EventMapP
                   className="text-left text-[#A3A3A3] hover:text-[#FAFAFA]"
                 >
                   {e.title}{' '}
-                  <span className="text-[#555555]">
+                  <span className="text-[#737373]">
                     · {walkingTimeMin(km)} min walk
                   </span>
                 </button>

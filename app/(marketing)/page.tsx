@@ -47,7 +47,7 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <p className="text-[#555555] text-sm font-mono">
+        <p className="text-[#737373] text-sm font-mono">
           or{' '}
           <Link href="/beyond" className="hover:text-[#A3A3A3] underline underline-offset-4">
             see /beyond if you want it all →
@@ -96,7 +96,7 @@ export default function HomePage() {
             devtools, platform engineering, security, and open source. Day-grouped,
             mapped, with honest blurbs on the Editor&apos;s Picks. Curation over filtering.
           </p>
-          <p className="text-[#666666] text-sm font-mono pt-2">
+          <p className="text-[#7A7A7A] text-sm font-mono pt-2">
             — Artur Skowroński, VirtusLab
           </p>
         </div>

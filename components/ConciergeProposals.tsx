@@ -38,7 +38,7 @@ export function ConciergeProposals({
         <p className="font-mono text-sm text-[#A3A3A3]">
           No matches for that profile.
         </p>
-        <p className="text-xs text-[#666666] mt-1">
+        <p className="text-xs text-[#7A7A7A] mt-1">
           Try broader interests, or check{' '}
           <a href="/beyond" className="text-[#FF6B35] hover:underline">
             other aggregators →

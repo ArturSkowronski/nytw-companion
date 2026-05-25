@@ -31,7 +31,7 @@ export function CountdownCard({ now, events }: CountdownCardProps) {
   return (
     <div className="bg-[#111111] border border-[#1A1A1A] rounded-md p-6 space-y-5">
       <div>
-        <p className="text-xs font-mono text-[#666666] uppercase tracking-widest mb-1">
+        <p className="text-xs font-mono text-[#7A7A7A] uppercase tracking-widest mb-1">
           Pre-festival
         </p>
         <p className="font-mono text-2xl font-bold text-[#FF6B35]">
@@ -45,13 +45,13 @@ export function CountdownCard({ now, events }: CountdownCardProps) {
           {showPlan ? 'From your plan · Day 1' : 'Editor’s Picks · Day 1 preview'}
         </p>
         {preview.length === 0 ? (
-          <p className="text-sm text-[#666666]">No events queued yet. Browse to start →</p>
+          <p className="text-sm text-[#7A7A7A]">No events queued yet. Browse to start →</p>
         ) : (
           <ul className="space-y-2">
             {preview.map((e) => (
               <li key={e.id} className="text-sm">
                 <p className="font-mono text-[#FAFAFA]">{e.title}</p>
-                <p className="text-xs text-[#666666]">
+                <p className="text-xs text-[#7A7A7A]">
                   {e.host} · {formatEventTime(e.starts_at, e.ends_at)}
                   {e.neighborhood ? ` · ${e.neighborhood}` : ''}
                 </p>

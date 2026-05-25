@@ -65,7 +65,7 @@ export const MyPlanEventCard = forwardRef<HTMLDivElement, MyPlanEventCardProps>(
           <button
             type="button"
             onClick={() => removeItem(event.id)}
-            className="text-[10px] text-[#555555] hover:text-red-400 font-mono"
+            className="text-[10px] text-[#737373] hover:text-red-400 font-mono"
           >
             Remove
           </button>

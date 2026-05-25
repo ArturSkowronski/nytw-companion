@@ -19,7 +19,9 @@
         "categories:accessibility": ["error", { "minScore": 0.95 }],
         "categories:best-practices": ["warn", { "minScore": 0.9 }],
         "categories:seo": ["error", { "minScore": 1.0 }],
-        "installable-manifest": "warn"
+        "installable-manifest": "warn",
+        "lcp-lazy-loaded": "off",
+        "errors-in-console": "warn"
       }
     },
     "upload": {

@@ -11,11 +11,11 @@ interface SuggestionsCardProps {
 export function SuggestionsCard({ suggestions, fromPlan }: SuggestionsCardProps) {
   return (
     <div className="bg-[#111111] border border-[#1A1A1A] rounded-md p-5">
-      <p className="text-xs font-mono text-[#666666] uppercase tracking-widest mb-3">
+      <p className="text-xs font-mono text-[#7A7A7A] uppercase tracking-widest mb-3">
         {fromPlan ? 'Nothing planned next 2h — later today' : 'Plan is light — try one of these'}
       </p>
       {suggestions.length === 0 ? (
-        <p className="text-sm text-[#666666]">No suggestions available.</p>
+        <p className="text-sm text-[#7A7A7A]">No suggestions available.</p>
       ) : (
         <ul className="space-y-3">
           {suggestions.map((e) => (

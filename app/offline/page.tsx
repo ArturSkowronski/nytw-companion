@@ -39,7 +39,7 @@ export default function OfflinePage() {
           ))}
         </ul>
 
-        <p className="text-[#555555] text-sm font-mono">
+        <p className="text-[#737373] text-sm font-mono">
           When you&apos;re back online, everything reconnects automatically.
         </p>
       </section>

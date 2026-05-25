@@ -50,7 +50,7 @@ export function NowClient({ events }: NowClientProps) {
   if (!mounted) {
     return (
       <div className="bg-[#111111] border border-[#1A1A1A] rounded-md p-6">
-        <p className="font-mono text-sm text-[#666666]">Loading…</p>
+        <p className="font-mono text-sm text-[#7A7A7A]">Loading…</p>
       </div>
     )
   }
@@ -116,7 +116,7 @@ export function NowClient({ events }: NowClientProps) {
         </Button>
       )}
       {geoError && (
-        <p className="text-xs text-[#666666] font-mono">
+        <p className="text-xs text-[#7A7A7A] font-mono">
           Location unavailable — addresses shown without travel times.
         </p>
       )}

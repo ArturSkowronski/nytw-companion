@@ -142,14 +142,14 @@ export function EventCard({ event, onTagClick }: EventCardProps) {
                   type="button"
                   onClick={() => onTagClick(tag)}
                   aria-label={`Filter by tag ${tag}`}
-                  className="text-[10px] text-[#666666] bg-[#1A1A1A] hover:bg-[#FF6B35]/20 hover:text-[#FF6B35] px-1.5 py-0.5 rounded font-mono transition-colors"
+                  className="text-[10px] text-[#7A7A7A] bg-[#1A1A1A] hover:bg-[#FF6B35]/20 hover:text-[#FF6B35] px-1.5 py-0.5 rounded font-mono transition-colors"
                 >
                   {tag}
                 </button>
               ) : (
                 <span
                   key={tag}
-                  className="text-[10px] text-[#666666] bg-[#1A1A1A] px-1.5 py-0.5 rounded font-mono"
+                  className="text-[10px] text-[#7A7A7A] bg-[#1A1A1A] px-1.5 py-0.5 rounded font-mono"
                 >
                   {tag}
                 </span>

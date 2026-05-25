@@ -94,7 +94,7 @@ function EventListInner({ events }: EventListProps) {
               key={key}
               type="button"
               onClick={() => scrollToDay(key)}
-              className="text-left font-mono text-xs text-[#555555] hover:text-[#A3A3A3] transition-colors py-1 px-2 rounded hover:bg-[#111111]"
+              className="text-left font-mono text-xs text-[#737373] hover:text-[#A3A3A3] transition-colors py-1 px-2 rounded hover:bg-[#111111]"
             >
               {formatDayShort(key)}
               <span className="block text-[#333333] text-[10px]">
@@ -156,7 +156,7 @@ function EventListInner({ events }: EventListProps) {
                 className="shrink-0 font-mono text-xs text-[#A3A3A3] bg-[#111111] border border-[#2A2A2A] px-3 py-1.5 rounded-full hover:border-[#FF6B35] hover:text-[#FF6B35] transition-colors whitespace-nowrap"
               >
                 {formatDayShort(key)}
-                <span className="ml-1 text-[#555555]">({grouped[key].length})</span>
+                <span className="ml-1 text-[#737373]">({grouped[key].length})</span>
               </button>
             ))}
           </div>
@@ -210,7 +210,7 @@ function EventListInner({ events }: EventListProps) {
                 <h2 className="font-mono font-bold text-[#FAFAFA] text-lg">
                   {formatDayHeading(dayKey)}
                 </h2>
-                <span className="text-[#555555] text-xs font-mono">
+                <span className="text-[#737373] text-xs font-mono">
                   {dayEvents.length} events
                 </span>
               </div>

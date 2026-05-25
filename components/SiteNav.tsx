@@ -23,7 +23,7 @@ function NavLink({ item, active }: { item: NavItem; active: boolean }) {
   if (!item.live) {
     return (
       <span
-        className="font-mono text-sm text-[#555555] cursor-not-allowed flex flex-col"
+        className="font-mono text-sm text-[#737373] cursor-not-allowed flex flex-col"
         aria-disabled="true"
       >
         {item.label}

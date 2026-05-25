@@ -23,7 +23,7 @@ function Chip({ label, ariaLabel, onClear }: { label: string; ariaLabel: string;
         type="button"
         onClick={onClear}
         aria-label={ariaLabel}
-        className="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full text-[#666666] hover:text-[#FAFAFA] hover:bg-[#2A2A2A]"
+        className="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full text-[#7A7A7A] hover:text-[#FAFAFA] hover:bg-[#2A2A2A]"
       >
         ×
       </button>

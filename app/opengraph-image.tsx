@@ -50,7 +50,7 @@ export default async function Image() {
           style={{
             display: 'flex',
             justifyContent: 'flex-end',
-            color: '#555555',
+            color: '#737373',
             fontSize: 24,
           }}
         >

@@ -253,7 +253,7 @@ export function EventMap({ events, initialDay }: EventMapProps) {
                   ? 'No plan events on this day.'
                   : 'No events on this day.'}
               </p>
-              <p className="text-xs text-[#666666] mt-1">Try another day →</p>
+              <p className="text-xs text-[#7A7A7A] mt-1">Try another day →</p>
             </div>
           </div>
         )}

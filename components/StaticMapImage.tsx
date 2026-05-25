@@ -23,7 +23,7 @@ export function StaticMapImage({
   if (!url) {
     return (
       <div
-        className={`bg-[#111111] border border-[#1A1A1A] rounded-md flex items-center justify-center text-[#666666] text-xs font-mono ${className}`}
+        className={`bg-[#111111] border border-[#1A1A1A] rounded-md flex items-center justify-center text-[#7A7A7A] text-xs font-mono ${className}`}
         style={{ width, height }}
       >
         Map disabled

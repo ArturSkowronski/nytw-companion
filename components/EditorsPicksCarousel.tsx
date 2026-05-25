@@ -53,7 +53,7 @@ export function EditorsPicksCarousel({ picks }: EditorsPicksCarouselProps) {
         <h2 className="font-mono text-sm font-bold text-amber-400 uppercase tracking-wider">
           Editor&apos;s Picks
         </h2>
-        <span className="text-[#555555] text-xs font-mono">{current + 1}/{picks.length}</span>
+        <span className="text-[#737373] text-xs font-mono">{current + 1}/{picks.length}</span>
       </div>
 
       <div className="mb-3">
@@ -69,7 +69,7 @@ export function EditorsPicksCarousel({ picks }: EditorsPicksCarouselProps) {
           {pick.host} · {formatEventTime(pick.starts_at, pick.ends_at)}
         </p>
         {pick.neighborhood && (
-          <p className="text-[#666666] text-xs mb-3">{pick.neighborhood}</p>
+          <p className="text-[#7A7A7A] text-xs mb-3">{pick.neighborhood}</p>
         )}
 
         {pick.editors_pick_blurb && (

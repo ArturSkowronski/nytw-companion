@@ -17,7 +17,7 @@ export function TagFilterChips({ tags, selected, onToggle }: TagFilterChipsProps
 
   if (tags.length === 0) {
     return (
-      <p className="font-mono text-xs text-[#555555]">No tags available in current data</p>
+      <p className="font-mono text-xs text-[#737373]">No tags available in current data</p>
     )
   }
 
@@ -40,7 +40,7 @@ export function TagFilterChips({ tags, selected, onToggle }: TagFilterChipsProps
             }
           >
             <span className="truncate inline-block max-w-[160px] align-bottom">{tag}</span>
-            <span className="ml-1 text-[#555555]">{count}</span>
+            <span className="ml-1 text-[#737373]">{count}</span>
           </button>
         )
       })}

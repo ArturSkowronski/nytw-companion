@@ -46,7 +46,7 @@ export function EventFilters({
   return (
     <div className="flex flex-col gap-6">
       <section>
-        <h3 className="font-mono text-xs uppercase tracking-widest text-[#666666] mb-2">
+        <h3 className="font-mono text-xs uppercase tracking-widest text-[#7A7A7A] mb-2">
           Quick toggles
         </h3>
         <ToggleRow
@@ -70,7 +70,7 @@ export function EventFilters({
       </section>
 
       <section>
-        <h3 className="font-mono text-xs uppercase tracking-widest text-[#666666] mb-2">
+        <h3 className="font-mono text-xs uppercase tracking-widest text-[#7A7A7A] mb-2">
           Tags
         </h3>
         <TagFilterChips

@@ -215,7 +215,7 @@ export function MyPlanMap({ planEvents, initialDay }: MyPlanMapProps) {
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div className="bg-[#111111]/95 border border-[#1A1A1A] rounded-md px-4 py-3 text-center pointer-events-auto">
               <p className="font-mono text-sm text-[#A3A3A3]">No plan events on this day.</p>
-              <p className="text-xs text-[#666666] mt-1">Try another day →</p>
+              <p className="text-xs text-[#7A7A7A] mt-1">Try another day →</p>
             </div>
           </div>
         )}

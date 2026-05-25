@@ -95,30 +95,30 @@ export function EventDetailModal({ event, open, onClose }: EventDetailModalProps
         {/* Time / Location */}
         <div className="space-y-1.5 mb-4 text-sm">
           <div className="flex items-center gap-2 text-[#A3A3A3]">
-            <span className="text-[#666666]">🕐</span>
+            <span className="text-[#7A7A7A]">🕐</span>
             <span>{formatEventTime(event.starts_at, event.ends_at)}</span>
           </div>
           {event.venue_name && (
             <div className="flex items-center gap-2 text-[#A3A3A3]">
-              <span className="text-[#666666]">📍</span>
+              <span className="text-[#7A7A7A]">📍</span>
               <span>{event.venue_name}{event.neighborhood ? ` · ${event.neighborhood}` : ''}</span>
             </div>
           )}
           {event.address && (
             <div className="flex items-start gap-2 text-[#A3A3A3]">
-              <span className="text-[#666666] mt-0.5">🗺</span>
+              <span className="text-[#7A7A7A] mt-0.5">🗺</span>
               <span>{event.address}</span>
             </div>
           )}
           {event.format && (
             <div className="flex items-center gap-2 text-[#A3A3A3]">
-              <span className="text-[#666666]">·</span>
+              <span className="text-[#7A7A7A]">·</span>
               <span>{FORMAT_LABELS[event.format] ?? event.format}</span>
             </div>
           )}
           {event.capacity && (
             <div className="flex items-center gap-2 text-[#A3A3A3]">
-              <span className="text-[#666666]">👥</span>
+              <span className="text-[#7A7A7A]">👥</span>
               <span>Capacity: ~{event.capacity}</span>
             </div>
           )}
@@ -145,7 +145,7 @@ export function EventDetailModal({ event, open, onClose }: EventDetailModalProps
             {event.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-xs text-[#666666] bg-[#1A1A1A] px-2 py-1 rounded font-mono"
+                className="text-xs text-[#7A7A7A] bg-[#1A1A1A] px-2 py-1 rounded font-mono"
               >
                 {tag}
               </span>

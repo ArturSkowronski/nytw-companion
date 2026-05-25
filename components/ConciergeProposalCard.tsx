@@ -57,7 +57,7 @@ export function ConciergeProposalCard({
       </div>
 
       <div className="bg-[#0F0F0F] border-l-2 border-[#FF6B35]/40 pl-3 py-2">
-        <p className="text-[10px] font-mono text-[#666666] uppercase tracking-widest mb-1">
+        <p className="text-[10px] font-mono text-[#7A7A7A] uppercase tracking-widest mb-1">
           Why for you
         </p>
         <p className="text-sm text-[#A3A3A3]">{proposal.reasoning}</p>

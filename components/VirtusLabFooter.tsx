@@ -18,7 +18,7 @@ export function VirtusLabFooter() {
         <p className="text-[#A3A3A3] text-sm font-mono">
           Not affiliated with a16z or Tech Week NYC
         </p>
-        <nav className="flex gap-4 text-[#555555] text-xs font-mono">
+        <nav className="flex gap-4 text-[#737373] text-xs font-mono">
           <Link href="/about" className="hover:text-[#A3A3A3]">
             About
           </Link>

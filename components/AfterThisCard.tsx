@@ -11,7 +11,7 @@ export function AfterThisCard({ event }: AfterThisCardProps) {
   if (!event) return null
   return (
     <div className="bg-[#0F0F0F] border border-[#1A1A1A] rounded-md p-4">
-      <p className="text-[10px] font-mono text-[#666666] uppercase tracking-widest mb-1">
+      <p className="text-[10px] font-mono text-[#7A7A7A] uppercase tracking-widest mb-1">
         After this
       </p>
       <p className="font-mono text-sm text-[#FAFAFA]">{event.title}</p>

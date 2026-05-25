@@ -48,7 +48,7 @@ export function ConciergeForm({ existingCount, submitting, error, onSubmit }: Co
           Get 5–8 suggestions →
         </Button>
         {submitting && (
-          <span className="text-xs font-mono text-[#666666]">
+          <span className="text-xs font-mono text-[#7A7A7A]">
             Claude is reading the catalog…
           </span>
         )}
