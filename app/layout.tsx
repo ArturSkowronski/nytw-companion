@@ -2,6 +2,7 @@
 import type { Metadata } from 'next'
 import { JetBrains_Mono, Inter } from 'next/font/google'
 import { Toaster } from '@/components/ui/sonner'
+import { Analytics } from '@vercel/analytics/next'
 import { MyPlanWidget } from '@/components/MyPlanWidget'
 import { SiteNav } from '@/components/SiteNav'
 import { SITE_URL } from '@/lib/site-url'
@@ -52,6 +53,7 @@ export default function RootLayout({
             },
           }}
         />
+        <Analytics />
       </body>
     </html>
   )
