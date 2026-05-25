@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { EditorsPicksCarousel } from '@/components/EditorsPicksCarousel'
+import { SectionHead } from '@/components/SectionHead'
 import { VirtusLabFooter } from '@/components/VirtusLabFooter'
 import seedEvents from '@/data/seed-events.json' with { type: 'json' }
 import type { Event } from '@/lib/types'
@@ -82,9 +83,9 @@ export default function HomePage() {
       )}
 
       {/* Why we built this */}
-      <section className="px-6 py-16 border-t border-[#1A1A1A]">
+      <section className="px-6 py-16">
         <div className="max-w-3xl mx-auto space-y-5">
-          <h2 className="font-mono text-2xl font-bold">Why we built this</h2>
+          <SectionHead num="01" label="Background" title="Why we built this" />
           <p className="text-[#9B9B9B] text-base leading-relaxed">
             Tech Week NYC runs over a thousand events in a single week. No existing
             aggregator filters for engineers who actually ship code — they all surface
@@ -103,9 +104,9 @@ export default function HomePage() {
       </section>
 
       {/* What we don't do */}
-      <section className="px-6 py-16 border-t border-[#1A1A1A]">
+      <section className="px-6 py-16">
         <div className="max-w-3xl mx-auto space-y-4">
-          <h2 className="font-mono text-2xl font-bold">What we don&apos;t do</h2>
+          <SectionHead num="02" label="Honesty" title="What we don't do" />
           <ul className="space-y-3 text-[#9B9B9B] text-base leading-relaxed">
             <li className="flex gap-3">
               <span className="text-[#FF5B25] font-mono shrink-0">•</span>

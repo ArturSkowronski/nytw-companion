@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SectionHead } from '@/components/SectionHead'
 import { VirtusLabFooter } from '@/components/VirtusLabFooter'
 
 export const metadata: Metadata = {
@@ -8,10 +9,10 @@ export const metadata: Metadata = {
   alternates: { canonical: '/privacy' },
 }
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({ num, label, title, children }: { num: string; label: string; title: string; children: React.ReactNode }) {
   return (
     <section className="space-y-2">
-      <h2 className="font-mono text-xl font-bold">{title}</h2>
+      <SectionHead num={num} label={label} title={title} />
       <p className="text-[#9B9B9B] text-base leading-relaxed">{children}</p>
     </section>
   )
@@ -26,11 +27,11 @@ export default function PrivacyPage() {
           NYTW Companion is built to be unintrusive. Here&apos;s exactly what happens with your data.
         </p>
 
-        <Section title="Plan storage">
+        <Section num="01" label="Data" title="Plan storage">
           Your plan lives in your browser&apos;s localStorage. We don&apos;t send it anywhere. Clearing site data deletes it.
         </Section>
 
-        <Section title="AI Concierge">
+        <Section num="02" label="AI" title="AI Concierge">
           When you submit a profile to <code>/plan</code>, the text is sent to Anthropic&apos;s API to generate proposals. We don&apos;t store the text on our servers; we don&apos;t log it. Anthropic&apos;s terms apply to their handling — see their{' '}
           <a href="https://www.anthropic.com/legal" target="_blank" rel="noopener noreferrer" className="text-[#FF5B25] hover:underline">
             legal page
@@ -38,11 +39,11 @@ export default function PrivacyPage() {
           . Without an Anthropic API key configured the app serves deterministic mock proposals; nothing leaves your browser.
         </Section>
 
-        <Section title="Analytics">
+        <Section num="03" label="Telemetry" title="Analytics">
           We use Vercel Analytics for aggregate pageviews and Web Vitals. No per-user IDs, no cross-site tracking, no PII. You can disable it at the browser level with a content blocker.
         </Section>
 
-        <Section title="Map tiles">
+        <Section num="04" label="Maps" title="Map tiles">
           When the map view is open, your browser fetches tiles from Mapbox. Mapbox sees the URL and your IP. See their{' '}
           <a href="https://www.mapbox.com/legal" target="_blank" rel="noopener noreferrer" className="text-[#FF5B25] hover:underline">
             legal page
@@ -50,15 +51,15 @@ export default function PrivacyPage() {
           .
         </Section>
 
-        <Section title="Geolocation">
+        <Section num="05" label="Location" title="Geolocation">
           <code>/now</code> offers a &ldquo;Get travel times&rdquo; button. If you tap it, your browser asks for permission. The position is used only on your device — we don&apos;t transmit it. We cache it for 5 minutes then forget.
         </Section>
 
-        <Section title="Cookies">
+        <Section num="06" label="Cookies" title="Cookies">
           None set by us. The hosting provider may set deployment-related cookies; the analytics layer does not use cookies.
         </Section>
 
-        <Section title="Changes">
+        <Section num="07" label="Updates" title="Changes">
           We may update this page. Material changes go in the GitHub history.
         </Section>
       </section>

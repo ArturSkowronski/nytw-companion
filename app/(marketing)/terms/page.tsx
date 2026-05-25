@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SectionHead } from '@/components/SectionHead'
 import { VirtusLabFooter } from '@/components/VirtusLabFooter'
 
 export const metadata: Metadata = {
@@ -8,10 +9,10 @@ export const metadata: Metadata = {
   alternates: { canonical: '/terms' },
 }
 
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
+function Section({ num, label, title, children }: { num: string; label: string; title: string; children: React.ReactNode }) {
   return (
     <section className="space-y-2">
-      <h2 className="font-mono text-xl font-bold">{title}</h2>
+      <SectionHead num={num} label={label} title={title} />
       <p className="text-[#9B9B9B] text-base leading-relaxed">{children}</p>
     </section>
   )
@@ -26,28 +27,28 @@ export default function TermsPage() {
           Short version: use at your own risk. We&apos;re not Tech Week.
         </p>
 
-        <Section title="Independence">
+        <Section num="01" label="Project" title="Independence">
           NYTW Engineer&apos;s Companion is an independent project by VirtusLab. Not affiliated with a16z, Tech Week NYC, or any host listed.
         </Section>
 
-        <Section title="Event listings">
+        <Section num="02" label="Content" title="Event listings">
           Events shown are publicly listed elsewhere — we link them. Inclusion is not endorsement. Hosts, dates, venues can change without our knowledge; verify on the host&apos;s official page before showing up.
         </Section>
 
-        <Section title="No warranty">
+        <Section num="03" label="Disclaimer" title="No warranty">
           The site is provided &ldquo;as is&rdquo;. We don&apos;t guarantee accuracy, completeness, or uptime. We may add, remove, or change events at any time.
         </Section>
 
-        <Section title="AI proposals">
+        <Section num="04" label="AI" title="AI proposals">
           The AI Concierge proposes ideas. They&apos;re suggestions, not advice. We don&apos;t guarantee fit, quality, or availability of suggested events.
         </Section>
 
-        <Section title="Your conduct">
+        <Section num="05" label="Use" title="Your conduct">
           Don&apos;t abuse the API endpoints. Rate limits apply. If you find a bug or content issue, see{' '}
           <a href="/about" className="text-[#FF5B25] hover:underline">/about</a> for contact.
         </Section>
 
-        <Section title="Liability">
+        <Section num="06" label="Legal" title="Liability">
           To the extent permitted by law, VirtusLab has no liability for any loss arising from your use of the site.
         </Section>
       </section>

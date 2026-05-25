@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SectionHead } from '@/components/SectionHead'
 import { VirtusLabFooter } from '@/components/VirtusLabFooter'
 
 export const metadata: Metadata = {
@@ -17,7 +18,7 @@ export default function AboutPage() {
         </h1>
 
         <section className="space-y-3">
-          <h2 className="font-mono text-xl font-bold">Why this exists</h2>
+          <SectionHead num="01" label="Origin" title="Why this exists" />
           <p className="text-[#9B9B9B] text-base leading-relaxed">
             Tech Week NYC runs about a thousand events in a single week. No existing
             aggregator filters for engineers who ship code — they surface the same
@@ -29,7 +30,7 @@ export default function AboutPage() {
         </section>
 
         <section className="space-y-3">
-          <h2 className="font-mono text-xl font-bold">How we curate</h2>
+          <SectionHead num="02" label="Process" title="How we curate" />
           <ul className="space-y-2 text-[#9B9B9B] text-base leading-relaxed">
             <li className="flex gap-3">
               <span className="text-[#FF5B25] font-mono shrink-0">•</span>
@@ -57,7 +58,7 @@ export default function AboutPage() {
         </section>
 
         <section className="space-y-4">
-          <h2 className="font-mono text-xl font-bold">Who built this</h2>
+          <SectionHead num="03" label="Author" title="Who built this" />
           <div className="flex items-start gap-4">
             <div
               aria-label="Artur Skowroński"

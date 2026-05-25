@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { SectionHead } from '@/components/SectionHead'
 import { VirtusLabFooter } from '@/components/VirtusLabFooter'
 import sources from '@/data/external-sources.json'
 
@@ -46,9 +47,7 @@ export default function BeyondPage() {
         </div>
 
         <section className="mt-16 max-w-3xl">
-          <h2 className="font-mono text-xl font-bold mb-3">
-            Why we link the competition
-          </h2>
+          <SectionHead num="01" label="Disclosure" title="Why we link the competition" />
           <p className="text-[#9B9B9B] text-base leading-relaxed">
             Tech Week is too big for one tool. We&apos;re the curated engineering
             layer; these cover what we don&apos;t.
