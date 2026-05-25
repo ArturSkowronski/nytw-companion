@@ -1,0 +1,3190 @@
+{
+  "partiful-iyevynaujxzqidnhixwa": {
+    "verdict": "DROP",
+    "reason": "Finance nerds IRR lecture, not engineering content"
+  },
+  "partiful-uamjvd3xrengjfwddiuf": {
+    "verdict": "KEEP",
+    "reason": "Hackathon for founders building across any stack"
+  },
+  "partiful-xecp6n0qyyuufzdbvauv": {
+    "verdict": "KEEP",
+    "reason": "AI agent networking system with technical implementation"
+  },
+  "partiful-t00vyqglgeg6aca3c4r1": {
+    "verdict": "DROP",
+    "reason": "Career advice and recruitment talk, not technical"
+  },
+  "partiful-ifuh1hpxzux8ijsb3khb": {
+    "verdict": "DROP",
+    "reason": "Business strategy and enterprise sales, no tech"
+  },
+  "partiful-cbin0gmruu8ozjudp3xm": {
+    "verdict": "KEEP",
+    "reason": "3D GenAI, Physical AI, World Models technical content"
+  },
+  "partiful-idvwunfixjguahcbid5o": {
+    "verdict": "DROP",
+    "reason": "Supply chain business strategy, not engineering focused"
+  },
+  "partiful-jbmmrgrmzarvxgtmo34l": {
+    "verdict": "DROP",
+    "reason": "Fundraising advice breakfast, not technical content"
+  },
+  "partiful-cqq5bdrrk32inhu7sutm": {
+    "verdict": "DROP",
+    "reason": "Government trade promotion event, no tech content"
+  },
+  "partiful-6tb6kotwvcsw0cdo5cam": {
+    "verdict": "KEEP",
+    "reason": "AI safety, policy, and deployment with OpenAI"
+  },
+  "partiful-ocqeg6szp23qz5nvcxbh": {
+    "verdict": "KEEP",
+    "reason": "Cross-border payments infrastructure and engineering scaling"
+  },
+  "partiful-9jbyswrl1xooe9oee17j": {
+    "verdict": "KEEP",
+    "reason": "AI governance study with IBM and Anthropic panelists"
+  },
+  "partiful-6buok8rk79b927tfqx7f": {
+    "verdict": "KEEP",
+    "reason": "VR/XR technical demos and spatial computing implementation"
+  },
+  "partiful-inz2d5f2pfpwdfnpvhol": {
+    "verdict": "DROP",
+    "reason": "Finance and accounting office hours, not engineering"
+  },
+  "partiful-g2m3exeh1j9zso7enpcd": {
+    "verdict": "KEEP",
+    "reason": "AI and financial markets hands-on workshop"
+  },
+  "partiful-sgbjcvdbeccdhffn1m6o": {
+    "verdict": "DROP",
+    "reason": "State funding and resources panel, not technical"
+  },
+  "partiful-gmoiwn5hmegxdt7gdftx": {
+    "verdict": "KEEP",
+    "reason": "LLM models, agents, and no-code vibes building"
+  },
+  "partiful-znsawrluqbzimqhrqoli": {
+    "verdict": "DROP",
+    "reason": "Pitch clinic and communication coaching, not technical"
+  },
+  "partiful-f5y6wthv792pjdhv56mb": {
+    "verdict": "KEEP",
+    "reason": "Code quantum computer with IBM quantum algorithm"
+  },
+  "partiful-wazzojiazjipjfmyrgps": {
+    "verdict": "DROP",
+    "reason": "Healthcare business strategy and consumer health, not engineering"
+  },
+  "partiful-covrmdyxgwthlp7ikpoj": {
+    "verdict": "KEEP",
+    "reason": "Spatial multi-omics tech and tissue-level foundation models"
+  },
+  "partiful-q9ekc1ijhsv32xmd8hxb": {
+    "verdict": "DROP",
+    "reason": "Generic VC/LP networking luncheon, no technical content"
+  },
+  "partiful-hvn69qhhqkal72l700kb": {
+    "verdict": "KEEP",
+    "reason": "Hands-on demos with ElevenAgents and voice AI tech"
+  },
+  "partiful-499cwphnn3uoh8j7c9an": {
+    "verdict": "KEEP",
+    "reason": "AI-native planning workshop with decision models and agents"
+  },
+  "partiful-asu0bbjuv36y2648j12g": {
+    "verdict": "DROP",
+    "reason": "Series A fundraising process panel, no technical content"
+  },
+  "partiful-z7k3rnyrnvrwkihgpokb": {
+    "verdict": "KEEP",
+    "reason": "Zero knowledge proofs for identity verification technical discussion"
+  },
+  "partiful-pxdwahjxi0eqkleuu50w": {
+    "verdict": "KEEP",
+    "reason": "Hands-on workshop building AI voice agents with Dograh"
+  },
+  "partiful-uli3d5eel4nua9hv5ygd": {
+    "verdict": "DROP",
+    "reason": "Generic founders lunch on strategy/finance, no technical substance"
+  },
+  "partiful-chhyzakgaieap3ntq7y2": {
+    "verdict": "DROP",
+    "reason": "Fundraising execution room, not technical engineering content"
+  },
+  "partiful-1llaohqik59rn516zva5": {
+    "verdict": "KEEP",
+    "reason": "Live demos of Voice API and Silent Auth"
+  },
+  "partiful-3wdkvdplkg4v9vvsgnba": {
+    "verdict": "KEEP",
+    "reason": "Mellea framework masterclass with structured AI programming patterns"
+  },
+  "partiful-e915u2akmufvgywg0cdf": {
+    "verdict": "KEEP",
+    "reason": "Hands-on hackathon building AI voice agents with tools"
+  },
+  "partiful-myubxfiabiuxekx9cw1b": {
+    "verdict": "KEEP",
+    "reason": "Live vibe-coding session building AI agents in real-time"
+  },
+  "partiful-altnfjqbtsexypynvzaj": {
+    "verdict": "DROP",
+    "reason": "IPO summit at NASDAQ, no technical content specified"
+  },
+  "partiful-ly9laohfyulhosojiy6u": {
+    "verdict": "DROP",
+    "reason": "Healthtech investor panel on fundraising, not engineering focused"
+  },
+  "partiful-titnwmy3y2qvpneyg6ts": {
+    "verdict": "DROP",
+    "reason": "Investor decision-making discussion, no technical engineering content"
+  },
+  "partiful-fhiunwzr13e3ybi4ssux": {
+    "verdict": "KEEP",
+    "reason": "IBM Bob agentic coding IDE hands-on engineering session"
+  },
+  "partiful-iwqrrkhda83svehtnf1x": {
+    "verdict": "DROP",
+    "reason": "Generic AI social good networking meetup, no content"
+  },
+  "partiful-dbfdiexjut9ahl4fekhk": {
+    "verdict": "KEEP",
+    "reason": "AI-powered search and AEO technical strategy discussion"
+  },
+  "partiful-mqvs9rrcxl6hcaezfzhg": {
+    "verdict": "KEEP",
+    "reason": "Build finance superagent live session with AI automation"
+  },
+  "partiful-za7fre0uqciayfraxee9": {
+    "verdict": "DROP",
+    "reason": "Generic healthcare panel, no concrete technical substance"
+  },
+  "partiful-8hy03hoeb7xdq7j3rc7b": {
+    "verdict": "DROP",
+    "reason": "Climate policy discussion, no engineering or infrastructure detail"
+  },
+  "partiful-yfxakr8dfsay4hpqixol": {
+    "verdict": "KEEP",
+    "reason": "Hands-on AI agent build for diligence workflows"
+  },
+  "partiful-a1ga0i6noefaupzcypuw": {
+    "verdict": "KEEP",
+    "reason": "Live agentic AI demos in production environments"
+  },
+  "partiful-ryqg93qlhtxnohog7kzf": {
+    "verdict": "KEEP",
+    "reason": "Technical masterclass on context engineering for AI"
+  },
+  "partiful-xowd9f3kb7mpfn1luuwy": {
+    "verdict": "KEEP",
+    "reason": "AI-driven development patterns and production-ready MVP practices"
+  },
+  "partiful-my668vnewsdxde4o8vnn": {
+    "verdict": "DROP",
+    "reason": "Generic founder scaling panel, no technical content"
+  },
+  "partiful-szg1bnpw8ts1szrdipxj": {
+    "verdict": "DROP",
+    "reason": "Pitch competition with no engineering evaluation criteria"
+  },
+  "partiful-sk4ahvwqj1kacn81cm0t": {
+    "verdict": "KEEP",
+    "reason": "AI agents for visual commerce production systems"
+  },
+  "partiful-njeyaexp13kvvfecxsq0": {
+    "verdict": "KEEP",
+    "reason": "Advanced manufacturing, defense tech, factory automation technology"
+  },
+  "partiful-m05ftdt8e8mbwxkeho6a": {
+    "verdict": "DROP",
+    "reason": "Generic cross-border fundraising and networking event"
+  },
+  "partiful-0vnz8pxendveyecu3fxi": {
+    "verdict": "KEEP",
+    "reason": "AI data centers energy infrastructure technical discussion"
+  },
+  "partiful-vp9dwpmj5h3v8wv5k4g5": {
+    "verdict": "KEEP",
+    "reason": "Causal simulation platform for decision systems modeling"
+  },
+  "partiful-dd5ne8wjr1lbdsvylqst": {
+    "verdict": "KEEP",
+    "reason": "AI healthcare use-cases panel plus startup pitches"
+  },
+  "partiful-p6wlauwmrr1d6swzks7o": {
+    "verdict": "DROP",
+    "reason": "Generic crypto AI happy hour, no technical substance"
+  },
+  "partiful-papvnad0hxi8rb7yop2c": {
+    "verdict": "KEEP",
+    "reason": "AI agents for events tech platforms discussion"
+  },
+  "partiful-n7njmjdm3biotauwfcmn": {
+    "verdict": "KEEP",
+    "reason": "Live AI interface build session with design systems"
+  },
+  "partiful-rqwniqbcukftyjbvwnji": {
+    "verdict": "KEEP",
+    "reason": "Deep tech AI startup pitches with investors"
+  },
+  "partiful-rscezqaajqj2gbgdnrvp": {
+    "verdict": "DROP",
+    "reason": "Happy hour with no description or technical content"
+  },
+  "partiful-e0yuy73dbgjtyru0dgjj": {
+    "verdict": "KEEP",
+    "reason": "Blockchain infrastructure technical panel tokenization finance tech"
+  },
+  "partiful-25dsyos4rlutnepesf1j": {
+    "verdict": "KEEP",
+    "reason": "Production RL for LLMs, technical panel"
+  },
+  "partiful-dmfbkixzn2ldfmktqas8": {
+    "verdict": "DROP",
+    "reason": "Generic AI panel, no concrete technical content"
+  },
+  "partiful-lnpcwhf4jsz27dguz1un": {
+    "verdict": "DROP",
+    "reason": "Product showcase for women users, not engineering"
+  },
+  "partiful-ibt9c0ibhvoasyp5qiks": {
+    "verdict": "KEEP",
+    "reason": "Model orchestration, API workflows, Cloudflare Replicate engineering"
+  },
+  "partiful-kgq1v7sdmgy8kfjxmu8e": {
+    "verdict": "KEEP",
+    "reason": "Deep tech dual-use: robotics, materials, energy"
+  },
+  "partiful-lbtuq9li46kivvnjyt8x": {
+    "verdict": "DROP",
+    "reason": "Generic pitch competition with no technical angle"
+  },
+  "partiful-e4ch5kgrdlo8mgl8jjpy": {
+    "verdict": "KEEP",
+    "reason": "LegalTech AI tools: contract analysis, compliance engineering"
+  },
+  "partiful-t0o0kfwcnobezm5f5x75": {
+    "verdict": "DROP",
+    "reason": "Recruiting/hiring networking, no technical content revealed"
+  },
+  "partiful-onqxtmt4ntbsql7puzj7": {
+    "verdict": "KEEP",
+    "reason": "Enterprise systems automation, SAP technical architecture discussion"
+  },
+  "partiful-b9eww3hyabdvjd4tfs6c": {
+    "verdict": "DROP",
+    "reason": "CFO dinner on pricing, finance not engineering"
+  },
+  "partiful-7zdtugm5kb3irzj9s5zc": {
+    "verdict": "DROP",
+    "reason": "Customer acquisition workshop, not technical content"
+  },
+  "partiful-bflcrbj99wif87eefzm3": {
+    "verdict": "DROP",
+    "reason": "HR/leadership discussion, not engineering focused"
+  },
+  "partiful-t8yzuafbpv56o8zw2der": {
+    "verdict": "DROP",
+    "reason": "Generic pitch competition, no technical criteria"
+  },
+  "partiful-zuyiqonlfm1fcvmival2": {
+    "verdict": "DROP",
+    "reason": "Founder dinner on scaling location, not technical"
+  },
+  "partiful-lysydss3yifkvybykscz": {
+    "verdict": "DROP",
+    "reason": "Generic pitch competition with no engineering angle"
+  },
+  "partiful-qjruk2dwzb16a4tfqsan": {
+    "verdict": "DROP",
+    "reason": "Healthtech networking happy hour, no technical content"
+  },
+  "partiful-qmldpvrwymyt2ufiskkd": {
+    "verdict": "DROP",
+    "reason": "AI roast comedy show, entertainment not technical"
+  },
+  "partiful-rjncgbukjw5il9upb378": {
+    "verdict": "KEEP",
+    "reason": "Legal AI engineering roles, technical talent discussion"
+  },
+  "partiful-yflfyvxyl8mfysuapd3o": {
+    "verdict": "KEEP",
+    "reason": "Agentic economy, autonomous systems, Stripe technical platform"
+  },
+  "partiful-u0lzzha1qwqo0qvdut3c": {
+    "verdict": "DROP",
+    "reason": "Ethics panel, no concrete technical content"
+  },
+  "partiful-slmninfeuyqo2dilr81o": {
+    "verdict": "DROP",
+    "reason": "Generic marketing mixer no technical content"
+  },
+  "partiful-tl8mxl8qhpqiakpnfoel": {
+    "verdict": "DROP",
+    "reason": "B2B marketing tool launch party not engineering"
+  },
+  "partiful-vwoxjodkgeklvm8asbju": {
+    "verdict": "DROP",
+    "reason": "JP Morgan investor showcase no technical content"
+  },
+  "partiful-pbo053wmritea0radpmr": {
+    "verdict": "DROP",
+    "reason": "Career advice and recruitment not engineering focused"
+  },
+  "partiful-nggfzmriek2hgnbssvzs": {
+    "verdict": "DROP",
+    "reason": "Healthcare panel no concrete technical content specified"
+  },
+  "partiful-09a0qpkv0csoiosgxjtq": {
+    "verdict": "KEEP",
+    "reason": "Software tools for robotics simulation autonomy stacks"
+  },
+  "partiful-hge7c0ho0vivhzg5wjwx": {
+    "verdict": "DROP",
+    "reason": "Healthcare AI operations panel not technical depth"
+  },
+  "partiful-4wmnb227jlokmvuftset": {
+    "verdict": "KEEP",
+    "reason": "Hands-on hackathon building retrieval API for agents"
+  },
+  "partiful-of1vp5l8dtxkrtinywks": {
+    "verdict": "KEEP",
+    "reason": "Open source engineering ecosystem technical discussion panel"
+  },
+  "partiful-7iltx8brwv10vo6cthgb": {
+    "verdict": "KEEP",
+    "reason": "ML engineers MLOps infra applied research happy hour"
+  },
+  "partiful-pmdosvwgbqpxlvdk8wwb": {
+    "verdict": "KEEP",
+    "reason": "Fintech engineers discussing system constraints and architecture"
+  },
+  "partiful-pe0mrfpx7xpre9uegqyl": {
+    "verdict": "KEEP",
+    "reason": "Rhino CAD Grasshopper AI technical user meetup"
+  },
+  "partiful-qpq2dx18rcpkn4ldttjb": {
+    "verdict": "DROP",
+    "reason": "AI agents finance panel no concrete technical"
+  },
+  "partiful-oqvmxtshovayx47ok3li": {
+    "verdict": "DROP",
+    "reason": "B2B AI founders investors mixer generic networking"
+  },
+  "partiful-mpwlkfdlqr5fo1ngtk1x": {
+    "verdict": "DROP",
+    "reason": "Academia to startup transition not technical content"
+  },
+  "partiful-jcwswroifonl6u8gm2qb": {
+    "verdict": "DROP",
+    "reason": "Rooftop kickoff party generic networking no content"
+  },
+  "partiful-qktgybxoixczudlrlw4t": {
+    "verdict": "DROP",
+    "reason": "AI-matched dinner generic networking no technical focus"
+  },
+  "partiful-pggsincwpvvs7vw92mzm": {
+    "verdict": "DROP",
+    "reason": "Fundraising discussion not engineering or technical content"
+  },
+  "partiful-5c4isrfc64dvxzosoto6": {
+    "verdict": "KEEP",
+    "reason": "AI agents computer use with DeepMind engineer"
+  },
+  "partiful-dy7ruqrhvpwyykqeucjk": {
+    "verdict": "DROP",
+    "reason": "Group run breakfast not technical content focus"
+  },
+  "partiful-uw9rs8e5eox6wxwsu2ii": {
+    "verdict": "DROP",
+    "reason": "Generic health tech networking breakfast, no technical content"
+  },
+  "partiful-suiukzxwktrnjbwruoae": {
+    "verdict": "DROP",
+    "reason": "IPO finance/investor summit, no engineering substance"
+  },
+  "partiful-d0zhxwwvqvdkz26ikab3": {
+    "verdict": "DROP",
+    "reason": "VC fundraising conversation, not technical content"
+  },
+  "partiful-ot8041lhdg9cem9rludb": {
+    "verdict": "KEEP",
+    "reason": "Physical AI and industrial tech startup pitches"
+  },
+  "partiful-ep89tnfpxauq0uwoq45t": {
+    "verdict": "KEEP",
+    "reason": "GTM data infrastructure, AI workflows, robot demo"
+  },
+  "partiful-pgc9007xbqzuiyefn7bv": {
+    "verdict": "KEEP",
+    "reason": "SOC 2, HIPAA, compliance infrastructure discussion"
+  },
+  "partiful-jyctzcrfy1myhhbjm771": {
+    "verdict": "DROP",
+    "reason": "Generic AI founder/VC panel, no concrete technical content"
+  },
+  "partiful-ycsebrl4yrehgiekdpxi": {
+    "verdict": "DROP",
+    "reason": "Coworking/networking/lunch, no technical programming specified"
+  },
+  "partiful-w1pvush2vjwnosmqm7qt": {
+    "verdict": "DROP",
+    "reason": "VC networking breakfast, no technical content"
+  },
+  "partiful-sbd7xorpwuin4anlc19o": {
+    "verdict": "KEEP",
+    "reason": "Hands-on app building with Lovable AI tools"
+  },
+  "partiful-z0pj3d36syv16pqyu8hk": {
+    "verdict": "DROP",
+    "reason": "Pre-seed founder breakfast, networking only"
+  },
+  "partiful-ycxj1l7qwrea9owckfau": {
+    "verdict": "DROP",
+    "reason": "Fintech CFO office hours, finance not engineering"
+  },
+  "partiful-yz0xkuquzuuarbmicnh5": {
+    "verdict": "KEEP",
+    "reason": "Full-day hands-on agentic commerce build session"
+  },
+  "partiful-ymjqaazx8lrxwxexrstj": {
+    "verdict": "DROP",
+    "reason": "Media breakfast with journalist, not technical content"
+  },
+  "partiful-yaaxnqzsjlz40sgx48gh": {
+    "verdict": "DROP",
+    "reason": "Coffee networking, no technical content specified"
+  },
+  "partiful-cpzhoze6jh2rupzfkdgk": {
+    "verdict": "KEEP",
+    "reason": "Deploying AI agents infrastructure, concrete use cases"
+  },
+  "partiful-8ywwimt3zz9gdkn49osh": {
+    "verdict": "DROP",
+    "reason": "Event moved to different page, unusable"
+  },
+  "partiful-8syezycs3htepxrb2f9q": {
+    "verdict": "KEEP",
+    "reason": "LLM production architecture, RAG, fine-tuning, evals"
+  },
+  "partiful-3bh9vu2spma3kwhsrore": {
+    "verdict": "DROP",
+    "reason": "Women's health/finance panel, no engineering content"
+  },
+  "partiful-3ulq45rdvutdjrsrsipg": {
+    "verdict": "DROP",
+    "reason": "Generic build-vs-buy panel, no concrete technical content"
+  },
+  "partiful-bcpy9eobwf8fipver3bo": {
+    "verdict": "DROP",
+    "reason": "Generic leadership/culture panel, no technical content"
+  },
+  "partiful-qby7sunwqut791gk5y9q": {
+    "verdict": "KEEP",
+    "reason": "Fraud detection tech, identity verification systems, AI security"
+  },
+  "partiful-ms799jnbmeb4w8981dii": {
+    "verdict": "KEEP",
+    "reason": "Mid-senior technologists, AI strategy, architecture decisions"
+  },
+  "partiful-qmtu47yttixuj7jgzpsp": {
+    "verdict": "DROP",
+    "reason": "Generic networking cafe, no specific technical content"
+  },
+  "partiful-xv4phzfi7e2cufqzaf1d": {
+    "verdict": "KEEP",
+    "reason": "Hands-on Cursor workshop, live building, show-and-tell"
+  },
+  "partiful-kqokplcskp79vs38zqvj": {
+    "verdict": "KEEP",
+    "reason": "Quantum computing systems, molecular modeling, materials science"
+  },
+  "partiful-blzgzxgnxauvuqtavgtc": {
+    "verdict": "DROP",
+    "reason": "Generic tech showcase, no concrete technical content"
+  },
+  "partiful-hqc1whoh5llou4orc6tk": {
+    "verdict": "DROP",
+    "reason": "Generic founders/VCs breakfast mixer, no technical topic"
+  },
+  "partiful-g02mialzt1yrwcpzzfy0": {
+    "verdict": "KEEP",
+    "reason": "AI agents A2A economy, coordination, evaluation systems"
+  },
+  "partiful-y1qpofkb9fl9vuf0dhmi": {
+    "verdict": "DROP",
+    "reason": "Generic startup advisory/boards, no engineering substance"
+  },
+  "partiful-a4otit5uqnhysg066ury": {
+    "verdict": "DROP",
+    "reason": "Sales/GTM panel, no technical content"
+  },
+  "partiful-p5m8qglbsombtqkb71uo": {
+    "verdict": "DROP",
+    "reason": "No description of technical content or focus"
+  },
+  "partiful-fy3kclq7szqranvs4iyt": {
+    "verdict": "DROP",
+    "reason": "Healthcare consumer trends, no technical infrastructure discussed"
+  },
+  "partiful-vrluxukmw04tmen0jgn0": {
+    "verdict": "DROP",
+    "reason": "IPO/capital markets panel, no engineering content"
+  },
+  "partiful-4yrlsfnwwgul2cmjjpx8": {
+    "verdict": "KEEP",
+    "reason": "Hands-on agent building workshop, deploying AI agents"
+  },
+  "partiful-6iyrrqo0oeyiwff8rdez": {
+    "verdict": "KEEP",
+    "reason": "AI-first engineering transformation, CTO technical leadership share"
+  },
+  "partiful-i3rokumjzcyfacyuqcp8": {
+    "verdict": "KEEP",
+    "reason": "Hands-on AI retention systems, marketing automation workflows"
+  },
+  "partiful-fmbvlzinaumqsqmydanm": {
+    "verdict": "KEEP",
+    "reason": "Aerospace tech, autonomy systems, advanced manufacturing innovation"
+  },
+  "partiful-gti2rpprb4r62eruhq6h": {
+    "verdict": "DROP",
+    "reason": "Generic startup demo day, no technical eval"
+  },
+  "partiful-utnlewpadjuraikzgcn5": {
+    "verdict": "KEEP",
+    "reason": "Data moats, synthetic data, model training technical"
+  },
+  "partiful-vnourbbjzws1lzqmuuf1": {
+    "verdict": "DROP",
+    "reason": "Generic AI showcase with vendor pitch vibes"
+  },
+  "partiful-xr549h5min8speycbreb": {
+    "verdict": "KEEP",
+    "reason": "Mainframe infrastructure discussion with actual engineers"
+  },
+  "partiful-gv4ohzuflk41mfqcwvcp": {
+    "verdict": "DROP",
+    "reason": "GTM/sales deck tooling for non-technical audience"
+  },
+  "partiful-m7pxmv8soxt11yhb9pkw": {
+    "verdict": "KEEP",
+    "reason": "AI in enterprise SDLC technical patterns discussion"
+  },
+  "partiful-mioqhxdejdbqkwhrpezf": {
+    "verdict": "DROP",
+    "reason": "Generic CVC networking lunch no technical content"
+  },
+  "partiful-t9rcgqhgn2tx8udcmkmx": {
+    "verdict": "DROP",
+    "reason": "Startup pitch event no technical evaluation criteria"
+  },
+  "partiful-1fk2cqrzyzhreabikjki": {
+    "verdict": "DROP",
+    "reason": "Healthcare benefits HR event not engineering focused"
+  },
+  "partiful-ilarl2ext4so55tvkwew": {
+    "verdict": "KEEP",
+    "reason": "Debugging AI projects technical troubleshooting session"
+  },
+  "partiful-ap7ihrx3qowb8ox2d7r2": {
+    "verdict": "DROP",
+    "reason": "Investor networking lunch no specified technical content"
+  },
+  "partiful-si9uavn8iojio6k4rlfi": {
+    "verdict": "DROP",
+    "reason": "GP/LP networking event no engineering substance"
+  },
+  "partiful-uhnwevw4jrqybdraoc9v": {
+    "verdict": "DROP",
+    "reason": "Generic healthtech networking with pizza stations"
+  },
+  "partiful-pmpzdsi9hp2mjltbfxrs": {
+    "verdict": "KEEP",
+    "reason": "Zo platform demos showing agents and workflows"
+  },
+  "partiful-twk9rnlh5btaddjgdeeb": {
+    "verdict": "KEEP",
+    "reason": "Longevity biotech AI genomics computational biology panels"
+  },
+  "partiful-1shhuqimnmhdfdynqclx": {
+    "verdict": "KEEP",
+    "reason": "Hands-on Claude Code agent building workshop"
+  },
+  "partiful-ydp71jpfgu83rwwiyohv": {
+    "verdict": "DROP",
+    "reason": "Wellness retreat coflow breathwork sessions disguised"
+  },
+  "partiful-tvledxqk9bwsvjcf0out": {
+    "verdict": "KEEP",
+    "reason": "AI hackathon building retention solutions prototypes"
+  },
+  "partiful-ufx7yjowpnesf1ta180j": {
+    "verdict": "DROP",
+    "reason": "Salon-style cultural discussion no technical substance"
+  },
+  "partiful-buiddld0rtn1ss7a67xa": {
+    "verdict": "DROP",
+    "reason": "Product validation methodology not engineering focused"
+  },
+  "partiful-rexrxyvizwqzbetws5kt": {
+    "verdict": "DROP",
+    "reason": "International student visa recruiting workshop"
+  },
+  "partiful-mwgk8ldzyybufww7cv2f": {
+    "verdict": "KEEP",
+    "reason": "Founder AI hackathon with engineering mentors"
+  },
+  "partiful-wjcoiw0cmjnrvf2sogq8": {
+    "verdict": "DROP",
+    "reason": "Generic panel on AI creative tools, no technical depth"
+  },
+  "partiful-krkerdozqgpetxzhlohf": {
+    "verdict": "DROP",
+    "reason": "Pitch competition with no engineering evaluation criteria"
+  },
+  "partiful-zejqul4v8lssfgc67l5g": {
+    "verdict": "DROP",
+    "reason": "McKinsey consulting talk on AI strategy, not engineering"
+  },
+  "partiful-9n0rjmwo3qmw0gcbsndf": {
+    "verdict": "KEEP",
+    "reason": "ZenGov founders on govtech fintech AI technical stack"
+  },
+  "partiful-ssoqr8v1u9os3khp517r": {
+    "verdict": "KEEP",
+    "reason": "Cryptographic verification workshop for agent safety engineering"
+  },
+  "partiful-uonetvuqrpunwekeplyn": {
+    "verdict": "DROP",
+    "reason": "Generic founder story fireside chat, no technical angle"
+  },
+  "partiful-y6jio5i17r9kcmz9brxz": {
+    "verdict": "KEEP",
+    "reason": "Role-specific AI product architecture from Ariso and Opine"
+  },
+  "partiful-t2csmrys2cjjert9dzky": {
+    "verdict": "DROP",
+    "reason": "AI creative tools screening, not hands-on engineering"
+  },
+  "partiful-9vmrvxtl6vajwendio8y": {
+    "verdict": "DROP",
+    "reason": "Sports IP and business talk, no technical content"
+  },
+  "partiful-rkc8jinnw0odfye8bevj": {
+    "verdict": "DROP",
+    "reason": "Vanderbilt angel pitch day, no engineering focus"
+  },
+  "partiful-bwi0kidjjzif7tcwtxyb": {
+    "verdict": "DROP",
+    "reason": "Generic AI happy hour networking, no content"
+  },
+  "partiful-8ytv1igfroeqamxi5xon": {
+    "verdict": "KEEP",
+    "reason": "Hands-on vibe coding workshop for building features"
+  },
+  "partiful-2uzoy58jttvpnlysyubc": {
+    "verdict": "DROP",
+    "reason": "Policy panel on AI equity, not technical"
+  },
+  "partiful-zjhdqwiiejsqwi4vr7hq": {
+    "verdict": "KEEP",
+    "reason": "Product build loop hands-on session MVP scoping"
+  },
+  "partiful-l79xoraeqh6iky77ajaz": {
+    "verdict": "DROP",
+    "reason": "Defense policy and acquisition, not engineering focused"
+  },
+  "partiful-od2kjymtsdjzkcvquhut": {
+    "verdict": "DROP",
+    "reason": "AI startup pitch competition, no technical evaluation"
+  },
+  "partiful-mzieajfwhcluynugsaip": {
+    "verdict": "DROP",
+    "reason": "VC fundraising advice panel, not technical content"
+  },
+  "partiful-qv3wwvc0rgfslpsbcwc0": {
+    "verdict": "KEEP",
+    "reason": "Hackathon building AI agent for creator brand deals"
+  },
+  "partiful-xq9xjglfbgtigyfr9avc": {
+    "verdict": "DROP",
+    "reason": "Hollywood AI storytelling, entertainment not engineering focus"
+  },
+  "partiful-vkqzm6uj1lkuk8bvbqu7": {
+    "verdict": "DROP",
+    "reason": "IBM CEO business talk, no technical depth"
+  },
+  "partiful-evxwspzyga7cpx3tjgnw": {
+    "verdict": "KEEP",
+    "reason": "Hands-on agent building hackathon on Hyperagent platform"
+  },
+  "partiful-ekvrcklxxr7hvl9ogump": {
+    "verdict": "KEEP",
+    "reason": "AI agents technical implementation in fintech domain"
+  },
+  "partiful-vfnhva22yqnk1h8hh1fb": {
+    "verdict": "KEEP",
+    "reason": "AI deployment in CRE tech stack discussion"
+  },
+  "partiful-6i7fkboq3eeciykalja3": {
+    "verdict": "KEEP",
+    "reason": "Blockchain tokenization infrastructure for municipal bonds"
+  },
+  "partiful-ufvzlwmfqfsibmawnc8u": {
+    "verdict": "KEEP",
+    "reason": "AI infrastructure and customer experience technical perspectives"
+  },
+  "partiful-eujnl6ukffk3xvpivuyp": {
+    "verdict": "KEEP",
+    "reason": "AI voice agent telephony integration office hours"
+  },
+  "partiful-cxk2x6xl26sighimb1iz": {
+    "verdict": "KEEP",
+    "reason": "Gridtech infrastructure innovation and deployment technology"
+  },
+  "partiful-lhcjyxozqjlhvcuvcafd": {
+    "verdict": "KEEP",
+    "reason": "Hands-on AI workflow automation workshop with hackathon"
+  },
+  "partiful-3xn91rapz6ahjehvigti": {
+    "verdict": "KEEP",
+    "reason": "Quantum and photonics engineering systems discussion"
+  },
+  "partiful-mpi0obszsnevkyhz81mm": {
+    "verdict": "KEEP",
+    "reason": "AI and aerospace engineering panel session"
+  },
+  "partiful-hbxtd2uujeigllnf9nfx": {
+    "verdict": "KEEP",
+    "reason": "AI tech stack for CFO financial operations"
+  },
+  "partiful-rgi2tezguqvm6vycoj96": {
+    "verdict": "KEEP",
+    "reason": "Hands-on sustainability tech prototyping with AI tools"
+  },
+  "partiful-bn5h1g13xzov6r5xklae": {
+    "verdict": "KEEP",
+    "reason": "Deep tech research to startup transition presentations"
+  },
+  "partiful-ebxma3cfqde9zcmfcgr7": {
+    "verdict": "KEEP",
+    "reason": "AI SDLC platform demo and developer productivity"
+  },
+  "partiful-5vhvrpi0vlmqwomqadcn": {
+    "verdict": "DROP",
+    "reason": "Pitch competition without specified technical evaluation criteria"
+  },
+  "partiful-ya82tfithdrtzphju3cm": {
+    "verdict": "KEEP",
+    "reason": "MCP protocol operationalization and enterprise integration technical"
+  },
+  "partiful-edg0gxdzcrwx1pwjuzaq": {
+    "verdict": "KEEP",
+    "reason": "Physical AI simulation for aerospace and robotics"
+  },
+  "partiful-aqfybwrortzywnl6b0uo": {
+    "verdict": "DROP",
+    "reason": "Generic fintech trends report without technical content"
+  },
+  "partiful-oznbqhg1v957gfsy9q4w": {
+    "verdict": "DROP",
+    "reason": "Dating game format focused on fundraising not tech"
+  },
+  "partiful-wquenyka7qksh4pd6dtb": {
+    "verdict": "DROP",
+    "reason": "Investment workflows panel, not engineering content"
+  },
+  "partiful-kopqogcyvavalkqg0547": {
+    "verdict": "DROP",
+    "reason": "HealthTech investor salon, no technical substance"
+  },
+  "partiful-eydn9namoiorakqv58yp": {
+    "verdict": "DROP",
+    "reason": "Enterprise AI panel with VCs, networking-focused"
+  },
+  "partiful-ntflcjca0fpg8lorosoh": {
+    "verdict": "DROP",
+    "reason": "Generic pitch competition, no engineering criteria"
+  },
+  "partiful-gc8dzreyqysfhsrnwuty": {
+    "verdict": "KEEP",
+    "reason": "Blockchain evaluation framework and institutional use cases"
+  },
+  "partiful-6racwcr6sfxbsyo2zmva": {
+    "verdict": "DROP",
+    "reason": "City growth and investment networking event"
+  },
+  "partiful-ekosu7sy0dbfiw5jpj9n": {
+    "verdict": "DROP",
+    "reason": "Health benefits policy discussion, not technical"
+  },
+  "partiful-ajydzaehnpbnqbcssw2h": {
+    "verdict": "KEEP",
+    "reason": "Agentic AI in finance panel, concrete workflows"
+  },
+  "partiful-fhzexbcteyzamh4z37wg": {
+    "verdict": "DROP",
+    "reason": "Capital and GTM strategy, not engineering"
+  },
+  "aws-for-startups-ai-visionaries-forum-2026-06-02": {
+    "verdict": "DROP",
+    "reason": "No description provided, cannot evaluate content"
+  },
+  "partiful-xc1k2ib7tiqun4mmkhma": {
+    "verdict": "DROP",
+    "reason": "Meme marketing discussion, not technical content"
+  },
+  "partiful-hyek0r0m60v3y1c7s7rk": {
+    "verdict": "DROP",
+    "reason": "Federal funding mechanisms, not engineering focused"
+  },
+  "partiful-awywjuex389umwiuywbq": {
+    "verdict": "DROP",
+    "reason": "Alt data and markets summit for traders"
+  },
+  "partiful-ytrormkjclhr4rudjy3k": {
+    "verdict": "KEEP",
+    "reason": "AI + blockchain technical convergence panel"
+  },
+  "partiful-gil3npfjeoczgdirm7cr": {
+    "verdict": "DROP",
+    "reason": "Corporate partnerships discussion, not technical builds"
+  },
+  "partiful-d07x2jmguayhv1tdu6jm": {
+    "verdict": "KEEP",
+    "reason": "DevRel, open source, agentic DevOps platform"
+  },
+  "partiful-neacqlrcbvdybv4ercaw": {
+    "verdict": "DROP",
+    "reason": "SpaceTech investor networking and market overview"
+  },
+  "partiful-n5mnmul6uaxvrfurtxc8": {
+    "verdict": "DROP",
+    "reason": "Demo day pitch event, no technical criteria"
+  },
+  "partiful-m3xlfwq93o3ijcguakiq": {
+    "verdict": "DROP",
+    "reason": "VC reverse pitch networking, not technical"
+  },
+  "partiful-cyc14rom81gqu39dqmur": {
+    "verdict": "DROP",
+    "reason": "SaaS founder investor networking happy hour"
+  },
+  "partiful-dzxbz2nm6cjxkgeabimd": {
+    "verdict": "DROP",
+    "reason": "Legal panel, no technical AI content"
+  },
+  "partiful-xelmoqgv0xd1buagyeff": {
+    "verdict": "DROP",
+    "reason": "GTM marketing workshop, not engineering focused"
+  },
+  "partiful-nvihhnrgfbvxzjchdcqp": {
+    "verdict": "KEEP",
+    "reason": "IoT sensors, RFID, BLE, LiDAR tech"
+  },
+  "partiful-1zvsfv5mv6ocucfgukwz": {
+    "verdict": "DROP",
+    "reason": "Consumer health panel, not technical depth"
+  },
+  "partiful-vii5avoavr5icyirnt27": {
+    "verdict": "DROP",
+    "reason": "Cocktail party with startup artifacts display"
+  },
+  "partiful-sy3goas8ekklieqqmzyr": {
+    "verdict": "DROP",
+    "reason": "Investor relations networking, no technical content"
+  },
+  "partiful-vllvbzyveyg1xvwk0fti": {
+    "verdict": "DROP",
+    "reason": "Fractional talent recruiting event, not technical"
+  },
+  "partiful-tqftk1ljwfwxxjjtlyaf": {
+    "verdict": "DROP",
+    "reason": "Wealth management and exits discussion"
+  },
+  "partiful-xmj2bjacl2lgq3i7q6v7": {
+    "verdict": "DROP",
+    "reason": "Generic scaling workshop, no specific tech"
+  },
+  "partiful-m7pci5edggvemhby9pgq": {
+    "verdict": "DROP",
+    "reason": "Consumer investor networking, no technical angle"
+  },
+  "partiful-m4g7u5lc1jpbwnzom60r": {
+    "verdict": "DROP",
+    "reason": "Faith-based pitch competition, religious focus"
+  },
+  "partiful-n9ccymio7nyeqt2wkee3": {
+    "verdict": "KEEP",
+    "reason": "Defense tech with Bloomberg, Lux Capital"
+  },
+  "partiful-etmljjsmxwh9wb4nmfe0": {
+    "verdict": "KEEP",
+    "reason": "Live engineering hiring tournament with coding"
+  },
+  "partiful-s9ffbvaganmfqpfnvyma": {
+    "verdict": "KEEP",
+    "reason": "Adobe Content Credentials technical standard implementation"
+  },
+  "partiful-6tgwbwflinhov8qc0u83": {
+    "verdict": "KEEP",
+    "reason": "Voice AI demos, LLMs, real-time infrastructure"
+  },
+  "partiful-xqibmzmb4oubczwfp2sl": {
+    "verdict": "KEEP",
+    "reason": "Agents and APIs demo night technical"
+  },
+  "partiful-wzrb36bfpwmiawawumd5": {
+    "verdict": "KEEP",
+    "reason": "Hinge engineering talks on ML systems"
+  },
+  "partiful-swfhpd2jwpqsela92wsp": {
+    "verdict": "DROP",
+    "reason": "Anti-gravity pseudoscience and Bitcoin film screening"
+  },
+  "partiful-wqsb1h70yupkhndf9q7v": {
+    "verdict": "KEEP",
+    "reason": "AI side-project demos with live builds"
+  },
+  "partiful-e67gbc3uj6ptgilxecct": {
+    "verdict": "KEEP",
+    "reason": "Product demos Gamma, Zo, Windmill AI"
+  },
+  "partiful-tplcsaej2w4mg9tbftyh": {
+    "verdict": "DROP",
+    "reason": "Generic consumer/media panel, no technical content"
+  },
+  "partiful-mh8b6grsens9gcczwu4n": {
+    "verdict": "DROP",
+    "reason": "Generic demo day, no technical criteria"
+  },
+  "partiful-gxt0mlpegp8rgfxrh2qg": {
+    "verdict": "KEEP",
+    "reason": "Hackathon with bounties and problem solving"
+  },
+  "partiful-d46hauajmeylwq69aj0c": {
+    "verdict": "DROP",
+    "reason": "Marketing/audience intelligence panel, not engineering content"
+  },
+  "partiful-nhlbgkxd64icegk4dnks": {
+    "verdict": "KEEP",
+    "reason": "AI observability, production systems with Datadog"
+  },
+  "partiful-3kdgu631rtkqssfe5zmo": {
+    "verdict": "KEEP",
+    "reason": "AI Agents, GTM engineering, technical tooling"
+  },
+  "partiful-ubrzopzqprwbn6qk0npo": {
+    "verdict": "DROP",
+    "reason": "Legal compliance panel, not technical content"
+  },
+  "partiful-ncycpvkfhxfdvuodhp90": {
+    "verdict": "KEEP",
+    "reason": "Vibe coding hackathon with Lovable, Replit"
+  },
+  "partiful-fenprxl7uhupw7xxxejb": {
+    "verdict": "DROP",
+    "reason": "Generic founder-investor networking, no technical content"
+  },
+  "partiful-ajldinggvqpvztpnzqqg": {
+    "verdict": "DROP",
+    "reason": "Wealth/finance networking, no technical substance"
+  },
+  "partiful-cldozdtbs7mmjqomw3k2": {
+    "verdict": "KEEP",
+    "reason": "Agentic GTM systems workshop with Claude"
+  },
+  "partiful-tzhaslxahe3uvbpbvxaz": {
+    "verdict": "DROP",
+    "reason": "Generic investor dinner, no technical content"
+  },
+  "partiful-hl2aiewhz1e2t6lveegw": {
+    "verdict": "DROP",
+    "reason": "AI training for small businesses, not engineering"
+  },
+  "partiful-u7ugtf8gtkw9bokug7k8": {
+    "verdict": "KEEP",
+    "reason": "Agentic commerce with JPM biometric payments technical"
+  },
+  "partiful-x6nfw7ekd1fownswwoqq": {
+    "verdict": "KEEP",
+    "reason": "General intelligence through games, ML engineering"
+  },
+  "partiful-g2kyxgwf2wha4lyjcd8f": {
+    "verdict": "DROP",
+    "reason": "Generic healthcare AI networking, no technical focus"
+  },
+  "partiful-ea5orw6fkg24xe61fidn": {
+    "verdict": "DROP",
+    "reason": "Media/creator mixer, no technical content specified"
+  },
+  "partiful-nokxyoaj7juituext448": {
+    "verdict": "DROP",
+    "reason": "IVF product pitch to investors, not engineering"
+  },
+  "partiful-jugbsvgkwlkmfxkiwdsy": {
+    "verdict": "DROP",
+    "reason": "Finance/investing networking, no technical focus"
+  },
+  "partiful-jwvwoaapyms8wrbp2g5t": {
+    "verdict": "DROP",
+    "reason": "Movie screening and finance talk, not technical"
+  },
+  "partiful-3c83it3ddwtnleboisvt": {
+    "verdict": "KEEP",
+    "reason": "AI agent deployment, simulation sandbox technical focus"
+  },
+  "partiful-nxua6yod01fxavyj1tyx": {
+    "verdict": "DROP",
+    "reason": "Generic panel mixer, no concrete technical content"
+  },
+  "partiful-uvrf9v2zad5m4gdpdkh9": {
+    "verdict": "DROP",
+    "reason": "Founders investors happy hour, no technical substance"
+  },
+  "partiful-oabgjyptxq9pqersnaaq": {
+    "verdict": "KEEP",
+    "reason": "Founders building AI products, pricing, technical decisions"
+  },
+  "partiful-7dygsiy1wuursvend5gp": {
+    "verdict": "KEEP",
+    "reason": "DevEx tech talks, AI reshaping software workflows"
+  },
+  "partiful-zepyrmozrtawdpegb28i": {
+    "verdict": "KEEP",
+    "reason": "Lightning talks on technical projects, Q&A session"
+  },
+  "partiful-t6fjz5ad6hprifqyjasz": {
+    "verdict": "DROP",
+    "reason": "Founder matchmaking networking, no technical content specified"
+  },
+  "partiful-atagkavgilrgqmdwkm91": {
+    "verdict": "DROP",
+    "reason": "Legal discussion, not engineering focused content"
+  },
+  "partiful-rlraqplpid3iy9jovtrs": {
+    "verdict": "DROP",
+    "reason": "VC networking with magician, no technical agenda"
+  },
+  "partiful-23vs8crnordwuiuxcajt": {
+    "verdict": "DROP",
+    "reason": "Generic happy hour networking, no concrete topic"
+  },
+  "partiful-x1immy3ashwtcbjmqwop": {
+    "verdict": "KEEP",
+    "reason": "Live demo EdTech platform, AI data robotics"
+  },
+  "partiful-ovgbqohaodqmonga1uno": {
+    "verdict": "DROP",
+    "reason": "Taco networking event, no technical content specified"
+  },
+  "partiful-3dssq4jlafwg2qjimxw3": {
+    "verdict": "DROP",
+    "reason": "Fintech networking panels, no concrete engineering content"
+  },
+  "partiful-ybvorh8clagkgejpegrd": {
+    "verdict": "KEEP",
+    "reason": "AI to scale product teams ops sessions"
+  },
+  "partiful-aitjroow2obxsa7ctkhg": {
+    "verdict": "DROP",
+    "reason": "Dinner discussion on org structure, not technical"
+  },
+  "partiful-ih22sdeyhvtbundcpacu": {
+    "verdict": "DROP",
+    "reason": "Startup pitch night, no engineering eval criteria"
+  },
+  "partiful-ezyyoasnhltpvjnfdxku": {
+    "verdict": "DROP",
+    "reason": "Fundraising scaling conversation, not technical focus"
+  },
+  "partiful-j6blmpb7wlxwenteujcn": {
+    "verdict": "KEEP",
+    "reason": "Agent workflow hacks tools challenges shared"
+  },
+  "partiful-tgzsqyahytcxi1gx0m4h": {
+    "verdict": "KEEP",
+    "reason": "Gaussian Splatting Physical AI Spatial Intelligence tech"
+  },
+  "partiful-qnkligfsuaxam07x1bec": {
+    "verdict": "KEEP",
+    "reason": "Agentic networks infrastructure financial services architecture"
+  },
+  "partiful-fszoo6xpn11iqxvdtq9j": {
+    "verdict": "KEEP",
+    "reason": "Shipping agents, governance frameworks, securing data pipelines"
+  },
+  "partiful-h1gptqxbn6aogow5cicd": {
+    "verdict": "DROP",
+    "reason": "Panel on AI bias, no engineering content"
+  },
+  "partiful-iygtsyfpmkhdhxgcofcb": {
+    "verdict": "DROP",
+    "reason": "Curated VC dinner, no technical content"
+  },
+  "partiful-plodssk5pxj3ikddaqk3": {
+    "verdict": "KEEP",
+    "reason": "Security professionals, authentication, enterprise infrastructure discussions"
+  },
+  "partiful-jytnb4idg0hxwjnqdsgf": {
+    "verdict": "KEEP",
+    "reason": "AI agents, internet architecture, Cloudflare Shopify tech"
+  },
+  "partiful-bc7djv7amllleaarxwrq": {
+    "verdict": "KEEP",
+    "reason": "Digital twins, agentic simulation platform, voice AI models"
+  },
+  "partiful-qetlha6f52i11y37wyfb": {
+    "verdict": "KEEP",
+    "reason": "Live coding micro-hack, demos, collaborative building session"
+  },
+  "partiful-ckp1qmcbzpfuwhlno6y0": {
+    "verdict": "DROP",
+    "reason": "VIP dinner networking, no technical programming"
+  },
+  "partiful-lcmxsfhnxlltkqqjyluw": {
+    "verdict": "DROP",
+    "reason": "VC panel on productivity tools, no engineering"
+  },
+  "partiful-akjamb5yywnlz8lfb5xl": {
+    "verdict": "KEEP",
+    "reason": "RegTech AI compliance automation, monitoring, governance workflows"
+  },
+  "partiful-leuafk4t1kckkgdrotjo": {
+    "verdict": "KEEP",
+    "reason": "AI video platform demo, node-based workflow technical deep-dive"
+  },
+  "partiful-obcsrtsobg9mvne5kl4d": {
+    "verdict": "DROP",
+    "reason": "Startup pitches across sectors, no technical content"
+  },
+  "partiful-vs2ec7nertgf0pgnwfuo": {
+    "verdict": "DROP",
+    "reason": "Marketing campaign generator demo, no engineering substance"
+  },
+  "partiful-qxjnrusoa1hyxqatxnsn": {
+    "verdict": "DROP",
+    "reason": "PE dinner with growth insights, no tech"
+  },
+  "partiful-cbbgd3lo8pagz6xyp3fi": {
+    "verdict": "KEEP",
+    "reason": "Biotech founders, IP, lab space, science-driven company building"
+  },
+  "partiful-wotuzhujuwqd4ttoknji": {
+    "verdict": "KEEP",
+    "reason": "Product design tool workflows, AI design automation technical"
+  },
+  "partiful-jq64sov8gjejclmepkrh": {
+    "verdict": "KEEP",
+    "reason": "Integrating AI into production healthtech, managing technical risk"
+  },
+  "partiful-i8n2nzdvvqzvmcpwpzwx": {
+    "verdict": "DROP",
+    "reason": "Human performance philosophy discussion, no engineering content"
+  },
+  "partiful-e2hnod2jizhnhqujwmqu": {
+    "verdict": "DROP",
+    "reason": "Labor market economics salon, no technical substance"
+  },
+  "partiful-pnoxo4w98ujrjj4hgfci": {
+    "verdict": "KEEP",
+    "reason": "AI in care delivery technical implementation discussion"
+  },
+  "partiful-c4ccsntonqyein1kpsw1": {
+    "verdict": "KEEP",
+    "reason": "Security leaders discussing real programs at scale"
+  },
+  "partiful-qak3xx2vl5vllq2v9c5y": {
+    "verdict": "KEEP",
+    "reason": "AI deployment in healthcare/fintech, technical implementation discussion"
+  },
+  "partiful-560ftf86antkts67d4s3": {
+    "verdict": "DROP",
+    "reason": "Performance artist keynote, wellness branding not technical content"
+  },
+  "partiful-ya9fboo26bt6i1n8ha72": {
+    "verdict": "KEEP",
+    "reason": "Liability law for AI chatbots substantive technical"
+  },
+  "partiful-ctlx3ytfjakgapdvqcw6": {
+    "verdict": "DROP",
+    "reason": "Generic poker night no technical content specified"
+  },
+  "partiful-7qri7f6jjm3bsjw6dej5": {
+    "verdict": "DROP",
+    "reason": "Comedy show not technical content despite tech angle"
+  },
+  "partiful-m0kczmvabhz7jy00zfwa": {
+    "verdict": "DROP",
+    "reason": "Generic networking party no specific technical topics"
+  },
+  "partiful-c1izhargw1zll9aykizj": {
+    "verdict": "KEEP",
+    "reason": "Deep tech infrastructure investing AI robotics defense"
+  },
+  "partiful-ms9ovrumkl2c2xk2zjpc": {
+    "verdict": "DROP",
+    "reason": "HR readiness workshop not engineering or technical build"
+  },
+  "partiful-h9bpa3i5jwuubkb7bpcq": {
+    "verdict": "DROP",
+    "reason": "Family office networking dinner no technical content"
+  },
+  "partiful-fcicxmpnjxhxmsynvqpn": {
+    "verdict": "KEEP",
+    "reason": "AI leaders discussing agent adoption in enterprises"
+  },
+  "partiful-gh3jtovzgcyjxsth6wte": {
+    "verdict": "DROP",
+    "reason": "Generic builders dinner economist not technical focused"
+  },
+  "partiful-0jl8b2j56m7sv5blh9yh": {
+    "verdict": "DROP",
+    "reason": "Wildfire resilience workshop not engineering or tech"
+  },
+  "partiful-bpune1hudeaunpne2rqw": {
+    "verdict": "KEEP",
+    "reason": "Prediction markets for clinical trials technical mechanism"
+  },
+  "partiful-qrbk69m7svt7xn1xymqg": {
+    "verdict": "DROP",
+    "reason": "Poker tournament for VCs no technical content"
+  },
+  "partiful-ebzpadedumk03er8rnbu": {
+    "verdict": "KEEP",
+    "reason": "All-female hackathon building prototypes hands-on technical"
+  },
+  "partiful-0zgeizwpfm6jwbwjltxc": {
+    "verdict": "KEEP",
+    "reason": "GIDE hackathon 5-hour build competition technical judging"
+  },
+  "partiful-dgj1cumg1bultjn89gai": {
+    "verdict": "KEEP",
+    "reason": "Claude Code hands-on AI finance workflows technical"
+  },
+  "partiful-abbl1aqescppuw22ijrf": {
+    "verdict": "KEEP",
+    "reason": "Production deployment checklist costs latency evals observability"
+  },
+  "partiful-8wdylwzwayaimq5zxcx8": {
+    "verdict": "KEEP",
+    "reason": "CFO panel AI agents in finance function"
+  },
+  "partiful-pr2diua7ud7hgdkphiij": {
+    "verdict": "KEEP",
+    "reason": "AI responsibility frameworks for CTOs and engineers"
+  },
+  "partiful-qnhfgezhxu07gtraf5zo": {
+    "verdict": "DROP",
+    "reason": "Generic founder investor breakfast no technical content"
+  },
+  "partiful-wcxp7cbcwqwc2dfnxgug": {
+    "verdict": "KEEP",
+    "reason": "Hands-on MongoDB AI workshop with Voyage models"
+  },
+  "partiful-vzfisuj168sj3mjvvd3n": {
+    "verdict": "DROP",
+    "reason": "Fundraising breakfast no engineering or technical content"
+  },
+  "partiful-jk9rahlxawguteraldwt": {
+    "verdict": "DROP",
+    "reason": "No description provided cannot evaluate technical content"
+  },
+  "partiful-fcd9gmr2lf8smgrsltr4": {
+    "verdict": "KEEP",
+    "reason": "Hands-on Claude AI workflow building workshop"
+  },
+  "partiful-r1bb2tfjziqr2btosw6r": {
+    "verdict": "KEEP",
+    "reason": "Hands-on AI agent org design framework session"
+  },
+  "partiful-ind6o3uwwh5zc1z6fc1y": {
+    "verdict": "KEEP",
+    "reason": "Physical AI robotics technical report and discussion"
+  },
+  "partiful-orqg3coa8tt6n5tagni0": {
+    "verdict": "KEEP",
+    "reason": "QA engineering leaders AI-native development automation practices"
+  },
+  "partiful-prgmgly8pbqzl3qbug9s": {
+    "verdict": "KEEP",
+    "reason": "Battery-free wearables tech deployment diabetic foot prevention"
+  },
+  "partiful-vafo9sgyifz1hzqrskoa": {
+    "verdict": "KEEP",
+    "reason": "AI clinical workflows regulatory tools healthtech engineering"
+  },
+  "partiful-7gioil1g0r949i9stvoe": {
+    "verdict": "KEEP",
+    "reason": "Agentic finance infrastructure AI payments crypto engineering"
+  },
+  "partiful-zzxfq9vcfoduqbbrqtzv": {
+    "verdict": "DROP",
+    "reason": "Generic hub access no specific technical content"
+  },
+  "partiful-05kyaz0ht3cako2docjw": {
+    "verdict": "KEEP",
+    "reason": "Hands-on AI web scraping agent building workshop"
+  },
+  "partiful-ffd0btc2b2hfv0yhtmrl": {
+    "verdict": "KEEP",
+    "reason": "Empire AI supercomputing infrastructure research platform technical"
+  },
+  "partiful-gkcn2pyh6wfe3oli7a7d": {
+    "verdict": "DROP",
+    "reason": "Generic founder investor breakfast no technical content"
+  },
+  "partiful-mmoaahh8dqi0upn3y27e": {
+    "verdict": "DROP",
+    "reason": "Legal challenges breakfast no engineering or technical angle"
+  },
+  "partiful-e0fyrbmbfipxgqduttnw": {
+    "verdict": "KEEP",
+    "reason": "Google DeepMind AI infrastructure tools technical foundations"
+  },
+  "partiful-qrpqqengvh26dukcxojf": {
+    "verdict": "DROP",
+    "reason": "Fintech VC panel business focus no engineering"
+  },
+  "partiful-jzl9ghlfq6edjxp2bocy": {
+    "verdict": "DROP",
+    "reason": "Marketing sales conference not engineering or technical"
+  },
+  "partiful-5qlpvykqd9tuljy0cfzv": {
+    "verdict": "DROP",
+    "reason": "Generic networking mixer no technical content"
+  },
+  "partiful-tha8hgecilhnptha760i": {
+    "verdict": "DROP",
+    "reason": "Pitch competition no engineering angle specified"
+  },
+  "partiful-3d1kwjijpbslcnebs0ij": {
+    "verdict": "KEEP",
+    "reason": "Cybersecurity education panel real technical domain"
+  },
+  "partiful-r7lqowc06vtdknjygjqt": {
+    "verdict": "DROP",
+    "reason": "Leadership workshop not technical engineering content"
+  },
+  "partiful-blniavh8vyavax5douig": {
+    "verdict": "KEEP",
+    "reason": "AI-powered CX data-driven underwriting technical strategies"
+  },
+  "partiful-u1wrm7svk12i0w8tyk7l": {
+    "verdict": "KEEP",
+    "reason": "AI startup expo real-world solutions enterprise AI"
+  },
+  "partiful-kcnk4mal67ourffcblry": {
+    "verdict": "DROP",
+    "reason": "No description of technical content fireside"
+  },
+  "partiful-vb18eco3mtaofsct98vk": {
+    "verdict": "KEEP",
+    "reason": "Hands-on Gemini AI upskilling workshop technical"
+  },
+  "partiful-ga2rwfrc5npohwne3vju": {
+    "verdict": "KEEP",
+    "reason": "Live hacking AI codebases security vulnerabilities hands-on"
+  },
+  "partiful-g1rqksr7pqb3t5sgrcpp": {
+    "verdict": "DROP",
+    "reason": "Agentic commerce marketing strategy no engineering depth"
+  },
+  "partiful-ozjpiryma9jrf4x3t4go": {
+    "verdict": "KEEP",
+    "reason": "401-level AI agents architecture masterclass technical"
+  },
+  "partiful-a1b26suya85y2x7bgw2z": {
+    "verdict": "KEEP",
+    "reason": "Google AI architecture workflows code generation technical"
+  },
+  "partiful-0tsrnbbr1d2fi4hqjrcj": {
+    "verdict": "DROP",
+    "reason": "Morning social meetup no technical content"
+  },
+  "partiful-fj1w7fo3lhelo552s2jd": {
+    "verdict": "KEEP",
+    "reason": "Live build AI hiring agent hands-on"
+  },
+  "partiful-4kbxsjank7wig3vcp3za": {
+    "verdict": "DROP",
+    "reason": "Creator infrastructure workshop not engineering focused"
+  },
+  "partiful-4xkbtflap5pbncsgsqmc": {
+    "verdict": "DROP",
+    "reason": "Lounge chair massage networking no technical content"
+  },
+  "partiful-5hhjgfjdacchulu3nuro": {
+    "verdict": "KEEP",
+    "reason": "Building AI concierge technical deep dive"
+  },
+  "partiful-rvvuxfkb01u59pmvznte": {
+    "verdict": "DROP",
+    "reason": "Generic matchmaking panels no specific technical content"
+  },
+  "partiful-mapuug1d3mb9pap550dp": {
+    "verdict": "KEEP",
+    "reason": "Live AI market simulation world model"
+  },
+  "partiful-ekvksitvp7zxenefmzsv": {
+    "verdict": "DROP",
+    "reason": "Intimate lunch networking no technical agenda"
+  },
+  "partiful-h473uhuqiyfjdct4pafu": {
+    "verdict": "DROP",
+    "reason": "Generic networking lunch, no technical content specified"
+  },
+  "partiful-7tw52yrkz9woqqgdxzjh": {
+    "verdict": "KEEP",
+    "reason": "SOC modernization panel: SIEM architecture, security tooling tradeoffs"
+  },
+  "partiful-zf6edvaxkkhcib0qwcsl": {
+    "verdict": "DROP",
+    "reason": "Founder office hours on fundraising, no engineering content"
+  },
+  "partiful-4hvzwy1vzlhgk21fmbuz": {
+    "verdict": "KEEP",
+    "reason": "Live demo: self-hosted AI deployment infrastructure, developer tools"
+  },
+  "partiful-cfcqzrhuaigoer02vxgs": {
+    "verdict": "DROP",
+    "reason": "Brunch with VC panel, no specific technical content"
+  },
+  "partiful-jfnhqnrqgfa7bxsytjll": {
+    "verdict": "DROP",
+    "reason": "Company building lunch, tools discussion too generic/marketing"
+  },
+  "partiful-tjc1eg8cxxaktyavxrh2": {
+    "verdict": "KEEP",
+    "reason": "Agentic AI fireside: investor perspective on agent infrastructure"
+  },
+  "partiful-l9fa0f5si4gurgc8hc4h": {
+    "verdict": "KEEP",
+    "reason": "Multi-agent system architecture: orchestration, tools, autonomous workflows"
+  },
+  "partiful-ufkyhnez8cmj7igyhmew": {
+    "verdict": "KEEP",
+    "reason": "Bolt.new COO fireside: AI-powered app builder platform"
+  },
+  "partiful-xp4e96lbzvakjv9grfcy": {
+    "verdict": "KEEP",
+    "reason": "Marimo reactive notebook: open-source computational research tooling"
+  },
+  "partiful-pdiozfxumsvzekp4cu32": {
+    "verdict": "KEEP",
+    "reason": "BioPharma AI operationalization: real-world systems at scale"
+  },
+  "partiful-qfvam5r9qxchey1ysiak": {
+    "verdict": "KEEP",
+    "reason": "Hardware scaling: product-to-business engineering for consumer hardware"
+  },
+  "partiful-xtuap0hiltdnyvqoiyxd": {
+    "verdict": "DROP",
+    "reason": "Marketing keynote: Google Ads automation, no engineering substance"
+  },
+  "partiful-titpml1nw0dkwgl9b6cf": {
+    "verdict": "KEEP",
+    "reason": "Anthropic salon: model capabilities, building with Claude API"
+  },
+  "partiful-yt2gcdfbv98emncupitd": {
+    "verdict": "DROP",
+    "reason": "Fundraising workshop: pitch decks, VC outreach, no tech"
+  },
+  "partiful-1n6cticpyquktoth5num": {
+    "verdict": "KEEP",
+    "reason": "GIDE AMA: AI-powered IDE, coding agent workflows"
+  },
+  "partiful-l38ujelxqvhmfb60e3ka": {
+    "verdict": "DROP",
+    "reason": "VC/PE investment panel, no technical engineering content"
+  },
+  "partiful-fjbzcfpprgdmvp1o534z": {
+    "verdict": "KEEP",
+    "reason": "Hands-on codelab: Google ADK for building AI agents"
+  },
+  "partiful-xsonw2zne84j144gdsml": {
+    "verdict": "DROP",
+    "reason": "General skills panel: what investors fund, too generic"
+  },
+  "partiful-ium6wxnvqpgcda5iktw3": {
+    "verdict": "KEEP",
+    "reason": "AccurKardia AI: ECG interpretation biomarker technical fireside"
+  },
+  "partiful-wxkisvqh11pgd8ywp1v9": {
+    "verdict": "KEEP",
+    "reason": "Concrete GTM tech stack: Clay, Claude, vibe coding"
+  },
+  "partiful-hyte0pkawn3s8y6v1108": {
+    "verdict": "DROP",
+    "reason": "Tokenization speculation forum, no engineering infrastructure content"
+  },
+  "partiful-yahodqpasujp8tmts0eh": {
+    "verdict": "KEEP",
+    "reason": "Deep-dive on Google Antigravity agent platform architecture"
+  },
+  "partiful-bbf0mhfqia55siijn7j6": {
+    "verdict": "KEEP",
+    "reason": "Hands-on CX Agent Studio agent building workshop"
+  },
+  "partiful-pr0pzvkkgz49kg8jr8xv": {
+    "verdict": "KEEP",
+    "reason": "Hands-on AI workflow deployment, building actual agents"
+  },
+  "partiful-kdjtju1sstiuthrehm2e": {
+    "verdict": "DROP",
+    "reason": "Web3 tokenization market/regulatory panel, not infra engineering"
+  },
+  "partiful-6ijnkbhjddd6pzokzkqh": {
+    "verdict": "DROP",
+    "reason": "VC investor networking, no technical content specified"
+  },
+  "partiful-0qpznnm0agehmffyc9h2": {
+    "verdict": "KEEP",
+    "reason": "Hands-on AI-enabled GTM workflows and system design"
+  },
+  "partiful-ktsk3lkzaqugwsxqhfo9": {
+    "verdict": "DROP",
+    "reason": "GP/LP fund design salon, finance not engineering"
+  },
+  "partiful-aphnxyhtb9fzybmsj0g5": {
+    "verdict": "KEEP",
+    "reason": "Graphite founder fireside, engineering tooling for developers"
+  },
+  "partiful-1hmgjjdddcgd4cqchlyg": {
+    "verdict": "KEEP",
+    "reason": "Hands-on lab building AI learning systems from content"
+  },
+  "partiful-6yrrqjbxexk25jqioboj": {
+    "verdict": "KEEP",
+    "reason": "Deep technical Firebase/GCloud for agentic development session"
+  },
+  "partiful-vew9vq95ouamplo0tg66": {
+    "verdict": "DROP",
+    "reason": "Shopping pop-up with agent demos, not engineering content"
+  },
+  "partiful-fymrhyn71hqmea2aqao4": {
+    "verdict": "KEEP",
+    "reason": "Factory floor robotics deployment engineering and operations"
+  },
+  "partiful-4lccr5kpekyh34xhd4pu": {
+    "verdict": "KEEP",
+    "reason": "AI/deep tech IP strategy for technical founders"
+  },
+  "partiful-2np0rzw8bmdgaguoehgp": {
+    "verdict": "KEEP",
+    "reason": "Enterprise agent harnesses: engineering discipline and patterns"
+  },
+  "partiful-g0viarhksqne1iybx0is": {
+    "verdict": "DROP",
+    "reason": "Generic AI mixer networking, no specific technical content"
+  },
+  "partiful-dyvtado1tn5srrrt3rf5": {
+    "verdict": "DROP",
+    "reason": "Fintech exec fireside, no concrete technical content"
+  },
+  "partiful-e8nhjnhwghmetllrfvq7": {
+    "verdict": "KEEP",
+    "reason": "Venmo/Stripe founders on AI product engineering patterns"
+  },
+  "partiful-05zxmulszr76jjcu6t5n": {
+    "verdict": "DROP",
+    "reason": "Private credit tokenization networking, not blockchain infra engineering"
+  },
+  "partiful-iidzd3lvrg4n50jys9fg": {
+    "verdict": "DROP",
+    "reason": "Generic consumer AI panel, no technical content"
+  },
+  "partiful-wy7cbygr92ujkolj86tr": {
+    "verdict": "DROP",
+    "reason": "Marketing systems discussion, not engineering-focused"
+  },
+  "partiful-wdfbogxhdigeintfwsnw": {
+    "verdict": "KEEP",
+    "reason": "8 AI startups demoing actual products and technology"
+  },
+  "partiful-jap9qn0os6goucwve0oq": {
+    "verdict": "DROP",
+    "reason": "Social impact demo day, no technical criteria"
+  },
+  "partiful-4mdmb4ghc4bd4vav1tpq": {
+    "verdict": "KEEP",
+    "reason": "Clinical AI deployment frameworks and real technical decisions"
+  },
+  "partiful-gqquhcjtfgyxyawpsurx": {
+    "verdict": "KEEP",
+    "reason": "AI agents in commerce, builders discussing implementation"
+  },
+  "partiful-ynisir5czonqmn0jqyey": {
+    "verdict": "DROP",
+    "reason": "Sales workshop, not engineering or technical content"
+  },
+  "partiful-9wh7el7bjtzyq0nwa0us": {
+    "verdict": "DROP",
+    "reason": "Generic pitch competition, no engineering angle specified"
+  },
+  "partiful-aqpqkes1hvxpemjcyrr8": {
+    "verdict": "DROP",
+    "reason": "Fireside chat, no specific technical content described"
+  },
+  "partiful-rrktfllq3k5upzwqjcth": {
+    "verdict": "DROP",
+    "reason": "Policy and governance focus, not technical implementation"
+  },
+  "partiful-aigkbhxekinxrisqxqhw": {
+    "verdict": "KEEP",
+    "reason": "AI agent deployment, governance frameworks in production"
+  },
+  "partiful-pis8aosthgpm9gxman6x": {
+    "verdict": "KEEP",
+    "reason": "Hands-on build session, voice agent API workshop"
+  },
+  "partiful-y8f9el9pvbxyytcfzdod": {
+    "verdict": "KEEP",
+    "reason": "AI billing workflow, contract ingestion to revenue"
+  },
+  "partiful-048kyo6hrsdlwmwlmutm": {
+    "verdict": "KEEP",
+    "reason": "Agent memory architecture, transactional database systems engineering"
+  },
+  "partiful-47mpwa31zzowx6tzozgr": {
+    "verdict": "DROP",
+    "reason": "Launch party, no technical content specified"
+  },
+  "partiful-ko9j2gtgq90189dr79va": {
+    "verdict": "KEEP",
+    "reason": "Hands-on AI systems building and breaking workshop"
+  },
+  "partiful-dev8bgmx3xvfwyoauz7b": {
+    "verdict": "KEEP",
+    "reason": "Hybrid AI implementation, AI-signal agents technical case studies"
+  },
+  "partiful-1lfpbftviilfxtfefsd9": {
+    "verdict": "DROP",
+    "reason": "Hedge fund competition, finance-focused not technical"
+  },
+  "partiful-gmuhxniaio3zyzdz56m7": {
+    "verdict": "DROP",
+    "reason": "Private market secondaries networking, pure finance"
+  },
+  "partiful-p116doaxz8zjlzboftqn": {
+    "verdict": "KEEP",
+    "reason": "AI agents automating work, technical implementation sharing"
+  },
+  "partiful-5btjoqjwwdhk70hbt7sx": {
+    "verdict": "DROP",
+    "reason": "Generic leadership networking, no technical content"
+  },
+  "partiful-j5kt9cgxjjqeboadzazj": {
+    "verdict": "KEEP",
+    "reason": "Robotics embodied AI LLM technical roundtable"
+  },
+  "partiful-2cw8oy83glbtw74x1b3x": {
+    "verdict": "DROP",
+    "reason": "Comedy roast pitch event, not technical"
+  },
+  "partiful-mwji3c1tucyhpsj42qje": {
+    "verdict": "KEEP",
+    "reason": "Engineers building AI solutions for legal"
+  },
+  "partiful-cexytpov5qbtqrkkik9o": {
+    "verdict": "KEEP",
+    "reason": "Live AI platform demo manufacturing engineering"
+  },
+  "partiful-wf1ave94yi0wglfdq82s": {
+    "verdict": "DROP",
+    "reason": "Generic founder investor networking no content"
+  },
+  "partiful-wwclre624ecpsxm0k0lp": {
+    "verdict": "KEEP",
+    "reason": "Physical AI compute platforms simulation infrastructure"
+  },
+  "partiful-ylphyl2b5km2dv5cyqvj": {
+    "verdict": "DROP",
+    "reason": "Mobile app product dinner, not engineering"
+  },
+  "partiful-h1hgv0pkskcagjov5m9k": {
+    "verdict": "KEEP",
+    "reason": "CTOs engineering leaders AI technical hiring"
+  },
+  "partiful-ho9hvhtn5iu4ws7iwm8z": {
+    "verdict": "DROP",
+    "reason": "Healthcare AI networking no technical substance"
+  },
+  "partiful-tplmvexfd6godgkcw6o7": {
+    "verdict": "KEEP",
+    "reason": "Enterprise AI ERP CIO transformation panel"
+  },
+  "partiful-f8vjqlhp62bgk7stqdgg": {
+    "verdict": "DROP",
+    "reason": "HR operations people management not engineering"
+  },
+  "partiful-p3hsw6zpoohypjdfuyt9": {
+    "verdict": "DROP",
+    "reason": "Fundraising investor decision making not technical"
+  },
+  "partiful-vt2a2b7ibq14iwj8vice": {
+    "verdict": "KEEP",
+    "reason": "AI deployment quality bars technical operators"
+  },
+  "partiful-svhgmrybah1xpllvvxrh": {
+    "verdict": "KEEP",
+    "reason": "Hands on coding agents app building"
+  },
+  "partiful-aktjgfwan6y37yoxffan": {
+    "verdict": "DROP",
+    "reason": "Team performance leadership webinar not technical"
+  },
+  "partiful-gj7z2tid5pv3qp8oanqb": {
+    "verdict": "DROP",
+    "reason": "VC networking reception no specified content"
+  },
+  "partiful-jyxy5gxuvgffmcuti6x0": {
+    "verdict": "DROP",
+    "reason": "Egg freezing healthcare consumer not engineering"
+  },
+  "partiful-fp5styph0mcet0awlwfd": {
+    "verdict": "KEEP",
+    "reason": "Agentic workflows technical demos engineering panel"
+  },
+  "partiful-mlcbwsk8wv96x3mzeoim": {
+    "verdict": "DROP",
+    "reason": "Enterprise sales procurement GTM not technical"
+  },
+  "partiful-3uttknzhe2nkwkvbuudu": {
+    "verdict": "KEEP",
+    "reason": "Hands-on guided build session using Lovable AI"
+  },
+  "partiful-cfx87wlizbqpnwetbucp": {
+    "verdict": "DROP",
+    "reason": "CVC networking with no technical content specified"
+  },
+  "partiful-oskdfzqbiwxr0frzoncz": {
+    "verdict": "DROP",
+    "reason": "Generic panel on AI in education pedagogy"
+  },
+  "partiful-2j98m1nn4k4mrvuqei6k": {
+    "verdict": "KEEP",
+    "reason": "GTM masterclass covering Claude Code, Clay, Cursor, agents"
+  },
+  "partiful-hyk62jyz42vc6yqsiewq": {
+    "verdict": "DROP",
+    "reason": "Generic networking for women with AI buzzword"
+  },
+  "partiful-yvm17p4sbb6xgnuq8odp": {
+    "verdict": "KEEP",
+    "reason": "Technical AEO/GEO strategies for LLM search citations"
+  },
+  "partiful-mj2inm6mwk3wnctiharb": {
+    "verdict": "DROP",
+    "reason": "Civic education panel with AI as buzzword"
+  },
+  "partiful-uevqfll5t78q0riazosc": {
+    "verdict": "KEEP",
+    "reason": "Vertical AI in construction workflows and tooling"
+  },
+  "partiful-kgsxq79chkbikfgsa4j4": {
+    "verdict": "KEEP",
+    "reason": "AI × Bio intersection for researchers and founders"
+  },
+  "partiful-7jfew6cdsbhpkyoqkkbp": {
+    "verdict": "DROP",
+    "reason": "Rooftop networking party with DJ, no technical content"
+  },
+  "partiful-2nka5vcorpj4f2ohrsz9": {
+    "verdict": "KEEP",
+    "reason": "Knowledge systems and Notion tooling for operators"
+  },
+  "partiful-4ilm6df7ix4oxktwsj5m": {
+    "verdict": "KEEP",
+    "reason": "Technical debt, AI codegen, and software sustainability"
+  },
+  "partiful-mltkgo4ougvzjkkqnajk": {
+    "verdict": "KEEP",
+    "reason": "Hands-on AI game dev hackathon with Vevey"
+  },
+  "partiful-jb36hgcbsjw6ej7qa1vm": {
+    "verdict": "DROP",
+    "reason": "Healthtech founder networking with unspecified panel content"
+  },
+  "partiful-dkcpj9zlgegjos4bdecd": {
+    "verdict": "KEEP",
+    "reason": "AI in customer success workflows and tooling"
+  },
+  "partiful-6zuudqbbzxcmnjdmynj2": {
+    "verdict": "KEEP",
+    "reason": "MCP production deployments, demos, and engineering roundtable"
+  },
+  "partiful-y4qveuhxopzo3xgiptia": {
+    "verdict": "KEEP",
+    "reason": "Cybersecurity and AI-driven threats technical discussion"
+  },
+  "partiful-ddugaigdalkim2alswdk": {
+    "verdict": "KEEP",
+    "reason": "Enterprise AI deployment case study with Scale"
+  },
+  "partiful-ymw6syth9irazzndcycn": {
+    "verdict": "KEEP",
+    "reason": "Neurotech, neural interfaces, and computational neuroscience research"
+  },
+  "partiful-s6qa7oltbdn0rifewcp6": {
+    "verdict": "KEEP",
+    "reason": "AI liability, open source risk, and regulation"
+  },
+  "partiful-adlwn5crtmxsfiy8tl5v": {
+    "verdict": "DROP",
+    "reason": "No description content, just generic VR happy hour"
+  },
+  "partiful-6iuvokztfgro2hpiphz3": {
+    "verdict": "DROP",
+    "reason": "Generic investor matchmaking, no technical content specified"
+  },
+  "partiful-igsl0pm9f4966lvt7upc": {
+    "verdict": "KEEP",
+    "reason": "Startups pitching AI, deeptech, cybersecurity, enterprise software solutions"
+  },
+  "partiful-stgbebpnpyy51qrwwqut": {
+    "verdict": "DROP",
+    "reason": "Panel on hiring/careers, not engineering or technical content"
+  },
+  "partiful-dkl5hdjghtgi3mqxrirv": {
+    "verdict": "DROP",
+    "reason": "Generic pitch competition, no technical evaluation criteria specified"
+  },
+  "partiful-zzngc5v5hvr8uby2oa0j": {
+    "verdict": "KEEP",
+    "reason": "Operators roundtable on AI operating models and enterprise deployment"
+  },
+  "partiful-bravejl6brcgfmnlq7x4": {
+    "verdict": "KEEP",
+    "reason": "Product/engineering leaders discussing AI in product strategy technical"
+  },
+  "partiful-xfvflvvd7ohloxau8ikk": {
+    "verdict": "DROP",
+    "reason": "Capital forum focused on fundraising, not technical content"
+  },
+  "partiful-cvdywrexwtglaxsek3bm": {
+    "verdict": "KEEP",
+    "reason": "Live demos of AI infrastructure for design systems"
+  },
+  "partiful-xf4l0ohjo6uhvvu3gknn": {
+    "verdict": "KEEP",
+    "reason": "Engineering leaders from Ramp discussing Core Engineering and Applied AI"
+  },
+  "partiful-d7mgfngir2icwr0jjvvi": {
+    "verdict": "KEEP",
+    "reason": "AI-native ERP and workflow infrastructure for finance operations"
+  },
+  "partiful-gik9dj3adpsfhwispksd": {
+    "verdict": "DROP",
+    "reason": "Societal implications panel, not concrete technical or engineering content"
+  },
+  "partiful-ktwa41kbfnyfftf6hcg7": {
+    "verdict": "KEEP",
+    "reason": "Hands-on vibe coding session building AI-powered solutions with Lovable"
+  },
+  "partiful-dy6xjuwm6h39svyu4ize": {
+    "verdict": "DROP",
+    "reason": "Accelerator program leaders dinner, no technical content specified"
+  },
+  "partiful-nlyatz2b1zaihiuiqguf": {
+    "verdict": "DROP",
+    "reason": "Marketing/brand panel with agents buzzword, no engineering substance"
+  },
+  "partiful-6rbvin19cncqiv6prd3v": {
+    "verdict": "DROP",
+    "reason": "Market entry strategy for international founders, not technical"
+  },
+  "partiful-o1qradcjialnug3c6zwj": {
+    "verdict": "KEEP",
+    "reason": "Live demos of MCP servers, AI coding tools for RevOps operators"
+  },
+  "partiful-ya3gzggsiw6kn2qokdid": {
+    "verdict": "KEEP",
+    "reason": "AI engineers discussing managing technical teams, MVP demos included"
+  },
+  "partiful-sezgbzt3bdyff9ds4bi5": {
+    "verdict": "DROP",
+    "reason": "Embedded payments business/strategy focus, not engineering or infrastructure"
+  },
+  "partiful-r9eck0k6zwexrhmzjgnv": {
+    "verdict": "DROP",
+    "reason": "HR and workforce strategy panel, not technical content"
+  },
+  "partiful-djh4igxuegjfcxelqtcz": {
+    "verdict": "KEEP",
+    "reason": "Bubble co-CEO, no-code infra, real builder discussion"
+  },
+  "partiful-tj3inkmnp0gquzduckqd": {
+    "verdict": "DROP",
+    "reason": "Generic deep-tech dinner, no specified technical content"
+  },
+  "partiful-vkvjr5dbr2fmbi2yk5ub": {
+    "verdict": "KEEP",
+    "reason": "Data center power compute deployment AI infrastructure"
+  },
+  "partiful-w2auknimwlsexucm83bb": {
+    "verdict": "DROP",
+    "reason": "Pure pitch competition no engineering angle specified"
+  },
+  "partiful-foujt07jj19qfk04dt8e": {
+    "verdict": "DROP",
+    "reason": "Generic founder AMA no technical content revealed"
+  },
+  "partiful-v9ysmnehz3lymwjhvqco": {
+    "verdict": "KEEP",
+    "reason": "Agentic commerce AI search visibility technical panel"
+  },
+  "partiful-oez0cvpvepvi9lreyieb": {
+    "verdict": "KEEP",
+    "reason": "Agents evals production AI engineers product leaders"
+  },
+  "partiful-h3p090opwdszmttlza1m": {
+    "verdict": "DROP",
+    "reason": "Marketing fireside no concrete technical AI content"
+  },
+  "partiful-nhoybpx8rlyjgjxowbwg": {
+    "verdict": "DROP",
+    "reason": "Comedy roast show not technical engineering content"
+  },
+  "partiful-5zjamdty4j6ooj2dxzps": {
+    "verdict": "KEEP",
+    "reason": "Hardware company HQ tours test rides founder"
+  },
+  "partiful-txqtiie5vdllmxeirkdw": {
+    "verdict": "KEEP",
+    "reason": "Agentic systems data architecture competitive moat technical"
+  },
+  "partiful-kxqjb4i9b8miigs1mijm": {
+    "verdict": "DROP",
+    "reason": "Treasury cash management finance not engineering focus"
+  },
+  "partiful-p74x9kdrgoladtu8bmvs": {
+    "verdict": "KEEP",
+    "reason": "SGLang inference systems lightning talks finance infra"
+  },
+  "partiful-79er0b9t7t3ceaaozyrs": {
+    "verdict": "DROP",
+    "reason": "Generic healthtech networking no technical content specified"
+  },
+  "partiful-zgdltkcvcjs9vwdjnxpx": {
+    "verdict": "DROP",
+    "reason": "Hiring decision process not engineering technical content"
+  },
+  "partiful-tmkuilgt51i97mdui4be": {
+    "verdict": "DROP",
+    "reason": "Agtech dinner no specified technical content revealed"
+  },
+  "partiful-7py4iwqgsria0gchhpcf": {
+    "verdict": "KEEP",
+    "reason": "Voice AI enterprise scaling implementation technical panel"
+  },
+  "partiful-3w3f8gnlabvfflil3kja": {
+    "verdict": "DROP",
+    "reason": "Women networking dinner no technical content specified"
+  },
+  "partiful-qtt9vmd7ltikn6y1a9rl": {
+    "verdict": "KEEP",
+    "reason": "DER grid infrastructure electric utility technical brainstorm"
+  },
+  "partiful-hqppxezjvr5anmrkv8pp": {
+    "verdict": "KEEP",
+    "reason": "CISOs discussing security risks, compliance, technical strategy"
+  },
+  "partiful-jklycobl4isiktz0hqjo": {
+    "verdict": "KEEP",
+    "reason": "AI researchers engineers discussing frontier technical questions"
+  },
+  "partiful-9x67cumfh48zj6py01ic": {
+    "verdict": "DROP",
+    "reason": "Poker tournament with no technical content"
+  },
+  "partiful-x7mgxpmgyjeis4og9u97": {
+    "verdict": "DROP",
+    "reason": "Marketing strategy panel not engineering content"
+  },
+  "partiful-rbrad6bdivtkmwcsbtho": {
+    "verdict": "KEEP",
+    "reason": "AI project hackathon with live demos technical builds"
+  },
+  "partiful-ditirz4sorc9fkwdzvot": {
+    "verdict": "KEEP",
+    "reason": "Multi-agent production engineering sprint with real infrastructure"
+  },
+  "partiful-lljdunteks0veueph0pj": {
+    "verdict": "KEEP",
+    "reason": "NVIDIA AI multi-omic diagnostics platform technical showcase"
+  },
+  "partiful-ndxal17plemxu25kplzy": {
+    "verdict": "DROP",
+    "reason": "Privacy legislation advocacy not technical content"
+  },
+  "partiful-skdelacr0glf9yumgq3t": {
+    "verdict": "KEEP",
+    "reason": "AI x Gaming technical engineering leader dinner"
+  },
+  "partiful-3rk3nk0982qhpfnqh6th": {
+    "verdict": "DROP",
+    "reason": "Generic investor dinner no specific tech content"
+  },
+  "partiful-gxfjrxdruk8wgxh6umg6": {
+    "verdict": "KEEP",
+    "reason": "Physical AI robotics and crypto infrastructure discussion"
+  },
+  "partiful-qraodovxs9qpsy9ndc7s": {
+    "verdict": "DROP",
+    "reason": "Generic fintech networking dinner no technical details"
+  },
+  "partiful-g4cvcadtynssovjqqgbd": {
+    "verdict": "DROP",
+    "reason": "Comedy show not technical content"
+  },
+  "partiful-hsysqrxtbbizfv4v6sdt": {
+    "verdict": "KEEP",
+    "reason": "Foundation model K2 live demo creative AI"
+  },
+  "partiful-aatz5nheznitvazusfdp": {
+    "verdict": "DROP",
+    "reason": "Generic networking party no concrete technical content"
+  },
+  "partiful-nhacrk8jk8f1d2h8abyn": {
+    "verdict": "DROP",
+    "reason": "Baseball game networking not technical content"
+  },
+  "partiful-67csjjfcrzmu8aql8xes": {
+    "verdict": "DROP",
+    "reason": "Apartment rental workshop not tech engineering content"
+  },
+  "partiful-bumquvpz1ssqxqmyhgec": {
+    "verdict": "DROP",
+    "reason": "Generic climate networking no specific tech content"
+  },
+  "partiful-g8vj854dfglj6gtydos4": {
+    "verdict": "DROP",
+    "reason": "Social media launch party no technical details"
+  },
+  "partiful-ed2efwip0do9ouymvpzi": {
+    "verdict": "KEEP",
+    "reason": "Agentic messaging SDK technical discussion with builders"
+  },
+  "partiful-ytg3a4316xfdtelbcozm": {
+    "verdict": "DROP",
+    "reason": "Wellness breathwork + pitch comp, no technical content"
+  },
+  "partiful-nqfm0ofzdp65dyikdbcm": {
+    "verdict": "KEEP",
+    "reason": "AI-driven transformation in FinTech and Media sectors"
+  },
+  "partiful-cr9uotmss2rdpryqqtzh": {
+    "verdict": "KEEP",
+    "reason": "Agentic commerce technical panel, AI agent infrastructure discussion"
+  },
+  "partiful-r9l7g8gn58zhsrtbncv7": {
+    "verdict": "DROP",
+    "reason": "IPO readiness business strategy, no engineering content"
+  },
+  "partiful-ajlpui2ui1wzyrglthif": {
+    "verdict": "KEEP",
+    "reason": "AI reshaping legal tech, product strategy perspectives"
+  },
+  "partiful-llxiwmjg8qwntzjhjplc": {
+    "verdict": "DROP",
+    "reason": "CFO conversations on IPO, no technical content"
+  },
+  "partiful-luzihalfvfzp6njuhoix": {
+    "verdict": "DROP",
+    "reason": "Generic founders breakfast networking, no technical angle"
+  },
+  "partiful-jbz0cmetzcnnmrxkhafi": {
+    "verdict": "KEEP",
+    "reason": "Stablecoin infrastructure, payment systems integration, crypto engineering"
+  },
+  "partiful-x6gcykqwli9ktdltlalk": {
+    "verdict": "DROP",
+    "reason": "VC fundraising strategies, no technical content"
+  },
+  "partiful-mfzruotromwldzt4jrxy": {
+    "verdict": "DROP",
+    "reason": "Wellness walk disguised as GTM discussion"
+  },
+  "partiful-f6kralscb9k0dxqcg63d": {
+    "verdict": "DROP",
+    "reason": "VC networking over coffee, no technical content"
+  },
+  "partiful-8bgcou7mta6ayqknh6fz": {
+    "verdict": "KEEP",
+    "reason": "Foundation models, aging clocks, AI biology infrastructure"
+  },
+  "partiful-joh4g5yjh6pw0756issd": {
+    "verdict": "KEEP",
+    "reason": "Agentic AI panel, Snowflake data engineering infrastructure"
+  },
+  "partiful-czmiyjiebfhbdyhrfy8q": {
+    "verdict": "DROP",
+    "reason": "Generic startup workshops culminating in pitch event"
+  },
+  "partiful-8x6emlbmvyrd9hfpy4om": {
+    "verdict": "DROP",
+    "reason": "UX design workshop, no concrete technical content"
+  },
+  "partiful-bknsmiibldqn5rcekcyb": {
+    "verdict": "KEEP",
+    "reason": "Hands-on AWS AI workshop building actual POCs"
+  },
+  "partiful-lha7ajtxq2oca6paky6j": {
+    "verdict": "DROP",
+    "reason": "Venture studio business model discussion, no tech"
+  },
+  "partiful-bfwbef02ho3vpxglommh": {
+    "verdict": "KEEP",
+    "reason": "Applied AI integration, E2E development optimization discussion"
+  },
+  "partiful-afinyfh4im7cxxznqli0": {
+    "verdict": "DROP",
+    "reason": "Startup culture and team building discussion"
+  },
+  "partiful-bdqpwks8hqwd6g5p5lqi": {
+    "verdict": "KEEP",
+    "reason": "Hardware startup engineering: manufacturing, prototyping, scaling technical challenges"
+  },
+  "partiful-8zim85jjl6n9qzjztfyf": {
+    "verdict": "KEEP",
+    "reason": "Hands-on hackathon building MVPs with GitHub Copilot"
+  },
+  "partiful-erklffoi0tbw9ckcvfnj": {
+    "verdict": "KEEP",
+    "reason": "Hands-on vibe coding lab building with AI"
+  },
+  "partiful-zpetibtps29umf27quif": {
+    "verdict": "DROP",
+    "reason": "Generic VC pitch event, no technical content"
+  },
+  "partiful-bmksthf0ullgowj4gog5": {
+    "verdict": "DROP",
+    "reason": "Capital, tax, legal roundtables, no engineering focus"
+  },
+  "partiful-nskvgw4mumitetwlk3v4": {
+    "verdict": "KEEP",
+    "reason": "AI applications in healthcare, robotics, security systems"
+  },
+  "partiful-sh6bd91odngwa6tgy52p": {
+    "verdict": "DROP",
+    "reason": "Policy and regulation discussion, no technical content"
+  },
+  "partiful-ng86ypyk7z8hyogbdhb2": {
+    "verdict": "KEEP",
+    "reason": "CTO roundtable with live AI solution demos"
+  },
+  "partiful-jypvvnt8arhl8qffve4o": {
+    "verdict": "DROP",
+    "reason": "Women founders networking, no specified technical content"
+  },
+  "partiful-cm9vo7iqf7tmc60zdacn": {
+    "verdict": "DROP",
+    "reason": "Fundraising breakfast, generic founder-VC networking event"
+  },
+  "partiful-ylzerjsutx3rp8h0dw3m": {
+    "verdict": "KEEP",
+    "reason": "Live adversarial security testing for AI products"
+  },
+  "partiful-9xmsuipst1guabeoigec": {
+    "verdict": "KEEP",
+    "reason": "AI deployment in healthcare workflows and EHR"
+  },
+  "partiful-gwdf3iqxpap9j1zeaoai": {
+    "verdict": "DROP",
+    "reason": "Healthtech networking with generic panel, no tech depth"
+  },
+  "partiful-dnyjff1yli6kv6hsi5em": {
+    "verdict": "DROP",
+    "reason": "Casual founder lunch, no agenda or technical content"
+  },
+  "partiful-mfi66ljwzfzeqxn7v52g": {
+    "verdict": "DROP",
+    "reason": "Founder identity and exit psychology workshop, no tech"
+  },
+  "partiful-lqu38pgygnmlvet26n7i": {
+    "verdict": "KEEP",
+    "reason": "Apache Beam and ActiveMQ data pipeline engineering"
+  },
+  "partiful-rkq2hwr7bs4m3iacdacf": {
+    "verdict": "KEEP",
+    "reason": "AI impact on software engineering roles panel"
+  },
+  "partiful-fmrhu5pzmbpskrmorfqk": {
+    "verdict": "KEEP",
+    "reason": "AI infrastructure, enterprise integration, technical implementation playbook"
+  },
+  "partiful-jsaitra2wgrory9fp45g": {
+    "verdict": "KEEP",
+    "reason": "Harness engineering, agentic coding workflows, live demo"
+  },
+  "partiful-et08mdx8yivrnczoribj": {
+    "verdict": "KEEP",
+    "reason": "AI in physical robotics and industrial hardware"
+  },
+  "partiful-dmstvg7vviat0kgkwcsk": {
+    "verdict": "KEEP",
+    "reason": "AI agents in enterprise, technical vendor evaluation"
+  },
+  "partiful-wxynnxkx6xuzypv1r0ny": {
+    "verdict": "DROP",
+    "reason": "Generic M&A panel, no technical content"
+  },
+  "partiful-hnaqjhwwvkvbnynzfmu5": {
+    "verdict": "DROP",
+    "reason": "AI activism platform, not engineering content"
+  },
+  "partiful-gsrimlksiwt2wyliw8tc": {
+    "verdict": "DROP",
+    "reason": "Generic networking for operators, no tech"
+  },
+  "partiful-zr6lo2nzy9aj78ya5um9": {
+    "verdict": "KEEP",
+    "reason": "Live workshops building AI trading agents"
+  },
+  "partiful-haarvrxcjqobolxlp2nd": {
+    "verdict": "DROP",
+    "reason": "Pitching workshop, not technical content"
+  },
+  "partiful-90goujsb0e4e46u5bo4b": {
+    "verdict": "DROP",
+    "reason": "Platform demo and community talk, unclear tech"
+  },
+  "partiful-wje6xcxpxwbpcicvlcas": {
+    "verdict": "KEEP",
+    "reason": "AI supply chain infrastructure discussion"
+  },
+  "partiful-o9jimbw5xjlugjtsytrt": {
+    "verdict": "KEEP",
+    "reason": "Building agent swarms with Weave MCP"
+  },
+  "partiful-qdvul6t9zzuhr6nvzyrf": {
+    "verdict": "DROP",
+    "reason": "Investment thesis talk, not engineering content"
+  },
+  "partiful-tuv88fw7j763q0zldtbi": {
+    "verdict": "DROP",
+    "reason": "Business policy discussion, no technical substance"
+  },
+  "partiful-3vxig2s6kieqbejpopgg": {
+    "verdict": "DROP",
+    "reason": "Pitch competition, no engineering angle"
+  },
+  "partiful-pnxa8toi47ygxtdi6flx": {
+    "verdict": "DROP",
+    "reason": "Fundraising advice, not technical content"
+  },
+  "partiful-qe0yjoqr1sgmyukouf73": {
+    "verdict": "DROP",
+    "reason": "Secondary markets panel, no engineering content"
+  },
+  "partiful-xkxlwl0tkacgxhuf194f": {
+    "verdict": "DROP",
+    "reason": "BizOps scaling panel, not technical"
+  },
+  "partiful-llicxuejan5y5prqxhg2": {
+    "verdict": "DROP",
+    "reason": "Generic pitch day and networking"
+  },
+  "partiful-bstxvujmobxv6y1eyqdx": {
+    "verdict": "KEEP",
+    "reason": "Health AI research to production engineering"
+  },
+  "partiful-ivy3zwzg7htpujbnhy3e": {
+    "verdict": "KEEP",
+    "reason": "OpenAI coworking with Codex agentic demos"
+  },
+  "partiful-w3efghhbj4ekabmifc0i": {
+    "verdict": "KEEP",
+    "reason": "Six hour agent building hackathon"
+  },
+  "partiful-vlgbzfx2akmyl0kobr3q": {
+    "verdict": "KEEP",
+    "reason": "AI security for practitioners by Snyk"
+  },
+  "partiful-kwj6biyd9u1mgrlp3nu4": {
+    "verdict": "KEEP",
+    "reason": "AI deployment workflow integration technical panel"
+  },
+  "partiful-kowyhvmxj0mhmukhprmu": {
+    "verdict": "DROP",
+    "reason": "Social sector AI workshop, no technical depth"
+  },
+  "partiful-xjjtc1cr1vtmlbmcmvcy": {
+    "verdict": "DROP",
+    "reason": "Sports tech pitch competition, no engineering content"
+  },
+  "partiful-z8jfryxy2lpndgfiyodf": {
+    "verdict": "DROP",
+    "reason": "Digital signage monetization fireside, no technical substance"
+  },
+  "partiful-wzyk1u8wvdwaomgw0cex": {
+    "verdict": "KEEP",
+    "reason": "Live wearable biofeedback demo with actual hardware"
+  },
+  "partiful-qqc3ixlm4f4xffmco8wl": {
+    "verdict": "DROP",
+    "reason": "Fractional exec recruiting panel, no technical content"
+  },
+  "partiful-n2keujttusxkeofbu9cv": {
+    "verdict": "KEEP",
+    "reason": "IEEE experts on AI infrastructure and standards"
+  },
+  "partiful-zvvlqyq8a1qostzxgqry": {
+    "verdict": "KEEP",
+    "reason": "Construction AI infrastructure and data systems discussion"
+  },
+  "partiful-hjut9chdvqxxrchgkfca": {
+    "verdict": "KEEP",
+    "reason": "Hands-on Claude MCP workshop for finance workflows"
+  },
+  "partiful-bzh8pcns375awo2juqld": {
+    "verdict": "DROP",
+    "reason": "Cruise networking happy hour with no content"
+  },
+  "partiful-8uaz7t4xlzkg1r2leavy": {
+    "verdict": "DROP",
+    "reason": "Generic happy hour with equity platform sponsor"
+  },
+  "partiful-2nxao6q4kirc15akfzuf": {
+    "verdict": "DROP",
+    "reason": "VC reverse pitch networking, no technical angle"
+  },
+  "partiful-nevihlvoy0l9uaxh63p5": {
+    "verdict": "KEEP",
+    "reason": "Physics AI simulation for industrial engineering systems"
+  },
+  "partiful-wj3ykrmuytbmeh7s1ap5": {
+    "verdict": "KEEP",
+    "reason": "Enterprise AI agents production deployment discussion leaders"
+  },
+  "partiful-5k5c4eodrgpkme7or20h": {
+    "verdict": "KEEP",
+    "reason": "Engineering leaders panel on agentic coding workflows"
+  },
+  "partiful-pqeys4amag8z14zjndgf": {
+    "verdict": "DROP",
+    "reason": "Hypergrowth scaling fireside, not technical engineering focus"
+  },
+  "partiful-ac0iqk6lbuy1d4ufpxxp": {
+    "verdict": "DROP",
+    "reason": "AI marketing personalization, not engineering infrastructure content"
+  },
+  "partiful-1dfntdwjx1an2xaps5yc": {
+    "verdict": "KEEP",
+    "reason": "Quantum computing technical deep dive at Mastercard"
+  },
+  "partiful-kiimvvdyb8fjaie1udzz": {
+    "verdict": "KEEP",
+    "reason": "AI founders building companies, technical innovation discussion"
+  },
+  "partiful-m22gc4alfy3rf3ws80sr": {
+    "verdict": "DROP",
+    "reason": "Startup ecosystem talent panel, no technical content"
+  },
+  "partiful-fa2q9jhgnpjig9rwcoax": {
+    "verdict": "KEEP",
+    "reason": "Agentic AI production engineering organization restructuring showcase"
+  },
+  "partiful-9eerpqocdpw3irxtnftk": {
+    "verdict": "DROP",
+    "reason": "Generic GTM marketing demo, no technical substance"
+  },
+  "partiful-w1wgkuzliyeuhksaomkd": {
+    "verdict": "KEEP",
+    "reason": "Hands-on Claude agentic team build hackathon workshop"
+  },
+  "partiful-gp80iodptvy1w5gx5lv4": {
+    "verdict": "DROP",
+    "reason": "No description provided, generic startup event"
+  },
+  "partiful-r0srpfriv3swrcqebvk7": {
+    "verdict": "DROP",
+    "reason": "Generic GTM founder discussion, no technical content"
+  },
+  "partiful-ic3xjf6jpm0iketkvccg": {
+    "verdict": "KEEP",
+    "reason": "Acquired founder discussing AI browser architecture Arc/Dia"
+  },
+  "partiful-wbx9hraz70hphugzfvhy": {
+    "verdict": "KEEP",
+    "reason": "Hands-on AI agent architecture hackathon for builders"
+  },
+  "partiful-szwfkltgl0ehktthyzan": {
+    "verdict": "DROP",
+    "reason": "Climate finance/capital discussion, not engineering focused"
+  },
+  "partiful-0686jcvpoqubyobtlkxh": {
+    "verdict": "DROP",
+    "reason": "Marketing perspective on agentic AI, not technical"
+  },
+  "partiful-blhchsaj6duohcgynakt": {
+    "verdict": "DROP",
+    "reason": "Regulatory/compliance discussion, no technical blockchain engineering"
+  },
+  "partiful-nnahoxkj6vvklnimnnxj": {
+    "verdict": "DROP",
+    "reason": "Generic rooftop mixer, no specific technical content"
+  },
+  "partiful-knzjykyzpsxc63xe7jn6": {
+    "verdict": "KEEP",
+    "reason": "Unreal Engine technical sessions and live demos"
+  },
+  "partiful-v5horzhjo2oq7yvxwxyx": {
+    "verdict": "DROP",
+    "reason": "EdTech networking, vague on actual technical content"
+  },
+  "partiful-trgveveru9gkeevmphkd": {
+    "verdict": "DROP",
+    "reason": "Healthcare AI adoption/workflow discussion, not technical implementation"
+  },
+  "partiful-xrh7bku0gav0flyewu32": {
+    "verdict": "DROP",
+    "reason": "Finance panel, unclear on technical AI engineering"
+  },
+  "partiful-9f5ixbleiohnjijln7h3": {
+    "verdict": "DROP",
+    "reason": "Product management networking, not engineering focused"
+  },
+  "partiful-ipg3ecbjisvsqklrdvjs": {
+    "verdict": "KEEP",
+    "reason": "Physical AI spatial intelligence robotics 3D technical builders"
+  },
+  "partiful-nz9hubqar16zcrsqsxpq": {
+    "verdict": "DROP",
+    "reason": "Media industry soiree, not technical content"
+  },
+  "partiful-at7yzv6dtrclioecibsx": {
+    "verdict": "DROP",
+    "reason": "Prediction markets mixer, no technical engineering angle"
+  },
+  "partiful-mgw5ckm5l452qnaezikr": {
+    "verdict": "KEEP",
+    "reason": "Open generative media models technical discussion panel"
+  },
+  "partiful-tlknsguufu4osjwmiwdi": {
+    "verdict": "DROP",
+    "reason": "Enterprise AI business impact, not technical implementation"
+  },
+  "partiful-m5xlxrznlv9vszz97lgf": {
+    "verdict": "KEEP",
+    "reason": "Panel on data engineering with AI agents"
+  },
+  "partiful-deh1uugmjh8elejlukj5": {
+    "verdict": "KEEP",
+    "reason": "Live demos of AI automation tools and ops"
+  },
+  "partiful-dhreyzzxqxt2o2xlnjot": {
+    "verdict": "KEEP",
+    "reason": "AI-native startup engineering architecture and custom agent platform"
+  },
+  "partiful-sca5lobuv2qarqsmzthk": {
+    "verdict": "DROP",
+    "reason": "Debate club with AI topics, no technical content"
+  },
+  "partiful-yjv70hysq7qz9yb9dxkn": {
+    "verdict": "KEEP",
+    "reason": "Agency roundtable on rebuilding workflows around AI implementation"
+  },
+  "partiful-baz9mopggbnbvf8wcvja": {
+    "verdict": "KEEP",
+    "reason": "Quantum computing, chips, semiconductor architecture panel"
+  },
+  "partiful-sp4bjt8b6pebpug5patr": {
+    "verdict": "KEEP",
+    "reason": "Voice AI builders community, engineers and researchers"
+  },
+  "partiful-cig2py1azru3nhbqhmfj": {
+    "verdict": "DROP",
+    "reason": "Debate night with no concrete technical content"
+  },
+  "partiful-akuokwp2dmvmosfeliqd": {
+    "verdict": "DROP",
+    "reason": "Digital health news commentary, not technical content"
+  },
+  "partiful-k9ysd4enz9lgtrhpr8v9": {
+    "verdict": "DROP",
+    "reason": "Generic VC networking with no technical focus"
+  },
+  "partiful-lbldmnek3shnl8q3phmr": {
+    "verdict": "DROP",
+    "reason": "Generic web3 mixer with no technical substance"
+  },
+  "partiful-b6yvp8u2zeel3tvcudrz": {
+    "verdict": "KEEP",
+    "reason": "Vertical AI for accounting systems and liability"
+  },
+  "partiful-hqdbwbdlwbvtjsl2yer5": {
+    "verdict": "DROP",
+    "reason": "Creator economy celebration, not technical engineering content"
+  },
+  "partiful-0bld4rlewbdpwvqiott4": {
+    "verdict": "DROP",
+    "reason": "Generic VC networking happy hour"
+  },
+  "partiful-b5kgzalea3ztn4cwc76b": {
+    "verdict": "DROP",
+    "reason": "Fashion models networking, not engineering focused"
+  },
+  "partiful-ufhy6atocwhsalpnpysb": {
+    "verdict": "DROP",
+    "reason": "Career coaching workshop, not technical content"
+  },
+  "partiful-umw3coh8elu8mnkorqwt": {
+    "verdict": "DROP",
+    "reason": "European themed VC social mixer"
+  },
+  "partiful-2dmdnnmcfblj3xrpnauo": {
+    "verdict": "DROP",
+    "reason": "Foodtech funding dinner, no technical engineering content"
+  },
+  "partiful-6blgfmwidpyndqylys2v": {
+    "verdict": "KEEP",
+    "reason": "Production agents panel: orchestration, eval, observability at scale"
+  },
+  "partiful-sntzt8awymce1mpkepzk": {
+    "verdict": "DROP",
+    "reason": "Healthcare networking mixer with no technical content"
+  },
+  "partiful-q50pwz1jw0pvwulvz8wa": {
+    "verdict": "DROP",
+    "reason": "Generic growth/marketing workshop, no engineering content"
+  },
+  "partiful-tpywyxanl1kj9n385rdw": {
+    "verdict": "DROP",
+    "reason": "Golf networking mixer, no technical content"
+  },
+  "partiful-vamn82rpscmy5sp1ugng": {
+    "verdict": "KEEP",
+    "reason": "ElevenLabs office event with AI/tech leaders"
+  },
+  "partiful-aldnfgn5cxishs3vqzqs": {
+    "verdict": "DROP",
+    "reason": "Hedge fund capital raising operations, not engineering"
+  },
+  "partiful-9w1ebgct3noondwcykad": {
+    "verdict": "DROP",
+    "reason": "AI in CPG panel, vendor pitch event"
+  },
+  "partiful-cuho3rlbstxqmszabree": {
+    "verdict": "DROP",
+    "reason": "Economic justice policy talk, not technical content"
+  },
+  "partiful-m6zg2yxrzxoh8y7bfvgx": {
+    "verdict": "DROP",
+    "reason": "Generic VC trends panel, no engineering substance"
+  },
+  "partiful-qgjkhfakuj5ozzx7pcam": {
+    "verdict": "KEEP",
+    "reason": "TwelveLabs AI video understanding technical panel"
+  },
+  "partiful-akommpb7b1cwfvpu1xrn": {
+    "verdict": "KEEP",
+    "reason": "Technical GTM for selling to engineers"
+  },
+  "partiful-ljcdufxhsf8zoltgn03k": {
+    "verdict": "KEEP",
+    "reason": "Robotics deployment engineering, production systems discussion"
+  },
+  "partiful-zbr84ayt1fwnpl7b6scx": {
+    "verdict": "DROP",
+    "reason": "Healthtech networking social, no technical focus"
+  },
+  "partiful-tgonropj21ipstpuq806": {
+    "verdict": "DROP",
+    "reason": "Generic scaling/market panel, unclear technical content"
+  },
+  "partiful-7r9d5lfrwibz2cqbhtl0": {
+    "verdict": "KEEP",
+    "reason": "AI-to-production developer tooling, unified environments"
+  },
+  "partiful-robijg7rr9ewadmiq5ip": {
+    "verdict": "DROP",
+    "reason": "Generic rooftop networking party, no content"
+  },
+  "partiful-sgvp4vir3krgqrowckhv": {
+    "verdict": "KEEP",
+    "reason": "Live AI workflow demos, code screenshares"
+  },
+  "partiful-k3usadveta7zhnrg3u18": {
+    "verdict": "DROP",
+    "reason": "Internal audit dinner, business not engineering"
+  },
+  "partiful-pxfidsr0zgw0aya26mrz": {
+    "verdict": "DROP",
+    "reason": "Expert network marketplace drinks, not technical"
+  },
+  "partiful-7yvlwdswcrzchpot2fgl": {
+    "verdict": "DROP",
+    "reason": "AI in finance governance panel, not engineering"
+  },
+  "partiful-mfhrnatdyc48a1xirukm": {
+    "verdict": "KEEP",
+    "reason": "Hands-on AI agent building workshop"
+  },
+  "partiful-ebsvmoq8tmbpluvwno0n": {
+    "verdict": "DROP",
+    "reason": "Women in AI celebration, community not technical"
+  },
+  "partiful-9vb2hfphuit5ra9occap": {
+    "verdict": "KEEP",
+    "reason": "AI compute infrastructure technical value chain discussion"
+  },
+  "partiful-7yhd19kdnmhkbd3az3wx": {
+    "verdict": "DROP",
+    "reason": "InsurTech dinner networking no specified technical content"
+  },
+  "partiful-gnp5np64desamk4guxym": {
+    "verdict": "DROP",
+    "reason": "Generic happy hour mixer no technical content"
+  },
+  "partiful-ngir5poonayvrfri63ka": {
+    "verdict": "DROP",
+    "reason": "Generic founder panel no specific technical content"
+  },
+  "partiful-dni5cnyva0wrz2linjrv": {
+    "verdict": "KEEP",
+    "reason": "Video AI fireside with a16z technical content"
+  },
+  "partiful-ud6pakoidvmavyh2lhhq": {
+    "verdict": "DROP",
+    "reason": "Compliance leaders discussion not engineering focused"
+  },
+  "partiful-h5aymfedr9tcz0cufgwx": {
+    "verdict": "DROP",
+    "reason": "Business strategy discussion not technical engineering content"
+  },
+  "partiful-qv0ih8gphwiuge3cjvyh": {
+    "verdict": "KEEP",
+    "reason": "AI investor technical evaluation defensibility and IP"
+  },
+  "partiful-zfoerhqnutzjpq3mhfpx": {
+    "verdict": "DROP",
+    "reason": "Legal tech mixer networking no technical content"
+  },
+  "partiful-velsqrad2a26jnovmok1": {
+    "verdict": "KEEP",
+    "reason": "Hands-on AI ROI framework workshop practical implementation"
+  },
+  "partiful-betmu06uq4ttorng6i1l": {
+    "verdict": "DROP",
+    "reason": "Cocktail competition not technical engineering content"
+  },
+  "partiful-yjeagfiayffgzidyjb2u": {
+    "verdict": "KEEP",
+    "reason": "Hardware meetup with HVAC connected IoT tech"
+  },
+  "partiful-wptbrogtpsen1j0yhz7m": {
+    "verdict": "DROP",
+    "reason": "Game night social networking no technical content"
+  },
+  "partiful-3yzyqkw2f4amwf9smeeb": {
+    "verdict": "KEEP",
+    "reason": "Physical AI robotics training data technical panel"
+  },
+  "partiful-wo7livvy7ag3wp8popuq": {
+    "verdict": "DROP",
+    "reason": "Marketing AI briefing not engineering technical content"
+  },
+  "partiful-xegmglkc2dltgswxhdpj": {
+    "verdict": "DROP",
+    "reason": "Paid VC-PR mixer fundraising not technical"
+  },
+  "partiful-mjv2xcuotqaz8mjwdnpj": {
+    "verdict": "KEEP",
+    "reason": "Govtech software demos AI-native platform engineering"
+  },
+  "partiful-rccgumydhdrqdvjacqit": {
+    "verdict": "KEEP",
+    "reason": "AAA game dev fireside technical gamedev content"
+  },
+  "partiful-3vrqkuhcqbrytuvdjbx0": {
+    "verdict": "DROP",
+    "reason": "Restaurant AI roundtable unclear technical engineering substance"
+  },
+  "partiful-ofgcygdiyygdcdxkfikr": {
+    "verdict": "DROP",
+    "reason": "Creative AI art installations not engineering technical"
+  },
+  "partiful-xxkhgzkn0clisflvmkei": {
+    "verdict": "DROP",
+    "reason": "Generic fintech vendor pitch, no technical content"
+  },
+  "partiful-amqjo2rjk5bg1ibyhc38": {
+    "verdict": "KEEP",
+    "reason": "ZK infrastructure and privacy payments technical focus"
+  },
+  "partiful-afaq98woxivzncavpcxj": {
+    "verdict": "DROP",
+    "reason": "HR tool pitch dinner, not engineering content"
+  },
+  "partiful-dlrenx0mq1qn6zi9pwyy": {
+    "verdict": "DROP",
+    "reason": "Mental health advocacy panel, no technical substance"
+  },
+  "partiful-x0u5grmzviutrjoaogvm": {
+    "verdict": "KEEP",
+    "reason": "Live demo of AI codegen framework architecture"
+  },
+  "partiful-zxctpnaxwpbhfwy631is": {
+    "verdict": "DROP",
+    "reason": "Jazz bar networking event, no technical content"
+  },
+  "partiful-umldx1pfizblwgclupxy": {
+    "verdict": "DROP",
+    "reason": "PE dinner about capital, not engineering"
+  },
+  "partiful-esldi3inivavo9utdd8s": {
+    "verdict": "KEEP",
+    "reason": "Prediction market infrastructure with demos and prototypes"
+  },
+  "partiful-idltitmja4zzl9iuk0y6": {
+    "verdict": "KEEP",
+    "reason": "AI infrastructure deployment technical panel for engineers"
+  },
+  "partiful-gn5fqi9e514ud7lpgfhh": {
+    "verdict": "KEEP",
+    "reason": "Hands-on hackathon building demos with farm data"
+  },
+  "partiful-67g3mkpklwcgwzajykgz": {
+    "verdict": "DROP",
+    "reason": "Investment app launch party, not engineering content"
+  },
+  "partiful-tomdkksttfkfsaro3sin": {
+    "verdict": "DROP",
+    "reason": "Business leader AI adoption talk, no technical depth"
+  },
+  "partiful-gx1zdtbio2avde8bhwzy": {
+    "verdict": "KEEP",
+    "reason": "Live coding session, founders building with IDEs shown"
+  },
+  "partiful-ofp2nxpwbmwmn6rgxvp1": {
+    "verdict": "DROP",
+    "reason": "Marketing cocktail hour, no technical search content"
+  },
+  "partiful-cz75if61uvnmlypykari": {
+    "verdict": "DROP",
+    "reason": "Generic founder dinner networking, no tech content"
+  },
+  "partiful-qg3izuxtunhkcyhc3i45": {
+    "verdict": "DROP",
+    "reason": "Fundraising tactics and pitch competition, not engineering"
+  },
+  "partiful-ndr5zz1fydjhfjcxu1bj": {
+    "verdict": "DROP",
+    "reason": "CEO dinner party game, no technical content"
+  },
+  "partiful-9og1h8nuli9zph9oxeco": {
+    "verdict": "DROP",
+    "reason": "Fashion hackathon lacks concrete technical challenge definition"
+  },
+  "partiful-hwlnp8uc6vwwcbx97dp9": {
+    "verdict": "DROP",
+    "reason": "Afterparty with DJ set, no technical content"
+  },
+  "partiful-hfsyqosqdglv01jhqhue": {
+    "verdict": "DROP",
+    "reason": "Growth marketing hackathon, not engineering or infrastructure"
+  },
+  "partiful-y1upsvnjvl885rva7lkb": {
+    "verdict": "DROP",
+    "reason": "Brand/marketing panel, no technical content"
+  },
+  "partiful-b5vpb8kmbuuhvuockmhg": {
+    "verdict": "DROP",
+    "reason": "Generic networking breakfast, no technical agenda"
+  },
+  "partiful-bgetqmmjexgvcvajyx6l": {
+    "verdict": "KEEP",
+    "reason": "Hands-on hackathon building AI accounting tools"
+  },
+  "partiful-04hsbaotcvaqnncycyqd": {
+    "verdict": "KEEP",
+    "reason": "Onchain vault infrastructure for institutional asset management"
+  },
+  "partiful-mhdn7iiv7d3p7uxbnitl": {
+    "verdict": "DROP",
+    "reason": "Investor networking breakfast, no technical content"
+  },
+  "partiful-cy4iiltbdihqqmms9wem": {
+    "verdict": "DROP",
+    "reason": "SMB enterprise solutions expo, not engineering focused"
+  },
+  "partiful-mt1yixuqszw3l7qhmq3t": {
+    "verdict": "KEEP",
+    "reason": "Hands-on Claude Code workshop building end-to-end"
+  },
+  "partiful-afk8297jbypjq3ycxihb": {
+    "verdict": "DROP",
+    "reason": "Operations/strategy panel for healthtech, not technical"
+  },
+  "partiful-ehqpuupsw2r4hwswjqzc": {
+    "verdict": "DROP",
+    "reason": "Sales pitch training, not engineering content"
+  },
+  "partiful-hy44nsxy8ficdvimp2bi": {
+    "verdict": "KEEP",
+    "reason": "Live build sprint for real-time apps"
+  },
+  "partiful-da79zhigcreurfjwfeki": {
+    "verdict": "KEEP",
+    "reason": "VR/XR tech demos for spatial computing"
+  },
+  "partiful-rlbh6vvwosjzfxljklpy": {
+    "verdict": "KEEP",
+    "reason": "Voice AI hackathon plus technical panel"
+  },
+  "partiful-jcyp1orboe16x2gy5wau": {
+    "verdict": "DROP",
+    "reason": "Financial planning session, not technical content"
+  },
+  "partiful-rlmyu1yn8otgj0vbaopm": {
+    "verdict": "DROP",
+    "reason": "Female exit strategy, no technical engineering focus"
+  },
+  "partiful-7xmyfffhtqbhpgqbunn4": {
+    "verdict": "DROP",
+    "reason": "Pitch feedback workshop, not technical content"
+  },
+  "partiful-sdrni3lxshfwexikn9gf": {
+    "verdict": "DROP",
+    "reason": "SAAS product demo, lacks technical depth"
+  },
+  "partiful-4mvtljrkocua7d1tfo3l": {
+    "verdict": "KEEP",
+    "reason": "LLM misinformation solution demo and announcement"
+  },
+  "partiful-y6jjork6u9e5hgpxi6uc": {
+    "verdict": "DROP",
+    "reason": "Workforce strategy panel, not engineering focused"
+  },
+  "partiful-jxbukobwnkyvfc87cz8a": {
+    "verdict": "KEEP",
+    "reason": "AI B2B startup demos and live products"
+  },
+  "partiful-qyk65dbfatgdutz68vmk": {
+    "verdict": "DROP",
+    "reason": "Venture building sprint, unclear technical focus"
+  },
+  "partiful-9h9isgkjawio4dumlqmo": {
+    "verdict": "KEEP",
+    "reason": "Cybersecurity research, technical conference, security startups ecosystem"
+  },
+  "partiful-cnhlw58dxtampjbzhmsl": {
+    "verdict": "DROP",
+    "reason": "Legal/governance focus, fundraising admin not technical content"
+  },
+  "partiful-nsliwdijvzpwl0dyqcdu": {
+    "verdict": "KEEP",
+    "reason": "AI-native services architecture, founders building technical products"
+  },
+  "partiful-h6ckvnb4wajntkdjtqsp": {
+    "verdict": "DROP",
+    "reason": "Generic networking event, no specific technical content"
+  },
+  "partiful-ejcb3haeeryekyumj9vj": {
+    "verdict": "KEEP",
+    "reason": "Fine-tuning models, technical AI workshop for builders"
+  },
+  "partiful-ncmrzeenirelhy8yhsim": {
+    "verdict": "KEEP",
+    "reason": "Vibe coding hackathon, live build solutions, hands-on"
+  },
+  "partiful-waeh7vpepdogvyfp7nss": {
+    "verdict": "DROP",
+    "reason": "Generic networking lunch, no specified technical content"
+  },
+  "partiful-t2iajzopxfrkn0b62ypj": {
+    "verdict": "KEEP",
+    "reason": "AI agents, infrastructure, enterprise orchestration architecture discussion"
+  },
+  "partiful-glbue1vf4t4mrsdbktvx": {
+    "verdict": "KEEP",
+    "reason": "Hands-on AI agents workshop, PhD-level platform, technical"
+  },
+  "partiful-tfqk8z0kzm00hcm55rvn": {
+    "verdict": "KEEP",
+    "reason": "DeFi infrastructure, blockchain rails, technical fintech architecture"
+  },
+  "partiful-wme3cogvwnphbryevkyp": {
+    "verdict": "DROP",
+    "reason": "Wellness retreat disguised, breathwork and meditation focus"
+  },
+  "partiful-wps4h72vxefetgndb7a0": {
+    "verdict": "KEEP",
+    "reason": "Real-time avatar tech stack, deployment architecture details"
+  },
+  "partiful-6tepduzj2faxaufuv5qv": {
+    "verdict": "DROP",
+    "reason": "GTM and ops strategy, not technical engineering"
+  },
+  "partiful-urffckpmvamg39em2kpc": {
+    "verdict": "KEEP",
+    "reason": "Vibe coding workshop, MuleRun AI tool, hands-on"
+  },
+  "partiful-m7ter1umil341a0ifk7q": {
+    "verdict": "DROP",
+    "reason": "Leadership and relationships focus, AI as buzzword"
+  },
+  "partiful-zt09j5tn5h4gpqoeynwj": {
+    "verdict": "DROP",
+    "reason": "Policy and jurisdictional strategy, not technical content"
+  },
+  "partiful-nirme2cxx6ligqpharza": {
+    "verdict": "DROP",
+    "reason": "No description provided, expansion strategy likely non-technical"
+  },
+  "partiful-ldlqu4a7ndyu37gii7x0": {
+    "verdict": "DROP",
+    "reason": "Generic healthcare panel, policy focus unclear technical"
+  },
+  "partiful-w1y2nl4n23pbrt3kwj3z": {
+    "verdict": "DROP",
+    "reason": "Exit advisory and wealth management, not technical"
+  },
+  "partiful-p3vw41fyokxlpihzqgfi": {
+    "verdict": "DROP",
+    "reason": "No description provided, career development likely generic"
+  },
+  "partiful-5vtezy208zqxji4zsvjt": {
+    "verdict": "KEEP",
+    "reason": "Live hands-on workshop building AI with Gemini"
+  },
+  "partiful-gkj9mapmrglafdours8a": {
+    "verdict": "DROP",
+    "reason": "Generic panel on inclusive leadership and scaling"
+  },
+  "partiful-estgcjd2gxjopgibphmv": {
+    "verdict": "KEEP",
+    "reason": "Technical hackathon with causal ML and forecasting challenge"
+  },
+  "partiful-iym9ln4ks0uf1uv9bab8": {
+    "verdict": "DROP",
+    "reason": "DEI networking event without specific technical content"
+  },
+  "partiful-ivvyeqlhieeu6286ykro": {
+    "verdict": "KEEP",
+    "reason": "Hands-on session building finance agents with APIs"
+  },
+  "partiful-9ys9qe1xby0mmpelvysq": {
+    "verdict": "KEEP",
+    "reason": "Enterprise AI strategy with technical implementation focus"
+  },
+  "partiful-kvgpufmeacw7zwpytxtp": {
+    "verdict": "DROP",
+    "reason": "Generic AI happy hour networking event"
+  },
+  "partiful-ckczgayvjbdwdba2q8kr": {
+    "verdict": "KEEP",
+    "reason": "AI infrastructure discussion with Sentry Neon Harness"
+  },
+  "partiful-jkjgahqgmh9plixjftft": {
+    "verdict": "KEEP",
+    "reason": "Autonomous systems agent fleet orchestration for engineers"
+  },
+  "partiful-4qp4a2zwqgdfkbmlbq59": {
+    "verdict": "DROP",
+    "reason": "Vibe coding for designers not engineering focus"
+  },
+  "partiful-ktoxgoryxujrzwxm1kwq": {
+    "verdict": "KEEP",
+    "reason": "Vertical AI agent demos with proprietary data"
+  },
+  "partiful-8pmtknfonlgm4fdi3mxf": {
+    "verdict": "KEEP",
+    "reason": "Deep tech buildathon with founder demos judging"
+  },
+  "partiful-dyxqfsmvhhthxj4gc280": {
+    "verdict": "DROP",
+    "reason": "Closing party rooftop networking no technical content"
+  },
+  "partiful-hnzbbtq1gxdenq3tlu9i": {
+    "verdict": "DROP",
+    "reason": "Generic fintech networking mixer no technical angle"
+  },
+  "partiful-v6w1ixuollfxgvdfychz": {
+    "verdict": "KEEP",
+    "reason": "Live demo of AI filmmaking workflows technical"
+  },
+  "partiful-lkauxsy3it3jrilzji2c": {
+    "verdict": "DROP",
+    "reason": "AI productivity tips for women no engineering"
+  },
+  "partiful-g2e6ks6gpdm0icqcc14a": {
+    "verdict": "DROP",
+    "reason": "Founder game show on runway not technical"
+  },
+  "partiful-t7fuprr3karqftoiugrr": {
+    "verdict": "DROP",
+    "reason": "Strategy dinner not engineering or technical content"
+  },
+  "partiful-myjkiwx4pykfwakyp0pn": {
+    "verdict": "DROP",
+    "reason": "EdTech panels on outcomes not technical content"
+  },
+  "partiful-waad8whscyljlqkl4uoi": {
+    "verdict": "DROP",
+    "reason": "Healthcare investor dinner no technical engineering angle"
+  },
+  "partiful-0uxv0ocphy8mmnweupgr": {
+    "verdict": "DROP",
+    "reason": "Restaurant workforce panel, not engineering content"
+  },
+  "partiful-0cnniftmqb0m0qqqkoob": {
+    "verdict": "DROP",
+    "reason": "Generic networking party with live music"
+  },
+  "partiful-yxvesjdzylbj9kkmt2be": {
+    "verdict": "KEEP",
+    "reason": "SpacetimeDB multiplayer backend hackathon with technical focus"
+  },
+  "partiful-z2sakzpog6vhzvi1ittl": {
+    "verdict": "KEEP",
+    "reason": "Hands-on hackathon building multimodal agent interfaces"
+  },
+  "partiful-ojzezf4fgq48lmtmv0xx": {
+    "verdict": "DROP",
+    "reason": "Law, marketing, fundraising roundtables, no engineering"
+  },
+  "partiful-rd1kczidmyx2q5j7fubm": {
+    "verdict": "KEEP",
+    "reason": "Bio agents hackathon with Nebius compute"
+  },
+  "partiful-oiagx5ncqfyvjs9ipljh": {
+    "verdict": "KEEP",
+    "reason": "AI/ML climate tech build sprint"
+  },
+  "partiful-5gz90kpgpe1xok3gztow": {
+    "verdict": "KEEP",
+    "reason": "ElevenLabs voice/audio hackathon building real applications"
+  },
+  "partiful-uusbkyefqhuurxthfyji": {
+    "verdict": "KEEP",
+    "reason": "Lightning AI autonomous agents hackathon"
+  },
+  "partiful-oamuphbkv4a3c4mjxww5": {
+    "verdict": "KEEP",
+    "reason": "TouchDesigner workshops and creative tech building"
+  },
+  "partiful-2svpnwqqok5sf4fckwxf": {
+    "verdict": "KEEP",
+    "reason": "Lovable app hackathon zero to working"
+  },
+  "partiful-83gf2sn1253qiv5yr2ry": {
+    "verdict": "KEEP",
+    "reason": "Consumer AI product building with mentorship"
+  },
+  "partiful-uqdzb29yfcgmt5eys7t0": {
+    "verdict": "KEEP",
+    "reason": "Vibecoding hackathon for engineers building products"
+  },
+  "partiful-ldruzdvoslbrx3uqt7dd": {
+    "verdict": "KEEP",
+    "reason": "Aging care delivery vibecoding prototypes"
+  },
+  "partiful-5b8de39znauhzspcsepq": {
+    "verdict": "KEEP",
+    "reason": "Hardware hackathon robots sensors microcontrollers"
+  },
+  "partiful-hi6tdz9djtmb6zrpz9zs": {
+    "verdict": "KEEP",
+    "reason": "AI agent trust infrastructure technical discussion"
+  },
+  "partiful-irecvlecigfuqft0aeun": {
+    "verdict": "DROP",
+    "reason": "Healthtech GTM strategy, not engineering content"
+  },
+  "partiful-yv14yr9ryc4qaz4jxg2o": {
+    "verdict": "DROP",
+    "reason": "Sales and marketing office hours"
+  },
+  "partiful-kphecjglwfrn7uza4av4": {
+    "verdict": "KEEP",
+    "reason": "AI-powered urban sustainability solutions hackathon"
+  },
+  "partiful-2pemzp1bxnczenujpuxv": {
+    "verdict": "KEEP",
+    "reason": "Engineer-creator hackathon shipping consumer apps"
+  },
+  "partiful-sm2xfuyglx4dtizzrw3s": {
+    "verdict": "KEEP",
+    "reason": "AI infrastructure integrating mismatched tech stacks"
+  },
+  "partiful-kic8xargdgtcyczqd62i": {
+    "verdict": "DROP",
+    "reason": "Generic pitch competition with networking mixer"
+  },
+  "partiful-3qoch02lcvowm3oqfvqy": {
+    "verdict": "KEEP",
+    "reason": "Healthcare AI technical adoption and workflow discussion"
+  },
+  "partiful-jgrift4jg6uriufvdwc2": {
+    "verdict": "KEEP",
+    "reason": "Algorithmic trading AI and market strategy technical"
+  },
+  "partiful-t9qdurh6p4xvt71xqzye": {
+    "verdict": "KEEP",
+    "reason": "Live AI demos YOLO OCR computer vision"
+  },
+  "partiful-87zdcwg3oofpvzvxdwcd": {
+    "verdict": "DROP",
+    "reason": "Generic networking no concrete technical content"
+  },
+  "partiful-5k4j5xge2u8uqwto4duo": {
+    "verdict": "DROP",
+    "reason": "Generic happy hour no technical substance"
+  },
+  "partiful-7pyv0k7xauzjpstkz3y8": {
+    "verdict": "DROP",
+    "reason": "Comedy roast show not technical content"
+  },
+  "partiful-s68ynusjqjwtcy8m6f0q": {
+    "verdict": "DROP",
+    "reason": "Generic AI matching networking no technical depth"
+  },
+  "partiful-tyvab17by93hhfnp5k8h": {
+    "verdict": "DROP",
+    "reason": "Pizza social networking no technical content"
+  },
+  "partiful-sc4mhjbd0dglgivvnhye": {
+    "verdict": "KEEP",
+    "reason": "Hands-on hackathon building health AI prototypes"
+  },
+  "partiful-p9ezwfalklmiqikrhbvk": {
+    "verdict": "KEEP",
+    "reason": "Fintech tech evolution AI-driven financial products"
+  },
+  "partiful-ocyhq1lc3wzvhqdp6xo7": {
+    "verdict": "KEEP",
+    "reason": "AI logistics embedded finance marketplace infrastructure demo"
+  },
+  "partiful-ve6zk5ivb4uqkiddcpyg": {
+    "verdict": "KEEP",
+    "reason": "Technical intern hackathon building projects with judges"
+  },
+  "partiful-s1gww9lgdfrsrourmesh": {
+    "verdict": "KEEP",
+    "reason": "High school demo AI robotics computer vision"
+  },
+  "partiful-7xifs67wntzphi6dvhys": {
+    "verdict": "DROP",
+    "reason": "Sales marketing GTM strategy no engineering angle"
+  },
+  "partiful-cwt9rn39gi6krdufm7nj": {
+    "verdict": "DROP",
+    "reason": "Open mic comedy roast not technical"
+  },
+  "partiful-fkbfxevmgfnv5gghwyqx": {
+    "verdict": "DROP",
+    "reason": "Generic rooftop networking no specific technical content"
+  },
+  "partiful-vxxev8vasdfviibyqqjd": {
+    "verdict": "DROP",
+    "reason": "Generic pitch happy hour no engineering depth"
+  }
+}

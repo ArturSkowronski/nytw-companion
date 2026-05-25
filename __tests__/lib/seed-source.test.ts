@@ -16,8 +16,9 @@ describe('selectSeed', () => {
   it('returns the base seed when env var is unset', async () => {
     const { selectSeed } = await import('../../lib/seed-source')
     const events = selectSeed()
-    // seed-events.json now holds the full raw tech-week.com scrape (~1.4k events)
-    expect(events.length).toBeGreaterThan(500)
+    // seed-events.json is now the LLM-curated subset (~380 events from the
+    // 1,390-event raw tech-week.com scrape after two filter passes).
+    expect(events.length).toBeGreaterThan(200)
   })
 
   it('returns the load fixture when NEXT_PUBLIC_USE_LOAD_FIXTURE === "1"', async () => {

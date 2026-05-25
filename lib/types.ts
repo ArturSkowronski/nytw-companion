@@ -43,6 +43,7 @@ export interface Event {
   is_virtuslab_event: boolean
   source: string
   source_url: string
+  image_url?: string | null
   created_at: string
   updated_at: string
 }
