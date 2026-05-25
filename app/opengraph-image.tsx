@@ -1,6 +1,8 @@
 import { ImageResponse } from 'next/og'
 
-export const runtime = 'edge'
+// Note: runtime='edge' caused 1.06 MB function (over Vercel Hobby's 1 MB limit).
+// Default Node.js runtime has a much higher limit and OG images are cached by
+// social platforms anyway, so cold-start difference is irrelevant.
 export const alt = "NYTW Engineer's Companion — 87 engineering-relevant events for Tech Week NYC 2026"
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
@@ -34,15 +36,13 @@ export default async function Image() {
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-          <div style={{ color: '#FAFAFA', fontSize: 96, fontWeight: 800, lineHeight: 1 }}>
-            NYTW Engineer&apos;s
-            <br />
-            Companion
+          <div style={{ display: 'flex', flexDirection: 'column', color: '#FAFAFA', fontSize: 96, fontWeight: 800, lineHeight: 1 }}>
+            <span>NYTW Engineer&apos;s</span>
+            <span>Companion</span>
           </div>
-          <div style={{ color: '#A3A3A3', fontSize: 36, lineHeight: 1.2 }}>
-            87 engineering-relevant events.
-            <br />
-            Plan the week you actually want.
+          <div style={{ display: 'flex', flexDirection: 'column', color: '#A3A3A3', fontSize: 36, lineHeight: 1.2 }}>
+            <span>87 engineering-relevant events.</span>
+            <span>Plan the week you actually want.</span>
           </div>
         </div>
 
