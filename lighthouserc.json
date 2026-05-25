@@ -1,0 +1,29 @@
+{
+  "ci": {
+    "collect": {
+      "url": [
+        "http://localhost:3000/",
+        "http://localhost:3000/events",
+        "http://localhost:3000/now",
+        "http://localhost:3000/plan",
+        "http://localhost:3000/my-plan"
+      ],
+      "startServerCommand": "npm run start",
+      "startServerReadyPattern": "Ready in",
+      "numberOfRuns": 1
+    },
+    "assert": {
+      "preset": "lighthouse:no-pwa",
+      "assertions": {
+        "categories:performance": ["error", { "minScore": 0.8 }],
+        "categories:accessibility": ["error", { "minScore": 0.95 }],
+        "categories:best-practices": ["warn", { "minScore": 0.9 }],
+        "categories:seo": ["error", { "minScore": 1.0 }],
+        "installable-manifest": "warn"
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}
