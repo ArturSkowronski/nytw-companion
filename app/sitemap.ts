@@ -22,5 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     route('/plan', 0.7, 'weekly'),
     route('/beyond', 0.7, 'monthly'),
     route('/about', 0.6, 'monthly'),
+    route('/privacy', 0.3, 'yearly'),
+    route('/terms', 0.3, 'yearly'),
   ]
 }

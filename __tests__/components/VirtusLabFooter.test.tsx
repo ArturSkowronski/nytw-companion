@@ -16,9 +16,11 @@ describe('VirtusLabFooter', () => {
     expect(screen.getByText(/not affiliated with a16z or tech week nyc/i)).toBeInTheDocument()
   })
 
-  it('renders About and Beyond internal links', () => {
+  it('renders About, Beyond, Privacy, Terms internal links', () => {
     render(<VirtusLabFooter />)
-    expect(screen.getByRole('link', { name: /about/i })).toHaveAttribute('href', '/about')
-    expect(screen.getByRole('link', { name: /beyond/i })).toHaveAttribute('href', '/beyond')
+    expect(screen.getByRole('link', { name: /^about$/i })).toHaveAttribute('href', '/about')
+    expect(screen.getByRole('link', { name: /^beyond$/i })).toHaveAttribute('href', '/beyond')
+    expect(screen.getByRole('link', { name: /^privacy$/i })).toHaveAttribute('href', '/privacy')
+    expect(screen.getByRole('link', { name: /^terms$/i })).toHaveAttribute('href', '/terms')
   })
 })

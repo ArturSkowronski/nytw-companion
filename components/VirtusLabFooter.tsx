@@ -25,6 +25,12 @@ export function VirtusLabFooter() {
           <Link href="/beyond" className="hover:text-[#A3A3A3]">
             Beyond
           </Link>
+          <Link href="/privacy" className="hover:text-[#A3A3A3]">
+            Privacy
+          </Link>
+          <Link href="/terms" className="hover:text-[#A3A3A3]">
+            Terms
+          </Link>
         </nav>
       </div>
     </footer>
