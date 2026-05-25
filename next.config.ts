@@ -1,8 +1,14 @@
 // next.config.ts
-// next-pwa full service worker config is done in Phase 8.
-// Manifest is wired up via app/layout.tsx metadata.manifest.
 import type { NextConfig } from 'next'
+import withSerwistInit from '@serwist/next'
+
+const withSerwist = withSerwistInit({
+  swSrc: 'app/sw.ts',
+  swDest: 'public/sw.js',
+  disable: process.env.NODE_ENV === 'development',
+  reloadOnOnline: true,
+})
 
 const nextConfig: NextConfig = {}
 
-export default nextConfig
+export default withSerwist(nextConfig)
