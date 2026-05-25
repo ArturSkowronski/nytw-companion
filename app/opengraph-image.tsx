@@ -17,7 +17,7 @@ export default async function Image() {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
-          background: '#0A0A0A',
+          background: '#000000',
           padding: '72px',
           fontFamily: 'ui-monospace, SFMono-Regular, Menlo, monospace',
         }}
@@ -25,7 +25,7 @@ export default async function Image() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
           <div
             style={{
-              color: '#FF6B35',
+              color: '#FF5B25',
               fontSize: 28,
               letterSpacing: 4,
               textTransform: 'uppercase',
@@ -36,11 +36,11 @@ export default async function Image() {
         </div>
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
-          <div style={{ display: 'flex', flexDirection: 'column', color: '#FAFAFA', fontSize: 96, fontWeight: 800, lineHeight: 1 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', color: '#F5F5F5', fontSize: 96, fontWeight: 800, lineHeight: 1 }}>
             <span>NYTW Engineer&apos;s</span>
             <span>Companion</span>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', color: '#A3A3A3', fontSize: 36, lineHeight: 1.2 }}>
+          <div style={{ display: 'flex', flexDirection: 'column', color: '#9B9B9B', fontSize: 36, lineHeight: 1.2 }}>
             <span>87 engineering-relevant events.</span>
             <span>Plan the week you actually want.</span>
           </div>
@@ -50,7 +50,7 @@ export default async function Image() {
           style={{
             display: 'flex',
             justifyContent: 'flex-end',
-            color: '#737373',
+            color: '#9B9B9B',
             fontSize: 24,
           }}
         >

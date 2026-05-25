@@ -43,12 +43,12 @@ export function DayChipNav({ eventsByDay }: DayChipNavProps) {
             className={
               `shrink-0 font-mono text-xs px-3 py-1.5 rounded-full whitespace-nowrap border transition-colors ` +
               (isActive
-                ? 'border-[#FF6B35] text-[#FF6B35] bg-[#FF6B35]/10'
-                : 'border-[#2A2A2A] text-[#A3A3A3] bg-[#111111] hover:border-[#737373]')
+                ? 'border-[#FF5B25] text-[#FF5B25] bg-[#FF5B25]/10'
+                : 'border-[#262626] text-[#9B9B9B] bg-[#0B0B0B] hover:border-[#9B9B9B]')
             }
           >
-            {label} <span className="text-[#737373]">{date}</span>
-            <span className="ml-1 text-[#737373]">({count})</span>
+            {label} <span className="text-[#9B9B9B]">{date}</span>
+            <span className="ml-1 text-[#9B9B9B]">({count})</span>
           </button>
         )
       })}

@@ -58,7 +58,7 @@ export function EventDetailModal({ event, open, onClose }: EventDetailModalProps
   return (
     <Sheet open={open} onOpenChange={(v) => { if (!v) onClose() }}>
       <SheetContent
-        className="bg-[#111111] border-[#1A1A1A] text-[#FAFAFA] w-full sm:max-w-lg overflow-y-auto p-6"
+        className="bg-[#0B0B0B] border-[#1A1A1A] text-[#F5F5F5] w-full sm:max-w-lg overflow-y-auto p-6"
         side="right"
       >
         <SheetHeader className="mb-4 p-0">
@@ -69,24 +69,24 @@ export function EventDetailModal({ event, open, onClose }: EventDetailModalProps
               </Badge>
             )}
             {event.is_virtuslab_event && (
-              <Badge className="bg-[#FF6B35]/20 text-[#FF6B35] border-[#FF6B35]/30 text-xs">
+              <Badge className="bg-[#FF5B25]/[0.14] text-[#FF5B25] border-[#FF5B25]/30 text-xs">
                 Featured
               </Badge>
             )}
             {event.is_invite_only && (
-              <Badge variant="outline" className="text-xs border-[#333333] text-[#A3A3A3]">
+              <Badge variant="outline" className="text-xs border-[#333333] text-[#9B9B9B]">
                 Invite-only
               </Badge>
             )}
           </div>
-          <SheetTitle className="font-mono text-xl font-bold text-[#FAFAFA] text-left">
+          <SheetTitle className="font-mono text-xl font-bold text-[#F5F5F5] text-left">
             {event.title}
           </SheetTitle>
         </SheetHeader>
 
         {/* Host */}
-        <div className="flex items-center gap-2 mb-4 text-sm text-[#A3A3A3]">
-          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#2A2A2A] text-xs font-mono font-bold text-[#FAFAFA]">
+        <div className="flex items-center gap-2 mb-4 text-sm text-[#9B9B9B]">
+          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#262626] text-xs font-mono font-bold text-[#F5F5F5]">
             {event.host.charAt(0).toUpperCase()}
           </span>
           <span>{event.host}</span>
@@ -94,31 +94,31 @@ export function EventDetailModal({ event, open, onClose }: EventDetailModalProps
 
         {/* Time / Location */}
         <div className="space-y-1.5 mb-4 text-sm">
-          <div className="flex items-center gap-2 text-[#A3A3A3]">
-            <span className="text-[#7A7A7A]">🕐</span>
+          <div className="flex items-center gap-2 text-[#9B9B9B]">
+            <span className="text-[#9B9B9B]">🕐</span>
             <span>{formatEventTime(event.starts_at, event.ends_at)}</span>
           </div>
           {event.venue_name && (
-            <div className="flex items-center gap-2 text-[#A3A3A3]">
-              <span className="text-[#7A7A7A]">📍</span>
+            <div className="flex items-center gap-2 text-[#9B9B9B]">
+              <span className="text-[#9B9B9B]">📍</span>
               <span>{event.venue_name}{event.neighborhood ? ` · ${event.neighborhood}` : ''}</span>
             </div>
           )}
           {event.address && (
-            <div className="flex items-start gap-2 text-[#A3A3A3]">
-              <span className="text-[#7A7A7A] mt-0.5">🗺</span>
+            <div className="flex items-start gap-2 text-[#9B9B9B]">
+              <span className="text-[#9B9B9B] mt-0.5">🗺</span>
               <span>{event.address}</span>
             </div>
           )}
           {event.format && (
-            <div className="flex items-center gap-2 text-[#A3A3A3]">
-              <span className="text-[#7A7A7A]">·</span>
+            <div className="flex items-center gap-2 text-[#9B9B9B]">
+              <span className="text-[#9B9B9B]">·</span>
               <span>{FORMAT_LABELS[event.format] ?? event.format}</span>
             </div>
           )}
           {event.capacity && (
-            <div className="flex items-center gap-2 text-[#A3A3A3]">
-              <span className="text-[#7A7A7A]">👥</span>
+            <div className="flex items-center gap-2 text-[#9B9B9B]">
+              <span className="text-[#9B9B9B]">👥</span>
               <span>Capacity: ~{event.capacity}</span>
             </div>
           )}
@@ -127,7 +127,7 @@ export function EventDetailModal({ event, open, onClose }: EventDetailModalProps
         <Separator className="bg-[#1A1A1A] mb-4" />
 
         {/* Description */}
-        <p className="text-[#A3A3A3] text-sm leading-relaxed mb-4">
+        <p className="text-[#9B9B9B] text-sm leading-relaxed mb-4">
           {event.description}
         </p>
 
@@ -135,7 +135,7 @@ export function EventDetailModal({ event, open, onClose }: EventDetailModalProps
         {event.is_editors_pick && event.editors_pick_blurb && (
           <div className="bg-amber-500/5 border border-amber-500/20 rounded-md p-3 mb-4">
             <p className="text-amber-400 text-xs font-mono mb-1">Why we picked this</p>
-            <p className="text-[#A3A3A3] text-sm">{event.editors_pick_blurb}</p>
+            <p className="text-[#9B9B9B] text-sm">{event.editors_pick_blurb}</p>
           </div>
         )}
 
@@ -145,7 +145,7 @@ export function EventDetailModal({ event, open, onClose }: EventDetailModalProps
             {event.tags.map((tag) => (
               <span
                 key={tag}
-                className="text-xs text-[#7A7A7A] bg-[#1A1A1A] px-2 py-1 rounded font-mono"
+                className="text-xs text-[#9B9B9B] bg-[#1A1A1A] px-2 py-1 rounded font-mono"
               >
                 {tag}
               </span>
@@ -158,7 +158,7 @@ export function EventDetailModal({ event, open, onClose }: EventDetailModalProps
         {/* Actions */}
         <div className="flex gap-2 flex-wrap">
           <Button
-            className="bg-[#FF6B35] hover:bg-[#e85a25] text-white font-mono"
+            className="bg-[#FF5B25] hover:bg-[#e85a25] text-white font-mono"
             onClick={handleOpenRsvp}
           >
             Open RSVP →
@@ -174,7 +174,7 @@ export function EventDetailModal({ event, open, onClose }: EventDetailModalProps
           ) : (
             <Button
               variant="outline"
-              className="border-[#333333] text-[#A3A3A3] hover:bg-[#1A1A1A] font-mono"
+              className="border-[#333333] text-[#9B9B9B] hover:bg-[#1A1A1A] font-mono"
               onClick={handleSave}
             >
               Save to plan

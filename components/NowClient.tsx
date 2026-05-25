@@ -49,8 +49,8 @@ export function NowClient({ events }: NowClientProps) {
 
   if (!mounted) {
     return (
-      <div className="bg-[#111111] border border-[#1A1A1A] rounded-md p-6">
-        <p className="font-mono text-sm text-[#7A7A7A]">Loading…</p>
+      <div className="bg-[#0B0B0B] border border-[#1A1A1A] rounded-md p-6">
+        <p className="font-mono text-sm text-[#9B9B9B]">Loading…</p>
       </div>
     )
   }
@@ -109,14 +109,14 @@ export function NowClient({ events }: NowClientProps) {
       {!geo && !geoError && (
         <Button
           variant="outline"
-          className="border-[#333333] text-[#A3A3A3] hover:bg-[#1A1A1A] font-mono"
+          className="border-[#333333] text-[#9B9B9B] hover:bg-[#1A1A1A] font-mono"
           onClick={requestGeo}
         >
           Enable location for travel times →
         </Button>
       )}
       {geoError && (
-        <p className="text-xs text-[#7A7A7A] font-mono">
+        <p className="text-xs text-[#9B9B9B] font-mono">
           Location unavailable — addresses shown without travel times.
         </p>
       )}

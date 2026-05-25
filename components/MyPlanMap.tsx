@@ -9,7 +9,7 @@ import { DayChipNav } from '@/components/DayChipNav'
 import type { Event, PlanItem } from '@/lib/types'
 
 const STATUS_COLOR: Record<PlanItem['status'], string> = {
-  interested:   '#A3A3A3',
+  interested:   '#9B9B9B',
   rsvp_pending: '#f59e0b',
   confirmed:    '#22c55e',
   waitlist:     '#f59e0b',
@@ -144,7 +144,7 @@ export function MyPlanMap({ planEvents, initialDay }: MyPlanMapProps) {
           paint: {
             'circle-radius': 8,
             'circle-color': ['get', 'color'],
-            'circle-stroke-color': '#0A0A0A',
+            'circle-stroke-color': '#000000',
             'circle-stroke-width': 2,
           },
         })
@@ -163,7 +163,7 @@ export function MyPlanMap({ planEvents, initialDay }: MyPlanMapProps) {
           type: 'line',
           source: 'plan-lines',
           paint: {
-            'line-color': '#FF6B35',
+            'line-color': '#FF5B25',
             'line-opacity': 0.5,
             'line-width': 2,
             'line-dasharray': [2, 2],
@@ -191,8 +191,8 @@ export function MyPlanMap({ planEvents, initialDay }: MyPlanMapProps) {
             'text-anchor': 'center',
           },
           paint: {
-            'text-color': '#FAFAFA',
-            'text-halo-color': '#0A0A0A',
+            'text-color': '#F5F5F5',
+            'text-halo-color': '#000000',
             'text-halo-width': 2,
           },
         })
@@ -213,9 +213,9 @@ export function MyPlanMap({ planEvents, initialDay }: MyPlanMapProps) {
         <div ref={containerRef} className="w-full h-full" />
         {visible.length === 0 && (
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="bg-[#111111]/95 border border-[#1A1A1A] rounded-md px-4 py-3 text-center pointer-events-auto">
-              <p className="font-mono text-sm text-[#A3A3A3]">No plan events on this day.</p>
-              <p className="text-xs text-[#7A7A7A] mt-1">Try another day →</p>
+            <div className="bg-[#0B0B0B]/95 border border-[#1A1A1A] rounded-md px-4 py-3 text-center pointer-events-auto">
+              <p className="font-mono text-sm text-[#9B9B9B]">No plan events on this day.</p>
+              <p className="text-xs text-[#9B9B9B] mt-1">Try another day →</p>
             </div>
           </div>
         )}

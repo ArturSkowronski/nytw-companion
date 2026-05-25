@@ -70,8 +70,8 @@ export function MyPlanClient({ events, initialTab, initialDay }: MyPlanClientPro
 
   if (!mounted) {
     return (
-      <div className="bg-[#111111] border border-[#1A1A1A] rounded-md p-6">
-        <p className="font-mono text-sm text-[#7A7A7A]">Loading…</p>
+      <div className="bg-[#0B0B0B] border border-[#1A1A1A] rounded-md p-6">
+        <p className="font-mono text-sm text-[#9B9B9B]">Loading…</p>
       </div>
     )
   }
@@ -84,8 +84,8 @@ export function MyPlanClient({ events, initialTab, initialDay }: MyPlanClientPro
     <div className="space-y-6">
       <header className="flex flex-wrap items-center justify-between gap-4">
         <div>
-          <p className="font-mono text-2xl font-bold text-[#FAFAFA]">Your plan</p>
-          <p className="text-xs text-[#A3A3A3] font-mono mt-1">
+          <p className="font-mono text-2xl font-bold text-[#F5F5F5]">Your plan</p>
+          <p className="text-xs text-[#9B9B9B] font-mono mt-1">
             {planEvents.length} events ·{' '}
             {counts.confirmed} confirmed · {counts.pending} pending ·{' '}
             {counts.waitlist} waitlist · {counts.interested} interested
@@ -95,7 +95,7 @@ export function MyPlanClient({ events, initialTab, initialDay }: MyPlanClientPro
       </header>
 
       <div
-        className="inline-flex rounded-md border border-[#2A2A2A] bg-[#111111] p-0.5"
+        className="inline-flex rounded-md border border-[#262626] bg-[#0B0B0B] p-0.5"
         role="group"
         aria-label="Tab"
       >
@@ -105,7 +105,7 @@ export function MyPlanClient({ events, initialTab, initialDay }: MyPlanClientPro
           onClick={() => setTab('timeline')}
           className={
             `font-mono text-xs px-3 py-1.5 rounded transition-colors ` +
-            (tab === 'timeline' ? 'bg-[#FF6B35] text-white' : 'text-[#A3A3A3] hover:text-[#FAFAFA]')
+            (tab === 'timeline' ? 'bg-[#FF5B25] text-white' : 'text-[#9B9B9B] hover:text-[#F5F5F5]')
           }
         >
           Timeline
@@ -116,7 +116,7 @@ export function MyPlanClient({ events, initialTab, initialDay }: MyPlanClientPro
           onClick={() => setTab('map')}
           className={
             `font-mono text-xs px-3 py-1.5 rounded transition-colors ` +
-            (tab === 'map' ? 'bg-[#FF6B35] text-white' : 'text-[#A3A3A3] hover:text-[#FAFAFA]')
+            (tab === 'map' ? 'bg-[#FF5B25] text-white' : 'text-[#9B9B9B] hover:text-[#F5F5F5]')
           }
         >
           Map

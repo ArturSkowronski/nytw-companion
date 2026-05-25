@@ -9,8 +9,8 @@ const MyPlanMapDynamic = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className="min-h-[400px] bg-[#111111] border border-[#1A1A1A] rounded-md flex items-center justify-center">
-        <p className="font-mono text-sm text-[#A3A3A3]">Loading map…</p>
+      <div className="min-h-[400px] bg-[#0B0B0B] border border-[#1A1A1A] rounded-md flex items-center justify-center">
+        <p className="font-mono text-sm text-[#9B9B9B]">Loading map…</p>
       </div>
     ),
   },

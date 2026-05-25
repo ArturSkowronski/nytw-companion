@@ -34,11 +34,11 @@ export default async function PlanPage() {
   const events = await fetchEvents()
 
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-[#FAFAFA]">
+    <main className="min-h-screen bg-[#000000] text-[#F5F5F5]">
       <div className="max-w-3xl mx-auto px-6 py-8">
         <header className="mb-8">
-          <p className="font-mono text-2xl font-bold text-[#FAFAFA]">Plan with AI</p>
-          <p className="text-sm text-[#A3A3A3] mt-1">
+          <p className="font-mono text-2xl font-bold text-[#F5F5F5]">Plan with AI</p>
+          <p className="text-sm text-[#9B9B9B] mt-1">
             Describe what you&rsquo;re looking for. Claude picks 5–8 events you&rsquo;d like.
           </p>
         </header>

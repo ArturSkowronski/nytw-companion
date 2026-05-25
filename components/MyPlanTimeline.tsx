@@ -39,7 +39,7 @@ export function MyPlanTimeline({ planEvents, conflicts }: MyPlanTimelineProps) {
       />
       {dayKeys.map((dayKey) => (
         <section key={dayKey} className="mb-10">
-          <h2 className="sticky top-0 z-10 bg-[#0A0A0A] border-b border-[#1A1A1A] py-3 mb-4 font-mono font-bold text-[#FAFAFA] text-lg">
+          <h2 className="sticky top-0 z-10 bg-[#000000] border-b border-[#1A1A1A] py-3 mb-4 font-mono font-bold text-[#F5F5F5] text-lg">
             {formatDayHeading(dayKey)}
           </h2>
           <div className="grid gap-3">

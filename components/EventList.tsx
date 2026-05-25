@@ -77,7 +77,7 @@ function EventListInner({ events }: EventListProps) {
 
   if (events.length === 0) {
     return (
-      <div className="text-center py-20 text-[#A3A3A3]">
+      <div className="text-center py-20 text-[#9B9B9B]">
         <p className="font-mono text-lg mb-2">No events loaded yet.</p>
         <p className="text-sm">Run the seed script or check your Supabase connection.</p>
       </div>
@@ -94,7 +94,7 @@ function EventListInner({ events }: EventListProps) {
               key={key}
               type="button"
               onClick={() => scrollToDay(key)}
-              className="text-left font-mono text-xs text-[#737373] hover:text-[#A3A3A3] transition-colors py-1 px-2 rounded hover:bg-[#111111]"
+              className="text-left font-mono text-xs text-[#9B9B9B] hover:text-[#9B9B9B] transition-colors py-1 px-2 rounded hover:bg-[#0B0B0B]"
             >
               {formatDayShort(key)}
               <span className="block text-[#333333] text-[10px]">
@@ -110,7 +110,7 @@ function EventListInner({ events }: EventListProps) {
         <div className="mb-4 flex items-center justify-between gap-3 flex-wrap">
           <FiltersTrigger activeCount={activeCount} onClick={() => setDrawerOpen(true)} />
           {filteredEvents.length !== events.length && (
-            <p className="font-mono text-xs text-[#A3A3A3]">
+            <p className="font-mono text-xs text-[#9B9B9B]">
               Showing {filteredEvents.length} of {events.length} events
             </p>
           )}
@@ -126,7 +126,7 @@ function EventListInner({ events }: EventListProps) {
         <Sheet open={drawerOpen} onOpenChange={setDrawerOpen}>
           <SheetContent side="right" className="w-[360px] sm:w-[420px] p-6 overflow-y-auto">
             <SheetHeader className="mb-6 p-0">
-              <SheetTitle className="font-mono text-base text-[#FAFAFA] text-left">
+              <SheetTitle className="font-mono text-base text-[#F5F5F5] text-left">
                 Filters
               </SheetTitle>
             </SheetHeader>
@@ -153,10 +153,10 @@ function EventListInner({ events }: EventListProps) {
                 key={key}
                 type="button"
                 onClick={() => scrollToDay(key)}
-                className="shrink-0 font-mono text-xs text-[#A3A3A3] bg-[#111111] border border-[#2A2A2A] px-3 py-1.5 rounded-full hover:border-[#FF6B35] hover:text-[#FF6B35] transition-colors whitespace-nowrap"
+                className="shrink-0 font-mono text-xs text-[#9B9B9B] bg-[#0B0B0B] border border-[#262626] px-3 py-1.5 rounded-full hover:border-[#FF5B25] hover:text-[#FF5B25] transition-colors whitespace-nowrap"
               >
                 {formatDayShort(key)}
-                <span className="ml-1 text-[#737373]">({grouped[key].length})</span>
+                <span className="ml-1 text-[#9B9B9B]">({grouped[key].length})</span>
               </button>
             ))}
           </div>
@@ -169,7 +169,7 @@ function EventListInner({ events }: EventListProps) {
 
         {/* Filter-aware empty state */}
         {filteredEvents.length === 0 && (query || activeCount > 0) && (
-          <div className="text-center py-16 text-[#A3A3A3]">
+          <div className="text-center py-16 text-[#9B9B9B]">
             {query ? (
               <p className="font-mono text-base mb-2">
                 No matches for &ldquo;{query}&rdquo;{activeCount > 0 ? ' under current filters' : ''}.
@@ -179,7 +179,7 @@ function EventListInner({ events }: EventListProps) {
             )}
             <p className="text-sm">
               Try {activeCount > 0 ? 'removing filters' : 'broader terms'}, or{' '}
-              <a href="/beyond" className="text-[#FF6B35] hover:underline">
+              <a href="/beyond" className="text-[#FF5B25] hover:underline">
                 browse other aggregators →
               </a>
             </p>
@@ -206,11 +206,11 @@ function EventListInner({ events }: EventListProps) {
               className="mb-12 scroll-mt-6"
             >
               {/* Day header */}
-              <div className="sticky top-0 z-10 bg-[#0A0A0A] border-b border-[#1A1A1A] py-3 mb-4 flex items-baseline justify-between">
-                <h2 className="font-mono font-bold text-[#FAFAFA] text-lg">
+              <div className="sticky top-0 z-10 bg-[#000000] border-b border-[#1A1A1A] py-3 mb-4 flex items-baseline justify-between">
+                <h2 className="font-mono font-bold text-[#F5F5F5] text-lg">
                   {formatDayHeading(dayKey)}
                 </h2>
-                <span className="text-[#737373] text-xs font-mono">
+                <span className="text-[#9B9B9B] text-xs font-mono">
                   {dayEvents.length} events
                 </span>
               </div>

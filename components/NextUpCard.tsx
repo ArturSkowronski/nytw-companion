@@ -40,26 +40,26 @@ export function NextUpCard({ event, now, geo }: NextUpCardProps) {
   }
 
   return (
-    <div className="bg-[#111111] border border-[#1A1A1A] rounded-md p-6 space-y-5">
+    <div className="bg-[#0B0B0B] border border-[#1A1A1A] rounded-md p-6 space-y-5">
       <div>
-        <p className="text-xs font-mono text-[#7A7A7A] uppercase tracking-widest mb-1">
+        <p className="text-xs font-mono text-[#9B9B9B] uppercase tracking-widest mb-1">
           Next up
         </p>
-        <p className="font-mono text-xl font-bold text-[#FAFAFA]">{event.title}</p>
-        <p className="text-sm text-[#A3A3A3] mt-1">
+        <p className="font-mono text-xl font-bold text-[#F5F5F5]">{event.title}</p>
+        <p className="text-sm text-[#9B9B9B] mt-1">
           {event.host} · {formatEventTime(event.starts_at, event.ends_at)}
         </p>
-        <p className="font-mono text-base text-[#FF6B35] mt-2">
+        <p className="font-mono text-base text-[#FF5B25] mt-2">
           {untilLabel(now, new Date(event.starts_at))}
         </p>
       </div>
 
       {event.address && (
-        <p className="text-sm text-[#A3A3A3]">📍 {event.address}</p>
+        <p className="text-sm text-[#9B9B9B]">📍 {event.address}</p>
       )}
 
       {km !== null && (
-        <p className="text-sm text-[#A3A3A3]">
+        <p className="text-sm text-[#9B9B9B]">
           ~{uberTimeMin(km)} min Uber · {walkingTimeMin(km)} min walk
         </p>
       )}
@@ -73,13 +73,13 @@ export function NextUpCard({ event, now, geo }: NextUpCardProps) {
           href={mapsHref(event)}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center rounded-md bg-[#FF6B35] hover:bg-[#e85a25] text-white font-mono text-sm px-4 py-2"
+          className="inline-flex items-center justify-center rounded-md bg-[#FF5B25] hover:bg-[#e85a25] text-white font-mono text-sm px-4 py-2"
         >
           Open in Maps →
         </a>
         <Button
           variant="outline"
-          className="border-[#333333] text-[#A3A3A3] hover:bg-[#1A1A1A] font-mono"
+          className="border-[#333333] text-[#9B9B9B] hover:bg-[#1A1A1A] font-mono"
           onClick={handleSkip}
         >
           Skip this event

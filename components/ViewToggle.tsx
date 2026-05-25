@@ -33,7 +33,7 @@ export function ViewToggle() {
 
   return (
     <div
-      className="inline-flex rounded-md border border-[#2A2A2A] bg-[#111111] p-0.5"
+      className="inline-flex rounded-md border border-[#262626] bg-[#0B0B0B] p-0.5"
       role="group"
       aria-label="View"
     >
@@ -44,8 +44,8 @@ export function ViewToggle() {
         className={
           `font-mono text-xs px-3 py-1.5 rounded transition-colors ` +
           (active === 'timeline'
-            ? 'bg-[#FF6B35] text-white'
-            : 'text-[#A3A3A3] hover:text-[#FAFAFA]')
+            ? 'bg-[#FF5B25] text-white'
+            : 'text-[#9B9B9B] hover:text-[#F5F5F5]')
         }
       >
         Timeline
@@ -57,8 +57,8 @@ export function ViewToggle() {
         className={
           `font-mono text-xs px-3 py-1.5 rounded transition-colors ` +
           (active === 'map'
-            ? 'bg-[#FF6B35] text-white'
-            : 'text-[#A3A3A3] hover:text-[#FAFAFA]')
+            ? 'bg-[#FF5B25] text-white'
+            : 'text-[#9B9B9B] hover:text-[#F5F5F5]')
         }
       >
         Map

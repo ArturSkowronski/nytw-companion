@@ -12,17 +12,17 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   return (
     <section className="space-y-2">
       <h2 className="font-mono text-xl font-bold">{title}</h2>
-      <p className="text-[#A3A3A3] text-base leading-relaxed">{children}</p>
+      <p className="text-[#9B9B9B] text-base leading-relaxed">{children}</p>
     </section>
   )
 }
 
 export default function TermsPage() {
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-[#FAFAFA]">
+    <main className="min-h-screen bg-[#000000] text-[#F5F5F5]">
       <section className="max-w-3xl mx-auto px-6 py-12 space-y-10">
         <h1 className="font-mono text-3xl md:text-4xl font-bold">Terms of use</h1>
-        <p className="text-[#A3A3A3] text-base leading-relaxed">
+        <p className="text-[#9B9B9B] text-base leading-relaxed">
           Short version: use at your own risk. We&apos;re not Tech Week.
         </p>
 
@@ -44,7 +44,7 @@ export default function TermsPage() {
 
         <Section title="Your conduct">
           Don&apos;t abuse the API endpoints. Rate limits apply. If you find a bug or content issue, see{' '}
-          <a href="/about" className="text-[#FF6B35] hover:underline">/about</a> for contact.
+          <a href="/about" className="text-[#FF5B25] hover:underline">/about</a> for contact.
         </Section>
 
         <Section title="Liability">

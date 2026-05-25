@@ -39,7 +39,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className="bg-[#0A0A0A] text-[#FAFAFA] font-sans antialiased min-h-screen"
+        className="bg-[#000000] text-[#F5F5F5] font-sans antialiased min-h-screen"
         suppressHydrationWarning
       >
         <SiteNav />
@@ -49,7 +49,7 @@ export default function RootLayout({
           theme="dark"
           toastOptions={{
             classNames: {
-              toast: 'bg-[#111111] border border-[#2A2A2A] text-[#FAFAFA] font-mono text-sm',
+              toast: 'bg-[#0B0B0B] border border-[#262626] text-[#F5F5F5] font-mono text-sm',
             },
           }}
         />

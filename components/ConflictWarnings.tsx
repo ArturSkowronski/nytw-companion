@@ -66,7 +66,7 @@ export function ConflictWarnings({ pairs, cardRefs, containerRef }: ConflictWarn
           aria-hidden="true"
         >
           <span
-            className="pointer-events-auto absolute -left-1 -translate-x-full top-1/2 -translate-y-1/2 text-[10px] text-red-400 bg-[#0A0A0A] font-mono whitespace-nowrap pr-2"
+            className="pointer-events-auto absolute -left-1 -translate-x-full top-1/2 -translate-y-1/2 text-[10px] text-red-400 bg-[#000000] font-mono whitespace-nowrap pr-2"
           >
             Conflict
           </span>

@@ -24,7 +24,7 @@ describe('DayChipNav', () => {
   it('marks the active day from ?day= URL param', () => {
     render(<DayChipNav eventsByDay={{}} />)
     const wed = screen.getByRole('button', { name: /Wed/ })
-    expect(wed.className).toMatch(/border-\[#FF6B35\]/)
+    expect(wed.className).toMatch(/border-\[#FF5B25\]/)
   })
 
   it('shows a 0-badge on chips with no events', () => {

@@ -17,7 +17,7 @@ const STATUS_LABEL: Record<PlanItem['status'], string> = {
 }
 
 const STATUS_TONE: Record<PlanItem['status'], string> = {
-  interested:   'bg-[#1A1A1A] text-[#A3A3A3] border-[#2A2A2A]',
+  interested:   'bg-[#1A1A1A] text-[#9B9B9B] border-[#262626]',
   rsvp_pending: 'bg-amber-500/10 text-amber-400 border-amber-500/30',
   confirmed:    'bg-emerald-500/10 text-emerald-400 border-emerald-500/30',
   waitlist:     'bg-amber-500/10 text-amber-400 border-amber-500/30',
@@ -37,7 +37,7 @@ export const MyPlanEventCard = forwardRef<HTMLDivElement, MyPlanEventCardProps>(
     return (
       <div
         ref={ref}
-        className="bg-[#111111] border border-[#1A1A1A] rounded-md p-5 space-y-3"
+        className="bg-[#0B0B0B] border border-[#1A1A1A] rounded-md p-5 space-y-3"
       >
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div className="min-w-0 flex-1">
@@ -51,13 +51,13 @@ export const MyPlanEventCard = forwardRef<HTMLDivElement, MyPlanEventCardProps>(
                 </Badge>
               )}
               {event.is_virtuslab_event && (
-                <Badge className="bg-[#FF6B35]/20 text-[#FF6B35] border-[#FF6B35]/30 text-[10px]">
+                <Badge className="bg-[#FF5B25]/[0.14] text-[#FF5B25] border-[#FF5B25]/30 text-[10px]">
                   Featured
                 </Badge>
               )}
             </div>
-            <p className="font-mono text-base font-bold text-[#FAFAFA]">{event.title}</p>
-            <p className="text-xs text-[#A3A3A3] mt-1">
+            <p className="font-mono text-base font-bold text-[#F5F5F5]">{event.title}</p>
+            <p className="text-xs text-[#9B9B9B] mt-1">
               {event.host} · {formatEventTime(event.starts_at, event.ends_at)}
               {event.neighborhood ? ` · ${event.neighborhood}` : ''}
             </p>
@@ -65,7 +65,7 @@ export const MyPlanEventCard = forwardRef<HTMLDivElement, MyPlanEventCardProps>(
           <button
             type="button"
             onClick={() => removeItem(event.id)}
-            className="text-[10px] text-[#737373] hover:text-red-400 font-mono"
+            className="text-[10px] text-[#9B9B9B] hover:text-red-400 font-mono"
           >
             Remove
           </button>
@@ -78,7 +78,7 @@ export const MyPlanEventCard = forwardRef<HTMLDivElement, MyPlanEventCardProps>(
             href={event.rsvp_url}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-md bg-[#FF6B35] hover:bg-[#e85a25] text-white font-mono text-sm px-4 py-2"
+            className="inline-flex items-center justify-center rounded-md bg-[#FF5B25] hover:bg-[#e85a25] text-white font-mono text-sm px-4 py-2"
           >
             Open RSVP →
           </a>

@@ -25,7 +25,7 @@ export function ConciergeForm({ existingCount, submitting, error, onSubmit }: Co
 
   return (
     <div className="space-y-4">
-      <p className="text-sm text-[#A3A3A3]">
+      <p className="text-sm text-[#9B9B9B]">
         {existingCount > 0
           ? `You have ${existingCount} events in your plan. AI will suggest more — it won't replace your plan.`
           : 'Tell us about yourself and AI will pick 5–8 events you\'d like.'}
@@ -36,19 +36,19 @@ export function ConciergeForm({ existingCount, submitting, error, onSubmit }: Co
         onChange={(e) => setText(e.target.value)}
         placeholder={PLACEHOLDER}
         rows={4}
-        className="bg-[#111111] border-[#1A1A1A] text-[#FAFAFA] font-mono text-sm"
+        className="bg-[#0B0B0B] border-[#1A1A1A] text-[#F5F5F5] font-mono text-sm"
       />
 
       <div className="flex items-center gap-3">
         <Button
           onClick={handleSubmit}
           disabled={isTooShort || submitting}
-          className="bg-[#FF6B35] hover:bg-[#e85a25] text-white font-mono"
+          className="bg-[#FF5B25] hover:bg-[#e85a25] text-white font-mono"
         >
           Get 5–8 suggestions →
         </Button>
         {submitting && (
-          <span className="text-xs font-mono text-[#7A7A7A]">
+          <span className="text-xs font-mono text-[#9B9B9B]">
             Claude is reading the catalog…
           </span>
         )}

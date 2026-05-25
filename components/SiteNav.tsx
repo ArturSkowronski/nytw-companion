@@ -23,7 +23,7 @@ function NavLink({ item, active }: { item: NavItem; active: boolean }) {
   if (!item.live) {
     return (
       <span
-        className="font-mono text-sm text-[#737373] cursor-not-allowed flex flex-col"
+        className="font-mono text-sm text-[#9B9B9B] cursor-not-allowed flex flex-col"
         aria-disabled="true"
       >
         {item.label}
@@ -34,7 +34,7 @@ function NavLink({ item, active }: { item: NavItem; active: boolean }) {
   return (
     <Link
       href={item.href}
-      className={`font-mono text-sm ${active ? 'text-[#FF6B35]' : 'text-[#A3A3A3] hover:text-[#FAFAFA]'}`}
+      className={`font-mono text-sm ${active ? 'text-[#FF5B25]' : 'text-[#9B9B9B] hover:text-[#F5F5F5]'}`}
     >
       {item.label}
     </Link>
@@ -51,9 +51,9 @@ export function SiteNav() {
   }
 
   return (
-    <div className="border-b border-[#1A1A1A] bg-[#0A0A0A]">
+    <div className="border-b border-[#1A1A1A] bg-[#000000]">
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
-        <Link href="/" className="font-mono font-bold text-[#FAFAFA] text-base">
+        <Link href="/" className="font-mono font-bold text-[#F5F5F5] text-base">
           NYTW Companion
         </Link>
 
@@ -71,7 +71,7 @@ export function SiteNav() {
               render={
                 <Button
                   variant="outline"
-                  className="border-[#333333] text-[#FAFAFA] font-mono"
+                  className="border-[#333333] text-[#F5F5F5] font-mono"
                   aria-label="Open menu"
                 >
                   ☰
@@ -80,10 +80,10 @@ export function SiteNav() {
             />
             <SheetContent
               side="right"
-              className="bg-[#0A0A0A] border-[#1A1A1A] text-[#FAFAFA] w-[280px] p-6"
+              className="bg-[#000000] border-[#1A1A1A] text-[#F5F5F5] w-[280px] p-6"
             >
               <SheetHeader className="mb-6 p-0">
-                <SheetTitle className="font-mono text-base text-[#FAFAFA] text-left">
+                <SheetTitle className="font-mono text-base text-[#F5F5F5] text-left">
                   Menu
                 </SheetTitle>
               </SheetHeader>

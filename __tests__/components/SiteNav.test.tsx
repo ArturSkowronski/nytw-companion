@@ -26,6 +26,6 @@ describe('SiteNav', () => {
     currentPath = '/events'
     render(<SiteNav />)
     const browse = screen.getByRole('link', { name: /^Browse/i })
-    expect(browse.className).toMatch(/text-\[#FF6B35\]/)
+    expect(browse.className).toMatch(/text-\[#FF5B25\]/)
   })
 })

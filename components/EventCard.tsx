@@ -57,7 +57,7 @@ export function EventCard({ event, onTagClick }: EventCardProps) {
     <>
       <div
         data-testid="event-card"
-        className="group relative rounded-lg border border-[#1A1A1A] bg-[#111111] p-4 hover:border-[#333333] transition-colors cursor-pointer"
+        className="group relative rounded-lg border border-[#1A1A1A] bg-[#0B0B0B] p-4 hover:border-[#333333] transition-colors cursor-pointer"
         onClick={() => setIsModalOpen(true)}
         onKeyDown={(e) => {
           if (e.key === ' ' || e.key === 'a') { e.preventDefault(); handleSave() }
@@ -75,45 +75,45 @@ export function EventCard({ event, onTagClick }: EventCardProps) {
             </Badge>
           )}
           {event.is_virtuslab_event && (
-            <Badge className="bg-[#FF6B35]/20 text-[#FF6B35] border-[#FF6B35]/30 text-xs">
+            <Badge className="bg-[#FF5B25]/[0.14] text-[#FF5B25] border-[#FF5B25]/30 text-xs">
               Featured
             </Badge>
           )}
           {event.is_invite_only && (
-            <Badge variant="outline" className="text-xs border-[#333333] text-[#A3A3A3]">
+            <Badge variant="outline" className="text-xs border-[#333333] text-[#9B9B9B]">
               Invite-only
             </Badge>
           )}
           {event.has_free_food && (
-            <Badge variant="outline" className="text-xs border-[#333333] text-[#A3A3A3]">
+            <Badge variant="outline" className="text-xs border-[#333333] text-[#9B9B9B]">
               Free food
             </Badge>
           )}
           {event.has_free_drinks && (
-            <Badge variant="outline" className="text-xs border-[#333333] text-[#A3A3A3]">
+            <Badge variant="outline" className="text-xs border-[#333333] text-[#9B9B9B]">
               Free drinks
             </Badge>
           )}
         </div>
 
         {/* Title */}
-        <h3 className="font-mono font-bold text-[#FAFAFA] text-base leading-tight mb-1">
+        <h3 className="font-mono font-bold text-[#F5F5F5] text-base leading-tight mb-1">
           {event.title}
         </h3>
 
         {/* Host */}
-        <p className="text-[#A3A3A3] text-sm mb-2 flex items-center gap-1.5">
-          <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#2A2A2A] text-[10px] font-mono font-bold text-[#FAFAFA] shrink-0">
+        <p className="text-[#9B9B9B] text-sm mb-2 flex items-center gap-1.5">
+          <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#262626] text-[10px] font-mono font-bold text-[#F5F5F5] shrink-0">
             {event.host.charAt(0).toUpperCase()}
           </span>
           {event.host}
         </p>
 
         {/* Time + neighborhood */}
-        <div className="flex items-center gap-2 mb-2 text-xs text-[#A3A3A3]">
+        <div className="flex items-center gap-2 mb-2 text-xs text-[#9B9B9B]">
           <span>{formatEventTime(event.starts_at, event.ends_at)}</span>
           <span>·</span>
-          <span className="bg-[#1A1A1A] text-[#A3A3A3] px-1.5 py-0.5 rounded text-[11px]">
+          <span className="bg-[#1A1A1A] text-[#9B9B9B] px-1.5 py-0.5 rounded text-[11px]">
             {event.neighborhood}
           </span>
           {event.format && (
@@ -125,7 +125,7 @@ export function EventCard({ event, onTagClick }: EventCardProps) {
         </div>
 
         {/* Description teaser */}
-        <p className="text-[#A3A3A3] text-sm line-clamp-1 mb-3">
+        <p className="text-[#9B9B9B] text-sm line-clamp-1 mb-3">
           {event.description}
         </p>
 
@@ -142,14 +142,14 @@ export function EventCard({ event, onTagClick }: EventCardProps) {
                   type="button"
                   onClick={() => onTagClick(tag)}
                   aria-label={`Filter by tag ${tag}`}
-                  className="text-[10px] text-[#7A7A7A] bg-[#1A1A1A] hover:bg-[#FF6B35]/20 hover:text-[#FF6B35] px-1.5 py-0.5 rounded font-mono transition-colors"
+                  className="text-[10px] text-[#9B9B9B] bg-[#1A1A1A] hover:bg-[#FF5B25]/[0.14] hover:text-[#FF5B25] px-1.5 py-0.5 rounded font-mono transition-colors"
                 >
                   {tag}
                 </button>
               ) : (
                 <span
                   key={tag}
-                  className="text-[10px] text-[#7A7A7A] bg-[#1A1A1A] px-1.5 py-0.5 rounded font-mono"
+                  className="text-[10px] text-[#9B9B9B] bg-[#1A1A1A] px-1.5 py-0.5 rounded font-mono"
                 >
                   {tag}
                 </span>
@@ -170,15 +170,15 @@ export function EventCard({ event, onTagClick }: EventCardProps) {
                 render={
                   <Button
                     size="sm"
-                    className="bg-[#1A1A1A] text-[#FAFAFA] border border-[#333333] hover:bg-[#2A2A2A] font-mono text-xs"
+                    className="bg-[#1A1A1A] text-[#F5F5F5] border border-[#333333] hover:bg-[#262626] font-mono text-xs"
                   >
                     In your plan ✓
                   </Button>
                 }
               />
-              <DropdownMenuContent className="bg-[#111111] border-[#333333]">
+              <DropdownMenuContent className="bg-[#0B0B0B] border-[#333333]">
                 <DropdownMenuItem
-                  className="text-[#FAFAFA] hover:bg-[#1A1A1A] cursor-pointer"
+                  className="text-[#F5F5F5] hover:bg-[#1A1A1A] cursor-pointer"
                   onClick={handleOpenRsvp}
                 >
                   Open RSVP →
@@ -195,7 +195,7 @@ export function EventCard({ event, onTagClick }: EventCardProps) {
             <>
               <Button
                 size="sm"
-                className="bg-[#FF6B35] hover:bg-[#e85a25] text-white font-mono text-xs"
+                className="bg-[#FF5B25] hover:bg-[#e85a25] text-white font-mono text-xs"
                 onClick={handleOpenRsvp}
               >
                 Open RSVP →
@@ -203,7 +203,7 @@ export function EventCard({ event, onTagClick }: EventCardProps) {
               <Button
                 size="sm"
                 variant="outline"
-                className="border-[#333333] text-[#A3A3A3] hover:bg-[#1A1A1A] font-mono text-xs"
+                className="border-[#333333] text-[#9B9B9B] hover:bg-[#1A1A1A] font-mono text-xs"
                 onClick={handleSave}
               >
                 Save

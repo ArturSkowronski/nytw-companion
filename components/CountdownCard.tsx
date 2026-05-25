@@ -29,29 +29,29 @@ export function CountdownCard({ now, events }: CountdownCardProps) {
     : events.filter((e) => e.is_editors_pick).slice(0, 3)
 
   return (
-    <div className="bg-[#111111] border border-[#1A1A1A] rounded-md p-6 space-y-5">
+    <div className="bg-[#0B0B0B] border border-[#1A1A1A] rounded-md p-6 space-y-5">
       <div>
-        <p className="text-xs font-mono text-[#7A7A7A] uppercase tracking-widest mb-1">
+        <p className="text-xs font-mono text-[#9B9B9B] uppercase tracking-widest mb-1">
           Pre-festival
         </p>
-        <p className="font-mono text-2xl font-bold text-[#FF6B35]">
+        <p className="font-mono text-2xl font-bold text-[#FF5B25]">
           {`Tech Week starts in ${days} days, ${hours}h ${mins}m`}
         </p>
-        <p className="text-sm text-[#A3A3A3] mt-1">Monday June 1, 2026 · New York City</p>
+        <p className="text-sm text-[#9B9B9B] mt-1">Monday June 1, 2026 · New York City</p>
       </div>
 
       <div>
-        <p className="text-xs font-mono text-[#A3A3A3] uppercase tracking-widest mb-3">
+        <p className="text-xs font-mono text-[#9B9B9B] uppercase tracking-widest mb-3">
           {showPlan ? 'From your plan · Day 1' : 'Editor’s Picks · Day 1 preview'}
         </p>
         {preview.length === 0 ? (
-          <p className="text-sm text-[#7A7A7A]">No events queued yet. Browse to start →</p>
+          <p className="text-sm text-[#9B9B9B]">No events queued yet. Browse to start →</p>
         ) : (
           <ul className="space-y-2">
             {preview.map((e) => (
               <li key={e.id} className="text-sm">
-                <p className="font-mono text-[#FAFAFA]">{e.title}</p>
-                <p className="text-xs text-[#7A7A7A]">
+                <p className="font-mono text-[#F5F5F5]">{e.title}</p>
+                <p className="text-xs text-[#9B9B9B]">
                   {e.host} · {formatEventTime(e.starts_at, e.ends_at)}
                   {e.neighborhood ? ` · ${e.neighborhood}` : ''}
                 </p>

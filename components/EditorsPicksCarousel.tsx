@@ -45,7 +45,7 @@ export function EditorsPicksCarousel({ picks }: EditorsPicksCarouselProps) {
 
   return (
     <div
-      className="relative bg-gradient-to-br from-amber-500/10 to-[#111111] border border-amber-500/20 rounded-lg p-5 mb-8"
+      className="relative bg-gradient-to-br from-amber-500/10 to-[#0B0B0B] border border-amber-500/20 rounded-lg p-5 mb-8"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -53,36 +53,36 @@ export function EditorsPicksCarousel({ picks }: EditorsPicksCarouselProps) {
         <h2 className="font-mono text-sm font-bold text-amber-400 uppercase tracking-wider">
           Editor&apos;s Picks
         </h2>
-        <span className="text-[#737373] text-xs font-mono">{current + 1}/{picks.length}</span>
+        <span className="text-[#9B9B9B] text-xs font-mono">{current + 1}/{picks.length}</span>
       </div>
 
       <div className="mb-3">
         {pick.is_virtuslab_event && (
-          <Badge className="bg-[#FF6B35]/20 text-[#FF6B35] border-[#FF6B35]/30 text-xs mb-2">
+          <Badge className="bg-[#FF5B25]/[0.14] text-[#FF5B25] border-[#FF5B25]/30 text-xs mb-2">
             Featured
           </Badge>
         )}
-        <h3 className="font-mono font-bold text-[#FAFAFA] text-lg leading-tight mb-1">
+        <h3 className="font-mono font-bold text-[#F5F5F5] text-lg leading-tight mb-1">
           {pick.title}
         </h3>
-        <p className="text-[#A3A3A3] text-sm mb-1">
+        <p className="text-[#9B9B9B] text-sm mb-1">
           {pick.host} · {formatEventTime(pick.starts_at, pick.ends_at)}
         </p>
         {pick.neighborhood && (
-          <p className="text-[#7A7A7A] text-xs mb-3">{pick.neighborhood}</p>
+          <p className="text-[#9B9B9B] text-xs mb-3">{pick.neighborhood}</p>
         )}
 
         {pick.editors_pick_blurb && (
           <div className="border-l-2 border-amber-500/40 pl-3 mb-4">
             <p className="text-xs text-amber-400 font-mono mb-1">Why we picked this</p>
-            <p className="text-[#A3A3A3] text-sm leading-relaxed">{pick.editors_pick_blurb}</p>
+            <p className="text-[#9B9B9B] text-sm leading-relaxed">{pick.editors_pick_blurb}</p>
           </div>
         )}
 
         <div className="flex gap-2">
           <Button
             size="sm"
-            className="bg-[#FF6B35] hover:bg-[#e85a25] text-white font-mono text-xs"
+            className="bg-[#FF5B25] hover:bg-[#e85a25] text-white font-mono text-xs"
             onClick={(e) => { e.stopPropagation(); window.open(pick.rsvp_url, '_blank', 'noopener,noreferrer'); handleAdd() }}
           >
             Open RSVP →
@@ -91,7 +91,7 @@ export function EditorsPicksCarousel({ picks }: EditorsPicksCarouselProps) {
             <Button
               size="sm"
               variant="outline"
-              className="border-[#333333] text-[#A3A3A3] hover:bg-[#1A1A1A] font-mono text-xs"
+              className="border-[#333333] text-[#9B9B9B] hover:bg-[#1A1A1A] font-mono text-xs"
               onClick={(e) => { e.stopPropagation(); handleAdd() }}
             >
               Add to plan
@@ -108,7 +108,7 @@ export function EditorsPicksCarousel({ picks }: EditorsPicksCarouselProps) {
         <div className="absolute top-4 right-4 flex gap-1">
           <button
             onClick={prev}
-            className="w-7 h-7 flex items-center justify-center rounded border border-[#2A2A2A] text-[#A3A3A3] hover:bg-[#1A1A1A] text-xs"
+            className="w-7 h-7 flex items-center justify-center rounded border border-[#262626] text-[#9B9B9B] hover:bg-[#1A1A1A] text-xs"
             aria-label="Previous pick"
             type="button"
           >
@@ -116,7 +116,7 @@ export function EditorsPicksCarousel({ picks }: EditorsPicksCarouselProps) {
           </button>
           <button
             onClick={next}
-            className="w-7 h-7 flex items-center justify-center rounded border border-[#2A2A2A] text-[#A3A3A3] hover:bg-[#1A1A1A] text-xs"
+            className="w-7 h-7 flex items-center justify-center rounded border border-[#262626] text-[#9B9B9B] hover:bg-[#1A1A1A] text-xs"
             aria-label="Next pick"
             type="button"
           >

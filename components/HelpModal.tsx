@@ -32,19 +32,19 @@ export function HelpModal() {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogContent className="bg-[#0A0A0A] border border-[#1A1A1A] text-[#FAFAFA] max-w-md p-6">
+      <DialogContent className="bg-[#000000] border border-[#1A1A1A] text-[#F5F5F5] max-w-md p-6">
         <DialogHeader>
-          <DialogTitle className="font-mono text-base text-[#FAFAFA] text-left">
+          <DialogTitle className="font-mono text-base text-[#F5F5F5] text-left">
             Keyboard shortcuts
           </DialogTitle>
         </DialogHeader>
         <ul className="mt-4 space-y-3">
           {SHORTCUTS.map((s) => (
             <li key={s.key} className="flex items-center justify-between gap-4 font-mono text-sm">
-              <kbd className="px-2 py-1 rounded border border-[#2A2A2A] bg-[#111111] text-[#FAFAFA] text-xs min-w-[36px] text-center">
+              <kbd className="px-2 py-1 rounded border border-[#262626] bg-[#0B0B0B] text-[#F5F5F5] text-xs min-w-[36px] text-center">
                 {s.key}
               </kbd>
-              <span className="text-[#A3A3A3]">{s.label}</span>
+              <span className="text-[#9B9B9B]">{s.label}</span>
             </li>
           ))}
         </ul>

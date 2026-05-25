@@ -58,9 +58,9 @@ export default async function EventsPage({ searchParams }: EventsPageProps) {
   const initialDay = resolveDay(dayParam)
 
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-[#FAFAFA]">
+    <main className="min-h-screen bg-[#000000] text-[#F5F5F5]">
       <div className="max-w-5xl mx-auto px-6 py-4 border-b border-[#1A1A1A] flex items-center justify-between gap-4 flex-wrap">
-        <p className="text-[#A3A3A3] text-xs font-mono">
+        <p className="text-[#9B9B9B] text-xs font-mono">
           {events.length} curated events · Tech Week NYC 2026 · June 1–7
         </p>
         <ViewToggle />

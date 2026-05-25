@@ -90,8 +90,8 @@ export function ConciergeClient({ events }: ConciergeClientProps) {
 
   if (!mounted) {
     return (
-      <div className="bg-[#111111] border border-[#1A1A1A] rounded-md p-6">
-        <p className="font-mono text-sm text-[#7A7A7A]">Loading…</p>
+      <div className="bg-[#0B0B0B] border border-[#1A1A1A] rounded-md p-6">
+        <p className="font-mono text-sm text-[#9B9B9B]">Loading…</p>
       </div>
     )
   }

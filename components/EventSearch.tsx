@@ -47,12 +47,12 @@ export function EventSearch({ onSearch }: EventSearchProps) {
         onChange={handleChange}
         onKeyDown={handleKeyDown}
         placeholder='Search events… (press "/" to focus)'
-        className="bg-[#111111] border-[#2A2A2A] text-[#FAFAFA] placeholder:text-[#737373] font-mono pr-16 focus-visible:ring-[#FF6B35]"
+        className="bg-[#0B0B0B] border-[#262626] text-[#F5F5F5] placeholder:text-[#9B9B9B] font-mono pr-16 focus-visible:ring-[#FF5B25]"
       />
       {query && (
         <button
           onClick={() => { setQuery(''); onSearch('') }}
-          className="absolute right-3 top-1/2 -translate-y-1/2 text-[#737373] hover:text-[#A3A3A3] text-xs font-mono"
+          className="absolute right-3 top-1/2 -translate-y-1/2 text-[#9B9B9B] hover:text-[#9B9B9B] text-xs font-mono"
         >
           ESC
         </button>

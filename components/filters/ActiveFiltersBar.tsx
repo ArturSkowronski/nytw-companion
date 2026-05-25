@@ -17,13 +17,13 @@ const TOGGLE_LABELS: Record<'editorsPicks' | 'freeFood' | 'hideInviteOnly', stri
 
 function Chip({ label, ariaLabel, onClear }: { label: string; ariaLabel: string; onClear: () => void }) {
   return (
-    <span className="inline-flex items-center gap-1.5 rounded-full border border-[#2A2A2A] bg-[#111111] px-2.5 py-1 font-mono text-[11px] text-[#A3A3A3]">
+    <span className="inline-flex items-center gap-1.5 rounded-full border border-[#262626] bg-[#0B0B0B] px-2.5 py-1 font-mono text-[11px] text-[#9B9B9B]">
       {label}
       <button
         type="button"
         onClick={onClear}
         aria-label={ariaLabel}
-        className="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full text-[#7A7A7A] hover:text-[#FAFAFA] hover:bg-[#2A2A2A]"
+        className="inline-flex items-center justify-center w-3.5 h-3.5 rounded-full text-[#9B9B9B] hover:text-[#F5F5F5] hover:bg-[#262626]"
       >
         ×
       </button>
@@ -74,7 +74,7 @@ export function ActiveFiltersBar({ filters, onToggleTag, onSetFilter, onReset }:
       <button
         type="button"
         onClick={onReset}
-        className="ml-1 font-mono text-[11px] text-[#FF6B35] hover:underline"
+        className="ml-1 font-mono text-[11px] text-[#FF5B25] hover:underline"
       >
         Clear all
       </button>

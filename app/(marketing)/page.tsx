@@ -17,17 +17,17 @@ export default function HomePage() {
   const picks = (seedEvents as Event[]).filter((e) => e.is_editors_pick)
 
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-[#FAFAFA]">
+    <main className="min-h-screen bg-[#000000] text-[#F5F5F5]">
       {/* Hero */}
       <section className="flex flex-col items-center justify-center min-h-[80vh] px-6 text-center gap-8 pt-10">
         <div className="space-y-4 max-w-2xl">
-          <p className="text-[#FF6B35] font-mono text-sm tracking-widest uppercase">
+          <p className="text-[#FF5B25] font-mono text-sm tracking-widest uppercase">
             Tech Week NYC · June 1–7, 2026
           </p>
           <h1 className="font-mono text-5xl md:text-7xl font-bold tracking-tight leading-none">
             NYTW Engineer&apos;s<br />Companion
           </h1>
-          <p className="text-[#A3A3A3] text-lg md:text-xl leading-relaxed">
+          <p className="text-[#9B9B9B] text-lg md:text-xl leading-relaxed">
             1,047 events. 168 hours. Plan the week you actually want.
           </p>
         </div>
@@ -35,21 +35,21 @@ export default function HomePage() {
         <div className="flex flex-col sm:flex-row gap-4">
           <Link
             href="/events"
-            className="px-8 py-4 bg-[#FF6B35] text-white font-mono font-bold text-lg rounded-md hover:bg-[#e85a25] transition-colors inline-flex items-center justify-center"
+            className="px-8 py-4 bg-[#FF5B25] text-white font-mono font-bold text-lg rounded-md hover:bg-[#e85a25] transition-colors inline-flex items-center justify-center"
           >
             Browse 87 events →
           </Link>
           <Link
             href="/plan"
-            className="px-8 py-4 border border-[#A3A3A3] text-[#FAFAFA] font-mono font-bold text-lg rounded-md hover:border-[#FAFAFA] hover:bg-[#111111] transition-colors inline-flex items-center justify-center"
+            className="px-8 py-4 border border-[#9B9B9B] text-[#F5F5F5] font-mono font-bold text-lg rounded-md hover:border-[#F5F5F5] hover:bg-[#0B0B0B] transition-colors inline-flex items-center justify-center"
           >
             Plan my week with AI →
           </Link>
         </div>
 
-        <p className="text-[#737373] text-sm font-mono">
+        <p className="text-[#9B9B9B] text-sm font-mono">
           or{' '}
-          <Link href="/beyond" className="hover:text-[#A3A3A3] underline underline-offset-4">
+          <Link href="/beyond" className="hover:text-[#9B9B9B] underline underline-offset-4">
             see /beyond if you want it all →
           </Link>
         </p>
@@ -64,9 +64,9 @@ export default function HomePage() {
             { n: '③', label: 'Sync to your calendar', body: 'Download .ics, drop it into Google Calendar / Outlook / Apple Calendar.' },
           ].map((step) => (
             <div key={step.n} className="space-y-2">
-              <p className="text-[#FF6B35] font-mono text-2xl">{step.n}</p>
-              <p className="font-mono font-bold text-[#FAFAFA] text-base">{step.label}</p>
-              <p className="text-[#A3A3A3] text-sm leading-relaxed">{step.body}</p>
+              <p className="text-[#FF5B25] font-mono text-2xl">{step.n}</p>
+              <p className="font-mono font-bold text-[#F5F5F5] text-base">{step.label}</p>
+              <p className="text-[#9B9B9B] text-sm leading-relaxed">{step.body}</p>
             </div>
           ))}
         </div>
@@ -85,18 +85,18 @@ export default function HomePage() {
       <section className="px-6 py-16 border-t border-[#1A1A1A]">
         <div className="max-w-3xl mx-auto space-y-5">
           <h2 className="font-mono text-2xl font-bold">Why we built this</h2>
-          <p className="text-[#A3A3A3] text-base leading-relaxed">
+          <p className="text-[#9B9B9B] text-base leading-relaxed">
             Tech Week NYC runs over a thousand events in a single week. No existing
             aggregator filters for engineers who actually ship code — they all surface
             the same founder dinners, networking mixers, and demo nights. We wanted
             something we&apos;d send to a colleague.
           </p>
-          <p className="text-[#A3A3A3] text-base leading-relaxed">
+          <p className="text-[#9B9B9B] text-base leading-relaxed">
             So this is one engineer&apos;s opinionated cut: 87 events across AI infra,
             devtools, platform engineering, security, and open source. Day-grouped,
             mapped, with honest blurbs on the Editor&apos;s Picks. Curation over filtering.
           </p>
-          <p className="text-[#7A7A7A] text-sm font-mono pt-2">
+          <p className="text-[#9B9B9B] text-sm font-mono pt-2">
             — Artur Skowroński, VirtusLab
           </p>
         </div>
@@ -106,17 +106,17 @@ export default function HomePage() {
       <section className="px-6 py-16 border-t border-[#1A1A1A]">
         <div className="max-w-3xl mx-auto space-y-4">
           <h2 className="font-mono text-2xl font-bold">What we don&apos;t do</h2>
-          <ul className="space-y-3 text-[#A3A3A3] text-base leading-relaxed">
+          <ul className="space-y-3 text-[#9B9B9B] text-base leading-relaxed">
             <li className="flex gap-3">
-              <span className="text-[#FF6B35] font-mono shrink-0">•</span>
+              <span className="text-[#FF5B25] font-mono shrink-0">•</span>
               <span>We don&apos;t RSVP for you. You click through to Luma/Partiful, then mark status here.</span>
             </li>
             <li className="flex gap-3">
-              <span className="text-[#FF6B35] font-mono shrink-0">•</span>
+              <span className="text-[#FF5B25] font-mono shrink-0">•</span>
               <span>We don&apos;t have every event — we have 87 we&apos;d recommend to an engineer friend.</span>
             </li>
             <li className="flex gap-3">
-              <span className="text-[#FF6B35] font-mono shrink-0">•</span>
+              <span className="text-[#FF5B25] font-mono shrink-0">•</span>
               <span>We don&apos;t track you. Plan stored in your browser. Email link only if you want recovery.</span>
             </li>
           </ul>

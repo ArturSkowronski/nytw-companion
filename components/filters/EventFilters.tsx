@@ -24,13 +24,13 @@ function ToggleRow({
 }) {
   return (
     <label htmlFor={id} className="flex items-center justify-between py-2 cursor-pointer">
-      <span className="font-mono text-sm text-[#FAFAFA]">{label}</span>
+      <span className="font-mono text-sm text-[#F5F5F5]">{label}</span>
       <input
         id={id}
         type="checkbox"
         checked={checked}
         onChange={(e) => onChange(e.target.checked)}
-        className="w-4 h-4 accent-[#FF6B35] cursor-pointer"
+        className="w-4 h-4 accent-[#FF5B25] cursor-pointer"
       />
     </label>
   )
@@ -46,7 +46,7 @@ export function EventFilters({
   return (
     <div className="flex flex-col gap-6">
       <section>
-        <h3 className="font-mono text-xs uppercase tracking-widest text-[#7A7A7A] mb-2">
+        <h3 className="font-mono text-xs uppercase tracking-widest text-[#9B9B9B] mb-2">
           Quick toggles
         </h3>
         <ToggleRow
@@ -70,7 +70,7 @@ export function EventFilters({
       </section>
 
       <section>
-        <h3 className="font-mono text-xs uppercase tracking-widest text-[#7A7A7A] mb-2">
+        <h3 className="font-mono text-xs uppercase tracking-widest text-[#9B9B9B] mb-2">
           Tags
         </h3>
         <TagFilterChips
@@ -83,7 +83,7 @@ export function EventFilters({
       <button
         type="button"
         onClick={onReset}
-        className="self-start font-mono text-xs text-[#A3A3A3] hover:text-[#FF6B35] underline underline-offset-4"
+        className="self-start font-mono text-xs text-[#9B9B9B] hover:text-[#FF5B25] underline underline-offset-4"
       >
         Reset all
       </button>

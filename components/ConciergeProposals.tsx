@@ -34,13 +34,13 @@ export function ConciergeProposals({
 
   if (renderable.length === 0) {
     return (
-      <div className="bg-[#111111] border border-[#1A1A1A] rounded-md p-6 text-center">
-        <p className="font-mono text-sm text-[#A3A3A3]">
+      <div className="bg-[#0B0B0B] border border-[#1A1A1A] rounded-md p-6 text-center">
+        <p className="font-mono text-sm text-[#9B9B9B]">
           No matches for that profile.
         </p>
-        <p className="text-xs text-[#7A7A7A] mt-1">
+        <p className="text-xs text-[#9B9B9B] mt-1">
           Try broader interests, or check{' '}
-          <a href="/beyond" className="text-[#FF6B35] hover:underline">
+          <a href="/beyond" className="text-[#FF5B25] hover:underline">
             other aggregators →
           </a>
         </p>
@@ -51,14 +51,14 @@ export function ConciergeProposals({
   return (
     <div className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="font-mono text-sm text-[#FAFAFA]">
+        <p className="font-mono text-sm text-[#F5F5F5]">
           {renderable.length} suggestion{renderable.length !== 1 ? 's' : ''} for you
         </p>
         {undecidedCount > 1 && (
           <Button
             onClick={onAddAll}
             variant="outline"
-            className="border-[#FF6B35]/40 text-[#FF6B35] hover:bg-[#FF6B35]/10 font-mono text-sm"
+            className="border-[#FF5B25]/40 text-[#FF5B25] hover:bg-[#FF5B25]/10 font-mono text-sm"
           >
             Add all {undecidedCount} →
           </Button>
@@ -66,7 +66,7 @@ export function ConciergeProposals({
       </div>
 
       {notes && (
-        <p className="text-xs italic text-[#A3A3A3] font-mono">{notes}</p>
+        <p className="text-xs italic text-[#9B9B9B] font-mono">{notes}</p>
       )}
 
       <div className="grid gap-3">

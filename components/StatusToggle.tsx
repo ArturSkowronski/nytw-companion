@@ -24,7 +24,7 @@ export function StatusToggle({ eventId }: StatusToggleProps) {
 
   return (
     <div
-      className="inline-flex flex-wrap gap-1 rounded-md border border-[#2A2A2A] bg-[#111111] p-1"
+      className="inline-flex flex-wrap gap-1 rounded-md border border-[#262626] bg-[#0B0B0B] p-1"
       role="group"
       aria-label="Update status"
     >
@@ -39,8 +39,8 @@ export function StatusToggle({ eventId }: StatusToggleProps) {
             className={
               `font-mono text-xs px-2.5 py-1.5 rounded transition-colors flex items-center gap-1.5 ` +
               (active
-                ? 'bg-[#FF6B35] text-white font-bold'
-                : 'text-[#A3A3A3] hover:text-[#FAFAFA] hover:bg-[#1A1A1A]')
+                ? 'bg-[#FF5B25] text-white font-bold'
+                : 'text-[#9B9B9B] hover:text-[#F5F5F5] hover:bg-[#1A1A1A]')
             }
           >
             <span aria-hidden="true">{icon}</span>

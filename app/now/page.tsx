@@ -34,9 +34,9 @@ export default async function NowPage() {
   const events = await fetchEvents()
 
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-[#FAFAFA]">
+    <main className="min-h-screen bg-[#000000] text-[#F5F5F5]">
       <div className="max-w-2xl mx-auto px-6 py-8">
-        <h1 className="font-mono text-lg font-bold text-[#FAFAFA] mb-6">/now</h1>
+        <h1 className="font-mono text-lg font-bold text-[#F5F5F5] mb-6">/now</h1>
         <NowClient events={events} />
       </div>
     </main>

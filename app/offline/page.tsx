@@ -16,11 +16,11 @@ const LINKS = [
 
 export default function OfflinePage() {
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-[#FAFAFA]">
+    <main className="min-h-screen bg-[#000000] text-[#F5F5F5]">
       <section className="max-w-2xl mx-auto px-6 py-16 space-y-8">
         <div className="space-y-3">
           <h1 className="font-mono text-3xl md:text-4xl font-bold">You&apos;re offline.</h1>
-          <p className="text-[#A3A3A3] text-base leading-relaxed">
+          <p className="text-[#9B9B9B] text-base leading-relaxed">
             We can&apos;t reach the network right now. The pages you&apos;ve already visited should still work.
           </p>
         </div>
@@ -30,16 +30,16 @@ export default function OfflinePage() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="block rounded-lg border border-[#1A1A1A] bg-[#111111] p-5 hover:border-[#FF6B35] transition-colors"
+                className="block rounded-lg border border-[#1A1A1A] bg-[#0B0B0B] p-5 hover:border-[#FF5B25] transition-colors"
               >
-                <p className="font-mono text-lg text-[#FAFAFA]">{link.label} →</p>
-                <p className="text-[#A3A3A3] text-sm mt-1">{link.hint}</p>
+                <p className="font-mono text-lg text-[#F5F5F5]">{link.label} →</p>
+                <p className="text-[#9B9B9B] text-sm mt-1">{link.hint}</p>
               </Link>
             </li>
           ))}
         </ul>
 
-        <p className="text-[#737373] text-sm font-mono">
+        <p className="text-[#9B9B9B] text-sm font-mono">
           When you&apos;re back online, everything reconnects automatically.
         </p>
       </section>

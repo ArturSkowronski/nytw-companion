@@ -26,25 +26,25 @@ export function EventMapPopup({ event, sameDayEvents, onOpenDetails }: EventMapP
     : []
 
   return (
-    <div className="bg-[#111111] border border-[#1A1A1A] rounded-md p-3 text-[#FAFAFA] font-sans max-w-[280px]">
+    <div className="bg-[#0B0B0B] border border-[#1A1A1A] rounded-md p-3 text-[#F5F5F5] font-sans max-w-[280px]">
       <p className="font-mono text-sm font-bold mb-1">{event.title}</p>
-      <p className="text-xs text-[#A3A3A3] mb-2">
+      <p className="text-xs text-[#9B9B9B] mb-2">
         {event.host} · {formatEventTime(event.starts_at, event.ends_at)}
       </p>
       {event.neighborhood && (
-        <p className="text-xs text-[#7A7A7A] mb-3">📍 {event.neighborhood}</p>
+        <p className="text-xs text-[#9B9B9B] mb-3">📍 {event.neighborhood}</p>
       )}
       <button
         type="button"
         onClick={() => onOpenDetails(event.id)}
-        className="font-mono text-xs text-[#FF6B35] hover:underline"
+        className="font-mono text-xs text-[#FF5B25] hover:underline"
       >
         Open details →
       </button>
 
       {nearest.length > 0 && (
         <div className="mt-3 pt-3 border-t border-[#1A1A1A]">
-          <p className="text-[10px] text-[#737373] uppercase tracking-widest mb-1.5">
+          <p className="text-[10px] text-[#9B9B9B] uppercase tracking-widest mb-1.5">
             5 nearest same day
           </p>
           <ul className="space-y-1">
@@ -53,10 +53,10 @@ export function EventMapPopup({ event, sameDayEvents, onOpenDetails }: EventMapP
                 <button
                   type="button"
                   onClick={() => onOpenDetails(e.id)}
-                  className="text-left text-[#A3A3A3] hover:text-[#FAFAFA]"
+                  className="text-left text-[#9B9B9B] hover:text-[#F5F5F5]"
                 >
                   {e.title}{' '}
-                  <span className="text-[#737373]">
+                  <span className="text-[#9B9B9B]">
                     · {walkingTimeMin(km)} min walk
                   </span>
                 </button>

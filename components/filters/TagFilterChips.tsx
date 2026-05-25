@@ -17,7 +17,7 @@ export function TagFilterChips({ tags, selected, onToggle }: TagFilterChipsProps
 
   if (tags.length === 0) {
     return (
-      <p className="font-mono text-xs text-[#737373]">No tags available in current data</p>
+      <p className="font-mono text-xs text-[#9B9B9B]">No tags available in current data</p>
     )
   }
 
@@ -35,12 +35,12 @@ export function TagFilterChips({ tags, selected, onToggle }: TagFilterChipsProps
             className={
               `font-mono text-[11px] px-2 py-1 rounded border transition-colors ` +
               (isSelected
-                ? 'bg-[#FF6B35] text-white border-[#FF6B35]'
-                : 'bg-[#111111] text-[#A3A3A3] border-[#2A2A2A] hover:border-[#FF6B35] hover:text-[#FAFAFA]')
+                ? 'bg-[#FF5B25] text-white border-[#FF5B25]'
+                : 'bg-[#0B0B0B] text-[#9B9B9B] border-[#262626] hover:border-[#FF5B25] hover:text-[#F5F5F5]')
             }
           >
             <span className="truncate inline-block max-w-[160px] align-bottom">{tag}</span>
-            <span className="ml-1 text-[#737373]">{count}</span>
+            <span className="ml-1 text-[#9B9B9B]">{count}</span>
           </button>
         )
       })}
@@ -48,7 +48,7 @@ export function TagFilterChips({ tags, selected, onToggle }: TagFilterChipsProps
         <button
           type="button"
           onClick={() => setShowAll(true)}
-          className="font-mono text-[11px] px-2 py-1 text-[#FF6B35] hover:underline"
+          className="font-mono text-[11px] px-2 py-1 text-[#FF5B25] hover:underline"
         >
           Show all (+{hiddenCount})
         </button>

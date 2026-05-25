@@ -44,7 +44,7 @@ export function IcalDownloadButton({ items, events }: IcalDownloadButtonProps) {
   return (
     <Button
       onClick={handleDownload}
-      className="bg-[#FF6B35] hover:bg-[#e85a25] text-white font-mono"
+      className="bg-[#FF5B25] hover:bg-[#e85a25] text-white font-mono"
     >
       Download .ics ({exportableCount})
     </Button>

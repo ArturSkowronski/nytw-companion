@@ -19,7 +19,7 @@ const FORMAT_COLORS: Record<string, string> = {
   hackathon: '#a855f7',
   workshop:  '#14b8a6',
 }
-const DEFAULT_COLOR = '#A3A3A3'
+const DEFAULT_COLOR = '#9B9B9B'
 
 interface EventMapProps {
   events: Event[]
@@ -151,7 +151,7 @@ export function EventMap({ events, initialDay }: EventMapProps) {
           paint: {
             'circle-radius': ['case', ['==', ['get', 'isVirtuslab'], true], 10, 6],
             'circle-color': ['get', 'color'],
-            'circle-stroke-color': '#0A0A0A',
+            'circle-stroke-color': '#000000',
             'circle-stroke-width': 2,
           },
         })
@@ -162,8 +162,8 @@ export function EventMap({ events, initialDay }: EventMapProps) {
           filter: ['has', 'point_count'],
           paint: {
             'circle-radius': 14,
-            'circle-color': '#FF6B35',
-            'circle-stroke-color': '#0A0A0A',
+            'circle-color': '#FF5B25',
+            'circle-stroke-color': '#000000',
             'circle-stroke-width': 2,
           },
         })
@@ -232,12 +232,12 @@ export function EventMap({ events, initialDay }: EventMapProps) {
     <div className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-4">
         <DayChipNav eventsByDay={eventsByDayCounts} />
-        <label className="flex items-center gap-2 text-xs font-mono text-[#A3A3A3]">
+        <label className="flex items-center gap-2 text-xs font-mono text-[#9B9B9B]">
           <input
             type="checkbox"
             checked={showOnlyMyPlan}
             onChange={(e) => setShowOnlyMyPlan(e.target.checked)}
-            className="accent-[#FF6B35]"
+            className="accent-[#FF5B25]"
           />
           Show only My Plan
         </label>
@@ -247,13 +247,13 @@ export function EventMap({ events, initialDay }: EventMapProps) {
         <div ref={containerRef} className="w-full h-full" />
         {visibleEvents.length === 0 && (
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="bg-[#111111]/95 border border-[#1A1A1A] rounded-md px-4 py-3 text-center pointer-events-auto">
-              <p className="font-mono text-sm text-[#A3A3A3]">
+            <div className="bg-[#0B0B0B]/95 border border-[#1A1A1A] rounded-md px-4 py-3 text-center pointer-events-auto">
+              <p className="font-mono text-sm text-[#9B9B9B]">
                 {showOnlyMyPlan
                   ? 'No plan events on this day.'
                   : 'No events on this day.'}
               </p>
-              <p className="text-xs text-[#7A7A7A] mt-1">Try another day →</p>
+              <p className="text-xs text-[#9B9B9B] mt-1">Try another day →</p>
             </div>
           </div>
         )}

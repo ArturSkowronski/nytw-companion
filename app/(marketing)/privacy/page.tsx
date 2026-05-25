@@ -12,17 +12,17 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   return (
     <section className="space-y-2">
       <h2 className="font-mono text-xl font-bold">{title}</h2>
-      <p className="text-[#A3A3A3] text-base leading-relaxed">{children}</p>
+      <p className="text-[#9B9B9B] text-base leading-relaxed">{children}</p>
     </section>
   )
 }
 
 export default function PrivacyPage() {
   return (
-    <main className="min-h-screen bg-[#0A0A0A] text-[#FAFAFA]">
+    <main className="min-h-screen bg-[#000000] text-[#F5F5F5]">
       <section className="max-w-3xl mx-auto px-6 py-12 space-y-10">
         <h1 className="font-mono text-3xl md:text-4xl font-bold">Privacy</h1>
-        <p className="text-[#A3A3A3] text-base leading-relaxed">
+        <p className="text-[#9B9B9B] text-base leading-relaxed">
           NYTW Companion is built to be unintrusive. Here&apos;s exactly what happens with your data.
         </p>
 
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
 
         <Section title="AI Concierge">
           When you submit a profile to <code>/plan</code>, the text is sent to Anthropic&apos;s API to generate proposals. We don&apos;t store the text on our servers; we don&apos;t log it. Anthropic&apos;s terms apply to their handling — see their{' '}
-          <a href="https://www.anthropic.com/legal" target="_blank" rel="noopener noreferrer" className="text-[#FF6B35] hover:underline">
+          <a href="https://www.anthropic.com/legal" target="_blank" rel="noopener noreferrer" className="text-[#FF5B25] hover:underline">
             legal page
           </a>
           . Without an Anthropic API key configured the app serves deterministic mock proposals; nothing leaves your browser.
@@ -44,7 +44,7 @@ export default function PrivacyPage() {
 
         <Section title="Map tiles">
           When the map view is open, your browser fetches tiles from Mapbox. Mapbox sees the URL and your IP. See their{' '}
-          <a href="https://www.mapbox.com/legal" target="_blank" rel="noopener noreferrer" className="text-[#FF6B35] hover:underline">
+          <a href="https://www.mapbox.com/legal" target="_blank" rel="noopener noreferrer" className="text-[#FF5B25] hover:underline">
             legal page
           </a>
           .
