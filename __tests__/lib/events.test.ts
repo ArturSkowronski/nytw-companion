@@ -1,6 +1,6 @@
 // __tests__/lib/events.test.ts
 import { describe, it, expect } from 'vitest'
-import { groupEventsByDay, getTimePeriod, formatEventTime } from '../../lib/events'
+import { groupEventsByDay, getTimePeriod, formatEventTime, formatStartTime, formatEndTime } from '../../lib/events'
 import type { Event } from '../../lib/types'
 
 function makeEvent(overrides: Partial<Event> & { starts_at: string; ends_at: string }): Event {
@@ -84,5 +84,17 @@ describe('formatEventTime', () => {
     // 2026-06-03T22:00:00Z = 6:00 PM EDT, 2026-06-04T01:00:00Z = 9:00 PM EDT
     const result = formatEventTime('2026-06-03T22:00:00Z', '2026-06-04T01:00:00Z')
     expect(result).toBe('Wed 6:00 PM – 9:00 PM')
+  })
+})
+
+describe('formatStartTime / formatEndTime', () => {
+  it('formatStartTime returns NYC time in h:mm aa format', () => {
+    // 2026-06-03T22:00:00Z = 6:00 PM EDT (NYC June = UTC-4)
+    expect(formatStartTime('2026-06-03T22:00:00Z')).toMatch(/6:00\s*PM/i)
+  })
+
+  it('formatEndTime returns NYC time in h:mm aa format', () => {
+    // 2026-06-04T01:00:00Z = 9:00 PM EDT
+    expect(formatEndTime('2026-06-04T01:00:00Z')).toMatch(/9:00\s*PM/i)
   })
 })

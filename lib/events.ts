@@ -36,6 +36,16 @@ export function formatEventTime(starts_at: string, ends_at: string): string {
   return `${dayAbbr} ${startTime} – ${endTime}`
 }
 
+export function formatStartTime(iso: string): string {
+  const d = toZonedTime(new Date(iso), NYC_TZ)
+  return formatTz(d, 'h:mm aa', { timeZone: NYC_TZ })
+}
+
+export function formatEndTime(iso: string): string {
+  const d = toZonedTime(new Date(iso), NYC_TZ)
+  return formatTz(d, 'h:mm aa', { timeZone: NYC_TZ })
+}
+
 export function formatDayHeading(dateKey: string): string {
   // dateKey = 'YYYY-MM-DD' in NYC
   const [year, month, day] = dateKey.split('-').map(Number)
