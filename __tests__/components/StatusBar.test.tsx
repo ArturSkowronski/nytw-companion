@@ -12,7 +12,7 @@ afterEach(() => {
 describe('StatusBar', () => {
   it('renders the festival-mode label during the festival', async () => {
     vi.doMock('@/lib/time', () => ({
-      festivalMode: () => 'during',
+      festivalMode: () => 'in',
       nowInNYC: () => new Date('2026-06-03T16:00:00-04:00'),
     }))
     const { StatusBar } = await import('../../components/StatusBar')
@@ -46,7 +46,7 @@ describe('StatusBar', () => {
 
   it('renders a NYC time string', async () => {
     vi.doMock('@/lib/time', () => ({
-      festivalMode: () => 'during',
+      festivalMode: () => 'in',
       nowInNYC: () => new Date('2026-06-03T16:00:00-04:00'),
     }))
     const { StatusBar } = await import('../../components/StatusBar')

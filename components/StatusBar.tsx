@@ -34,7 +34,7 @@ export function StatusBar() {
 
   const mode = festivalMode(now)
   let modeLabel: string
-  if (mode === 'during') modeLabel = 'Live · Tech Week'
+  if (mode === 'in') modeLabel = 'Live · Tech Week'
   else if (mode === 'pre') modeLabel = `T-${daysUntil(now)}d`
   else modeLabel = 'Past'
 
