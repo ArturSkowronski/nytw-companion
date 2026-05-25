@@ -49,3 +49,8 @@ public/sw.js
 public/sw.js.map
 public/swe-worker-*.js
 public/workbox-*.js
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
