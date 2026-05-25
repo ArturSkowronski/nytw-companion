@@ -56,6 +56,7 @@ export function EventCard({ event, onTagClick }: EventCardProps) {
   return (
     <>
       <div
+        data-testid="event-card"
         className="group relative rounded-lg border border-[#1A1A1A] bg-[#111111] p-4 hover:border-[#333333] transition-colors cursor-pointer"
         onClick={() => setIsModalOpen(true)}
         onKeyDown={(e) => {
