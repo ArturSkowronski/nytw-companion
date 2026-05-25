@@ -13,12 +13,11 @@ afterEach(() => {
 })
 
 describe('selectSeed', () => {
-  it('returns the curated base seed when env var is unset', async () => {
+  it('returns the base seed when env var is unset', async () => {
     const { selectSeed } = await import('../../lib/seed-source')
     const events = selectSeed()
-    // Actual seed-events.json count (30 curated events as of current data)
-    expect(events.length).toBeGreaterThan(0)
-    expect(events.length).toBeLessThan(250)
+    // seed-events.json now holds the full raw tech-week.com scrape (~1.4k events)
+    expect(events.length).toBeGreaterThan(500)
   })
 
   it('returns the load fixture when NEXT_PUBLIC_USE_LOAD_FIXTURE === "1"', async () => {
@@ -28,12 +27,11 @@ describe('selectSeed', () => {
     expect(events.length).toBe(250)
   })
 
-  it('returns the curated base seed when env var is anything other than "1"', async () => {
+  it('returns the base seed when env var is anything other than "1"', async () => {
     process.env.NEXT_PUBLIC_USE_LOAD_FIXTURE = '0'
     const { selectSeed } = await import('../../lib/seed-source')
     const events = selectSeed()
     // Should return base seed (not load fixture)
-    expect(events.length).toBeLessThan(250)
     expect(events[0]?.id).not.toMatch(/^load-/)
   })
 })

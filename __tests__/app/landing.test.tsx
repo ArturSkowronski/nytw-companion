@@ -31,11 +31,8 @@ describe('Landing page', () => {
     expect(screen.getByText(/Sync to your calendar/i)).toBeInTheDocument()
   })
 
-  it("renders Editor's Picks carousel with the VirtusLab disclosure blurb", () => {
-    render(<HomePage />)
-    // Stable substring of the seed VL pick blurb
-    expect(screen.getByText(/disclosure: virtuslab/i)).toBeInTheDocument()
-  })
+  // VirtusLab editor-pick disclosure test removed — raw tech-week.com scrape
+  // has no curated picks yet. Re-add once Artur designates Editor's Picks.
 
   it('renders "Why we built this" section with author signature', () => {
     render(<HomePage />)
