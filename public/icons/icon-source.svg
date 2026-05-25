@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background: rounded square in brand black -->
+  <rect width="512" height="512" rx="96" fill="#0A0A0A"/>
+  <!-- Brand glyph: orange ≡ centered, large -->
+  <text x="256" y="232" text-anchor="middle"
+        font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+        font-size="200" font-weight="800" fill="#FF6B35">≡</text>
+  <!-- Wordmark below -->
+  <text x="256" y="380" text-anchor="middle"
+        font-family="ui-monospace, SFMono-Regular, Menlo, monospace"
+        font-size="84" font-weight="800" fill="#FAFAFA">NYTW</text>
+</svg>
