@@ -47,9 +47,14 @@ jobs:
           retention-days: 7
 
   lighthouse:
-    name: Lighthouse audit
+    name: Lighthouse audit (informational)
     runs-on: ubuntu-latest
     needs: e2e
+    # Informational only: local/CI Lighthouse runs against `npm run start` have
+    # environment noise (no real fonts, no edge optimizations, N/A audits scored
+    # as NaN). Real gating happens against the deployed production URL — see
+    # docs/superpowers/launch/pre-launch-checklist.md item 10.
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
