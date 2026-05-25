@@ -4,6 +4,7 @@ import { createClient } from '@/lib/supabase/server'
 import { EventList } from '@/components/EventList'
 import { ViewToggle } from '@/components/ViewToggle'
 import { EventsMapClient } from '@/components/EventsMapClient'
+import { EventsJsonLd } from '@/components/EventsJsonLd'
 import type { Event } from '@/lib/types'
 import type { DayKey } from '@/lib/time'
 import { dayKeyForDate, festivalMode, nowInNYC } from '@/lib/time'
@@ -11,7 +12,7 @@ import { selectSeed } from '@/lib/seed-source'
 
 export const metadata: Metadata = {
   title: "Browse Events — NYTW Engineer's Companion",
-  description: 'LLM-curated engineering events for Tech Week NYC 2026. Day-grouped timeline with instant search — also browsable by AI agents via MCP.',
+  description: 'Curated engineering events for Tech Week NYC 2026. Day-grouped timeline with instant search — also browsable by AI agents via MCP.',
   alternates: { canonical: '/events' },
 }
 
@@ -59,6 +60,7 @@ export default async function EventsPage({ searchParams }: EventsPageProps) {
 
   return (
     <main className="min-h-screen bg-[#000000] text-[#F5F5F5]">
+      <EventsJsonLd events={events} />
       <div className="max-w-5xl mx-auto px-6 py-4 border-b border-[#1A1A1A] flex items-center justify-between gap-4 flex-wrap">
         <p className="text-[#9B9B9B] text-xs font-mono">
           {events.length} curated events · Tech Week NYC 2026 · June 1–7

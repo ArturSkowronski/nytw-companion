@@ -13,7 +13,7 @@ import { fileURLToPath } from 'node:url'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.resolve(__dirname, '..')
-const SRC = path.join(ROOT, 'data/seed-events.json')
+const SRC = path.join(ROOT, process.env.SEED_FILE || 'data/seed-events.json')
 const CACHE = path.join(ROOT, 'data/scrape/enrichments.json')
 
 const CONCURRENCY = 20

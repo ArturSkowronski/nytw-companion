@@ -12,11 +12,15 @@
 import { createMcpHandler } from 'mcp-handler'
 import { z } from 'zod'
 import { toZonedTime, format as formatTz } from 'date-fns-tz'
-import seedEvents from '@/data/seed-events.json' with { type: 'json' }
+// IMPORTANT: MCP exposes the FULL 1,390-event catalogue (data/all-events.json),
+// not the human-curated 379-event subset (data/seed-events.json). The web UI
+// curates aggressively for human attention; agents should get the raw signal
+// and filter themselves.
+import allEvents from '@/data/all-events.json' with { type: 'json' }
 import type { Event } from '@/lib/types'
 
 const NYC_TZ = 'America/New_York'
-const EVENTS = seedEvents as Event[]
+const EVENTS = allEvents as Event[]
 
 // ----- helpers -----
 function eventToMd(e: Event): string {
@@ -233,7 +237,7 @@ const handler = createMcpHandler(
               text: JSON.stringify(
                 {
                   total_events: EVENTS.length,
-                  source: 'tech-week.com, partiful.com — curated with Claude Sonnet 4.5 in two filter passes',
+                  source: 'tech-week.com (scrape) enriched with partiful.com descriptions — the full Tech Week NYC 2026 catalogue; filter on your own',
                   by_day: sortMap(byDay),
                   by_tag: sortMap(byTag),
                   by_format: sortMap(byFormat),

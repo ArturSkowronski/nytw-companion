@@ -10,7 +10,7 @@ const TOTAL_EVENTS = (seedEvents as Event[]).length
 
 export const metadata: Metadata = {
   title: "NYTW Engineer's Companion — Tech Week NYC 2026",
-  description: `${TOTAL_EVENTS} LLM-curated engineering events for Tech Week NYC 2026. Built for humans and AI agents — browse in the app, or connect via MCP.`,
+  description: `Curated engineering events for Tech Week NYC 2026. Built for humans and AI agents — browse in the app, or connect via MCP.`,
 }
 
 export const revalidate = 3600
@@ -68,7 +68,7 @@ export default function HomePage() {
       <section className="px-6 py-16 border-t border-[#1A1A1A]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { n: '①', label: 'Browse or AI-plan', body: `${TOTAL_EVENTS} LLM-curated events, day-grouped, or describe yourself and let the AI propose a week.` },
+            { n: '①', label: 'Browse or AI-plan', body: `Curated events, day-grouped, or describe yourself and let the AI propose a week.` },
             { n: '②', label: 'Add to My Plan', body: 'One-click add. Status tracking, conflict warnings, all stored in your browser.' },
             { n: '③', label: 'Sync to your calendar', body: 'Download .ics, drop it into Google Calendar / Outlook / Apple Calendar.' },
           ].map((step) => (
