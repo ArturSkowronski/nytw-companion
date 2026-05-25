@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Beyond — NYTW Engineer's Companion",
   description:
     'Honest list of other Tech Week NYC aggregators — Yorkseed, GarysGuide, Vibecal, Carly AI, and more. We cover the engineering layer; these cover the rest.',
+  alternates: { canonical: '/beyond' },
 }
 
 export default function BeyondPage() {

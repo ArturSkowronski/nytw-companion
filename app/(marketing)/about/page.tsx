@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "About — NYTW Engineer's Companion",
   description:
     'Why we built NYTW Companion, how we curate the 87 events, and who is behind the project.',
+  alternates: { canonical: '/about' },
 }
 
 export default function AboutPage() {
