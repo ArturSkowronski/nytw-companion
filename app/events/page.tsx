@@ -7,7 +7,7 @@ import { EventsMapClient } from '@/components/EventsMapClient'
 import type { Event } from '@/lib/types'
 import type { DayKey } from '@/lib/time'
 import { dayKeyForDate, festivalMode, nowInNYC } from '@/lib/time'
-import seedEvents from '@/data/seed-events.json' with { type: 'json' }
+import { selectSeed } from '@/lib/seed-source'
 
 export const metadata: Metadata = {
   title: "Browse Events — NYTW Engineer's Companion",
@@ -23,7 +23,7 @@ async function fetchEvents(): Promise<Event[]> {
   // Dev fallback: when Supabase env is unset, load from local seed JSON
   // so the UI is demo-able without a real database.
   if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
-    return seedEvents as Event[]
+    return selectSeed()
   }
   try {
     const supabase = await createClient()

@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { createClient } from '@/lib/supabase/server'
 import { ConciergeClient } from '@/components/ConciergeClient'
 import type { Event } from '@/lib/types'
-import seedEvents from '@/data/seed-events.json' with { type: 'json' }
+import { selectSeed } from '@/lib/seed-source'
 
 export const metadata: Metadata = {
   title: "Plan with AI — NYTW Engineer's Companion",
@@ -15,7 +15,7 @@ export const revalidate = 3600
 
 async function fetchEvents(): Promise<Event[]> {
   if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
-    return seedEvents as Event[]
+    return selectSeed()
   }
   try {
     const supabase = await createClient()

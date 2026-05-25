@@ -5,7 +5,7 @@ import { MyPlanClient } from '@/components/MyPlanClient'
 import type { Event } from '@/lib/types'
 import type { DayKey } from '@/lib/time'
 import { dayKeyForDate, festivalMode, nowInNYC } from '@/lib/time'
-import seedEvents from '@/data/seed-events.json' with { type: 'json' }
+import { selectSeed } from '@/lib/seed-source'
 
 export const metadata: Metadata = {
   title: "My Plan — NYTW Engineer's Companion",
@@ -19,7 +19,7 @@ const DAY_KEYS: DayKey[] = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
 
 async function fetchEvents(): Promise<Event[]> {
   if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
-    return seedEvents as Event[]
+    return selectSeed()
   }
   try {
     const supabase = await createClient()
