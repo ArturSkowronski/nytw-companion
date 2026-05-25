@@ -11,7 +11,7 @@ import { selectSeed } from '@/lib/seed-source'
 
 export const metadata: Metadata = {
   title: "Browse Events — NYTW Engineer's Companion",
-  description: '87 hand-curated engineering events for Tech Week NYC 2026. Day-grouped timeline with instant search.',
+  description: 'LLM-curated engineering events for Tech Week NYC 2026. Day-grouped timeline with instant search — also browsable by AI agents via MCP.',
   alternates: { canonical: '/events' },
 }
 

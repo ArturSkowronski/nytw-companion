@@ -7,7 +7,7 @@ describe('/beyond', () => {
   it('renders the page header and lede', () => {
     render(<BeyondPage />)
     expect(screen.getByRole('heading', { level: 1, name: /other places/i })).toBeInTheDocument()
-    expect(screen.getByText(/we curate 87 engineering-relevant events/i)).toBeInTheDocument()
+    expect(screen.getByText(/we llm-curate engineering-relevant events/i)).toBeInTheDocument()
   })
 
   it('renders every source name from external-sources.json', () => {

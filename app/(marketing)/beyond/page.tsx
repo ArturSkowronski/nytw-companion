@@ -18,8 +18,8 @@ export default function BeyondPage() {
           Other places to find Tech Week NYC events
         </h1>
         <p className="text-[#9B9B9B] text-base md:text-lg leading-relaxed max-w-3xl">
-          We curate 87 engineering-relevant events from 1,000+. We skip a lot.
-          Here&apos;s where to find the rest.
+          We LLM-curate engineering-relevant events from 1,390 scraped. We skip
+          most of them. Here&apos;s where to find the rest.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">

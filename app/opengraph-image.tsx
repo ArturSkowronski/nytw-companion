@@ -1,9 +1,12 @@
 import { ImageResponse } from 'next/og'
+import seedEvents from '@/data/seed-events.json' with { type: 'json' }
+
+const TOTAL_EVENTS = (seedEvents as unknown as unknown[]).length
 
 // Note: runtime='edge' caused 1.06 MB function (over Vercel Hobby's 1 MB limit).
 // Default Node.js runtime has a much higher limit and OG images are cached by
 // social platforms anyway, so cold-start difference is irrelevant.
-export const alt = "NYTW Engineer's Companion — 87 engineering-relevant events for Tech Week NYC 2026"
+export const alt = `NYTW Engineer's Companion — ${TOTAL_EVENTS} LLM-curated engineering events for Tech Week NYC 2026, browsable by humans and AI agents via MCP`
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
@@ -41,8 +44,8 @@ export default async function Image() {
             <span>Companion</span>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', color: '#9B9B9B', fontSize: 36, lineHeight: 1.2 }}>
-            <span>87 engineering-relevant events.</span>
-            <span>Plan the week you actually want.</span>
+            <span>{TOTAL_EVENTS} LLM-curated events.</span>
+            <span>For humans and AI agents.</span>
           </div>
         </div>
 

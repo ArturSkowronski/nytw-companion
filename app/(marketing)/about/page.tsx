@@ -5,7 +5,7 @@ import { VirtusLabFooter } from '@/components/VirtusLabFooter'
 export const metadata: Metadata = {
   title: "About — NYTW Engineer's Companion",
   description:
-    'Why we built NYTW Companion, how we curate the 87 events, and who is behind the project.',
+    'Why we built NYTW Companion, how we curate the catalogue, and who is behind the project.',
   alternates: { canonical: '/about' },
 }
 
@@ -22,10 +22,11 @@ export default function AboutPage() {
           <p className="text-[#9B9B9B] text-base leading-relaxed">
             Tech Week NYC runs about a thousand events in a single week. No existing
             aggregator filters for engineers who ship code — they surface the same
-            founder dinners, mixers, and demo nights. NYTW Companion is one engineer&apos;s
-            opinionated cut: 87 events across AI infra, devtools, platform engineering,
-            security, and open source. Day-grouped, mapped, with honest blurbs on the
-            Editor&apos;s Picks.
+            founder dinners, mixers, and demo nights. NYTW Companion is the opinionated
+            cut: 1,390 events scraped from tech-week.com, run through two LLM curation
+            passes (Claude Sonnet 4.5 reading every event description), boiled down to
+            the engineering-relevant subset. Day-grouped, mapped, and exposed over MCP
+            so AI agents can browse the same catalogue.
           </p>
         </section>
 

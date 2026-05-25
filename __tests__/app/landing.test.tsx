@@ -13,9 +13,18 @@ vi.mock('../../lib/plan-store', async () => {
 import HomePage from '../../app/(marketing)/page'
 
 describe('Landing page', () => {
-  it('renders the hero with the 1,047 events headline', () => {
+  it('renders the hero with the scrape→kept headline', () => {
     render(<HomePage />)
-    expect(screen.getByText(/1,047 events\. 168 hours/i)).toBeInTheDocument()
+    expect(screen.getByText(/1,390 events scraped/i)).toBeInTheDocument()
+    expect(screen.getByText(/for humans/i)).toBeInTheDocument()
+  })
+
+  it('renders the MCP integration section with endpoint and tool list', () => {
+    render(<HomePage />)
+    expect(screen.getByRole('heading', { level: 2, name: /companion is mcp-native/i })).toBeInTheDocument()
+    expect(screen.getAllByText(/\/api\/mcp\/mcp/i).length).toBeGreaterThan(0)
+    expect(screen.getByText(/catalogue_stats/i)).toBeInTheDocument()
+    expect(screen.getByText(/search_events/i)).toBeInTheDocument()
   })
 
   it('renders the subtle Beyond link in the hero', () => {
@@ -44,7 +53,7 @@ describe('Landing page', () => {
     render(<HomePage />)
     expect(screen.getByRole('heading', { level: 2, name: /what we don.?t do/i })).toBeInTheDocument()
     expect(screen.getByText(/we don.?t rsvp for you/i)).toBeInTheDocument()
-    expect(screen.getByText(/87 we.?d recommend to an engineer friend/i)).toBeInTheDocument()
+    expect(screen.getByText(/we.?d recommend to an engineer friend/i)).toBeInTheDocument()
     expect(screen.getByText(/we don.?t track you/i)).toBeInTheDocument()
   })
 

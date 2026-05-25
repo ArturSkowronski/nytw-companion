@@ -16,7 +16,7 @@ export function MyPlanEmptyState() {
           className="bg-[#0B0B0B] border border-[#1A1A1A] rounded-md p-5 text-left hover:border-[#FF5B25] transition-colors"
         >
           <p className="font-mono text-sm text-[#F5F5F5] font-bold mb-1">Browse events →</p>
-          <p className="text-xs text-[#9B9B9B]">87 curated picks, day-grouped timeline</p>
+          <p className="text-xs text-[#9B9B9B]">LLM-curated picks, day-grouped timeline</p>
         </Link>
         <Link
           href="/events"
