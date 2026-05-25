@@ -95,7 +95,7 @@ export default function HomePage() {
           <div className="space-y-3">
             <p className="font-mono text-xs uppercase tracking-widest text-[#FF5B25]">Endpoint</p>
             <code className="block bg-[#0B0B0B] border border-[#1A1A1A] rounded-md px-4 py-3 font-mono text-sm text-[#F5F5F5] break-all">
-              https://nytw.dev/api/mcp/mcp
+              https://nytw.dev/mcp
             </code>
           </div>
 
@@ -115,7 +115,7 @@ export default function HomePage() {
             <pre className="bg-[#0B0B0B] border border-[#1A1A1A] rounded-md px-4 py-3 font-mono text-xs text-[#F5F5F5] overflow-x-auto">{`{
   "mcpServers": {
     "nytw": {
-      "url": "https://nytw.dev/api/mcp/mcp"
+      "url": "https://nytw.dev/mcp"
     }
   }
 }`}</pre>

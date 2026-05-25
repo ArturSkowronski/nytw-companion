@@ -63,7 +63,7 @@ export function GET() {
         },
       ],
       endpoints: {
-        mcp: `${SITE_URL}/api/mcp/mcp`,
+        mcp: `${SITE_URL}/mcp`,
       },
     },
     {

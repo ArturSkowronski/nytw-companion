@@ -48,6 +48,8 @@ const nextConfig: NextConfig = {
       },
     ]
   },
+  // Note: /mcp and /sse rewrites live in middleware.ts because turbopack-dev
+  // does not reliably honour rewrites that target dynamic-segment routes.
 }
 
 export default withSerwist(nextConfig)

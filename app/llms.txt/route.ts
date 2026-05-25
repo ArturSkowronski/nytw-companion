@@ -19,7 +19,7 @@ export function GET() {
 Two views of the same event ecosystem:
 
 - **Human UI** ships ${curated} curated events at ${SITE_URL}/events.
-- **MCP server** exposes the full ${total}-event catalogue at ${SITE_URL}/api/mcp/mcp for agents that want to filter on their own.
+- **MCP server** exposes the full ${total}-event catalogue at ${SITE_URL}/mcp for agents that want to filter on their own.
 
 ## Quick links
 
@@ -31,7 +31,7 @@ Two views of the same event ecosystem:
 
 ## For agents
 
-- **MCP endpoint**: ${SITE_URL}/api/mcp/mcp (streamable HTTP transport).
+- **MCP endpoint**: ${SITE_URL}/mcp (streamable HTTP transport).
 - **MCP Server Card**: ${SITE_URL}/.well-known/mcp.json
 - **A2A Agent Card**: ${SITE_URL}/.well-known/agent-card.json
 - **Tools**: \`catalogue_stats\`, \`list_events\`, \`search_events\`, \`get_event\`, \`next_up\`. See \`/.well-known/mcp.json\` for descriptions.

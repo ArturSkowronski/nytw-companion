@@ -23,9 +23,9 @@ export function GET() {
       license: 'MIT',
       transport: {
         type: 'streamable_http',
-        url: `${SITE_URL}/api/mcp/mcp`,
+        url: `${SITE_URL}/mcp`,
       },
-      sse_url: `${SITE_URL}/api/mcp/sse`,
+      sse_url: `${SITE_URL}/sse`,
       capabilities: {
         tools: true,
         resources: false,
