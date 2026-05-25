@@ -1,28 +1,26 @@
 'use client'
 
-import { forwardRef } from 'react'
-import { Badge } from '@/components/ui/badge'
-import { StatusToggle } from '@/components/StatusToggle'
-import { formatEventTime } from '@/lib/events'
-import { usePlanStore } from '@/lib/plan-store'
+import { forwardRef, useState } from 'react'
+import { EventDetailModal } from '@/components/EventDetailModal'
+import { formatStartTime, formatEndTime } from '@/lib/events'
 import type { Event, PlanItem } from '@/lib/types'
 
 const STATUS_LABEL: Record<PlanItem['status'], string> = {
-  interested:   'Interested',
-  rsvp_pending: 'RSVPed',
-  confirmed:    'Confirmed',
-  waitlist:     'Waitlist',
-  declined:     'Declined',
-  attended:     'Attended',
+  interested: 'Interested',
+  rsvp_pending: 'RSVP pending',
+  confirmed: 'Confirmed',
+  waitlist: 'Waitlist',
+  declined: 'Declined',
+  attended: 'Attended',
 }
 
-const STATUS_TONE: Record<PlanItem['status'], string> = {
-  interested:   'bg-[#1A1A1A] text-[#9B9B9B] border-[#262626]',
-  rsvp_pending: 'bg-amber-500/10 text-amber-400 border-amber-500/30',
-  confirmed:    'bg-emerald-500/10 text-emerald-400 border-emerald-500/30',
-  waitlist:     'bg-amber-500/10 text-amber-400 border-amber-500/30',
-  declined:     'bg-red-500/10 text-red-400 border-red-500/30 line-through',
-  attended:     'bg-emerald-500/10 text-emerald-400/60 border-emerald-500/30',
+const STATUS_COLOR: Record<PlanItem['status'], string> = {
+  interested: 'text-[#9B9B9B]',
+  rsvp_pending: 'text-[#E0B847]',
+  confirmed: 'text-[#4CC38A]',
+  waitlist: 'text-[#FF5B25]',
+  declined: 'text-[#737373]',
+  attended: 'text-[#4CC38A]',
 }
 
 interface MyPlanEventCardProps {
@@ -32,58 +30,60 @@ interface MyPlanEventCardProps {
 
 export const MyPlanEventCard = forwardRef<HTMLDivElement, MyPlanEventCardProps>(
   function MyPlanEventCard({ planItem, event }, ref) {
-    const removeItem = usePlanStore((s) => s.removeItem)
+    const [isModalOpen, setIsModalOpen] = useState(false)
 
     return (
-      <div
-        ref={ref}
-        className="bg-[#0B0B0B] border border-[#1A1A1A] rounded-md p-5 space-y-3"
-      >
-        <div className="flex flex-wrap items-start justify-between gap-3">
-          <div className="min-w-0 flex-1">
-            <div className="flex flex-wrap items-center gap-2 mb-1">
-              <Badge className={`text-[10px] ${STATUS_TONE[planItem.status]}`}>
-                {STATUS_LABEL[planItem.status]}
-              </Badge>
-              {event.is_editors_pick && (
-                <Badge className="bg-amber-500/20 text-amber-400 border-amber-500/30 text-[10px]">
-                  Editor&rsquo;s Pick
-                </Badge>
-              )}
-              {event.is_virtuslab_event && (
-                <Badge className="bg-[#FF5B25]/[0.14] text-[#FF5B25] border-[#FF5B25]/30 text-[10px]">
-                  Featured
-                </Badge>
-              )}
-            </div>
-            <p className="font-mono text-base font-bold text-[#F5F5F5]">{event.title}</p>
-            <p className="text-xs text-[#9B9B9B] mt-1">
-              {event.host} · {formatEventTime(event.starts_at, event.ends_at)}
-              {event.neighborhood ? ` · ${event.neighborhood}` : ''}
+      <>
+        <div
+          ref={ref}
+          data-testid="my-plan-event-card"
+          onClick={() => setIsModalOpen(true)}
+          className="grid grid-cols-[90px_1fr] md:grid-cols-[90px_1fr_240px_auto] gap-5 py-5 border-t border-[#1A1A1A] hover:bg-[#FF5B25]/[0.03] transition-colors cursor-pointer"
+        >
+          <div className="font-mono text-xs text-[#FF5B25] font-bold tracking-wide pt-1">
+            {formatStartTime(event.starts_at)}
+            <span className="block text-[#737373] font-normal mt-1">
+              – {formatEndTime(event.ends_at)}
+            </span>
+          </div>
+
+          <div className="col-start-2 md:col-start-2 min-w-0">
+            {event.is_editors_pick && (
+              <span className="inline-block font-mono text-[10px] uppercase tracking-[0.14em] bg-[#FF5B25]/[0.14] text-[#FF5B25] px-1.5 py-0.5 mb-2">
+                Editor&apos;s Pick
+              </span>
+            )}
+            <h4 className="font-mono font-bold text-base leading-snug mb-1 text-[#F5F5F5]">
+              {event.title}
+            </h4>
+            <p className="font-mono text-xs uppercase tracking-wide text-[#9B9B9B] mb-2">
+              {event.host}
+            </p>
+            <p className="text-sm text-[#9B9B9B] leading-relaxed max-w-[62ch] line-clamp-2">
+              {event.description}
             </p>
           </div>
-          <button
-            type="button"
-            onClick={() => removeItem(event.id)}
-            className="text-[10px] text-[#9B9B9B] hover:text-red-400 font-mono"
-          >
-            Remove
-          </button>
+
+          <div className="hidden md:flex flex-col gap-1.5 font-mono text-xs uppercase tracking-wide text-[#737373] pt-1">
+            {event.neighborhood && (
+              <span className="text-[#9B9B9B]">{event.neighborhood}</span>
+            )}
+            {event.is_invite_only && <span>Invite-only</span>}
+          </div>
+
+          <div className="hidden md:block self-start pt-1" onClick={(e) => e.stopPropagation()}>
+            <span className={`font-mono text-xs uppercase tracking-wide ${STATUS_COLOR[planItem.status]}`}>
+              {STATUS_LABEL[planItem.status]}
+            </span>
+          </div>
         </div>
 
-        <StatusToggle eventId={event.id} />
-
-        <div>
-          <a
-            href={event.rsvp_url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-md bg-[#FF5B25] hover:bg-[#e85a25] text-white font-mono text-sm px-4 py-2"
-          >
-            Open RSVP →
-          </a>
-        </div>
-      </div>
+        <EventDetailModal
+          event={event}
+          open={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+        />
+      </>
     )
-  },
+  }
 )

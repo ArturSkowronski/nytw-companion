@@ -206,11 +206,19 @@ function EventListInner({ events }: EventListProps) {
               className="mb-12 scroll-mt-6"
             >
               {/* Day header */}
-              <div className="sticky top-0 z-10 bg-[#000000] border-b border-[#1A1A1A] py-3 mb-4 flex items-baseline justify-between">
-                <h2 className="font-mono font-bold text-[#F5F5F5] text-lg">
-                  {formatDayHeading(dayKey)}
-                </h2>
-                <span className="text-[#9B9B9B] text-xs font-mono">
+              <div className="sticky top-0 z-10 bg-[#000000] grid grid-cols-[90px_1fr_auto] items-baseline gap-5 pt-7 pb-3 border-t border-[#1A1A1A] mb-4">
+                <div className="font-mono font-bold text-2xl text-[#FF5B25]">
+                  {String(dayKeys.indexOf(dayKey) + 1).padStart(2, '0')}
+                </div>
+                <div>
+                  <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#9B9B9B]">
+                    {formatDayShort(dayKey)}
+                  </p>
+                  <h3 className="font-mono text-xl font-bold mt-0.5 text-[#F5F5F5]">
+                    {formatDayHeading(dayKey)}
+                  </h3>
+                </div>
+                <span className="font-mono text-xs uppercase tracking-wide text-[#737373]">
                   {dayEvents.length} events
                 </span>
               </div>
