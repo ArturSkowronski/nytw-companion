@@ -28,11 +28,15 @@ export const metadata: Metadata = {
   title: "NYTW Engineer's Companion",
   description: "1,000+ events. 168 hours. Plan the week you actually want.",
   manifest: '/manifest.json',
+  authors: [{ name: 'Artur Skowroński', url: 'https://www.linkedin.com/in/arturskowronski/' }],
+  creator: 'Artur Skowroński',
+  publisher: 'VirtusLab',
   other: {
     // Freshness signal for AI crawlers — picked up alongside the
     // Last-Modified HTTP header and dateModified in JSON-LD.
     'last-modified': BUILD_INFO.iso,
     'article:modified_time': BUILD_INFO.iso,
+    'article:author': 'Artur Skowroński',
   },
 }
 

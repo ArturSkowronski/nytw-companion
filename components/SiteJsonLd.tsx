@@ -5,22 +5,32 @@
 import { SITE_URL } from '@/lib/site-url'
 import { BUILD_INFO } from '@/lib/build-time'
 
+const author = {
+  '@type': 'Person',
+  '@id': `${SITE_URL}#author`,
+  name: 'Artur Skowroński',
+  url: 'https://www.linkedin.com/in/arturskowronski/',
+  jobTitle: 'Director of Technology',
+  worksFor: {
+    '@type': 'Organization',
+    name: 'VirtusLab',
+    url: 'https://virtuslab.com',
+  },
+  sameAs: [
+    'https://www.linkedin.com/in/arturskowronski/',
+    'https://github.com/ArturSkowronski',
+    'https://x.com/ArturSkowronski',
+  ],
+}
+
 const organization = {
   '@type': 'Organization',
   '@id': `${SITE_URL}#organization`,
   name: 'NYTW Engineer\'s Companion',
   url: SITE_URL,
   logo: `${SITE_URL}/icons/icon-512.png`,
-  founder: {
-    '@type': 'Person',
-    name: 'Artur Skowroński',
-    url: 'https://www.linkedin.com/in/arturskowronski/',
-    worksFor: {
-      '@type': 'Organization',
-      name: 'VirtusLab',
-      url: 'https://virtuslab.com',
-    },
-  },
+  founder: { '@id': `${SITE_URL}#author` },
+  author: { '@id': `${SITE_URL}#author` },
   sameAs: [
     'https://github.com/ArturSkowronski/nytw-companion',
     'https://virtuslab.com',
@@ -37,6 +47,8 @@ const website = {
   inLanguage: 'en-US',
   dateModified: BUILD_INFO.iso,
   publisher: { '@id': `${SITE_URL}#organization` },
+  author: { '@id': `${SITE_URL}#author` },
+  creator: { '@id': `${SITE_URL}#author` },
   potentialAction: {
     '@type': 'SearchAction',
     target: {
@@ -101,7 +113,7 @@ const faqPage = {
 
 const graph = {
   '@context': 'https://schema.org',
-  '@graph': [organization, website, faqPage],
+  '@graph': [author, organization, website, faqPage],
 }
 
 export function SiteJsonLd() {
