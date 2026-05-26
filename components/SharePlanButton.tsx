@@ -31,11 +31,13 @@ export function SharePlanButton({ eventIds }: SharePlanButtonProps) {
   const url = useMemo(() => buildShareUrl(eventIds, name), [eventIds, name])
   const overCap = eventIds.length > MAX_SHARE_EVENTS
 
-  function handleCopy() {
-    toast('Link copied — paste it in your DM')
-    navigator.clipboard.writeText(url).catch(() => {
+  async function handleCopy() {
+    try {
+      await navigator.clipboard.writeText(url)
+      toast('Link copied — paste it in your DM')
+    } catch {
       toast('Could not copy. Select the link and copy it manually.')
-    })
+    }
   }
 
   function handleNativeShare() {

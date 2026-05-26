@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { render, screen, fireEvent } from '@testing-library/react'
+import { render, screen, fireEvent, act } from '@testing-library/react'
 
 const { toastFn } = vi.hoisted(() => ({ toastFn: vi.fn() }))
 vi.mock('sonner', () => ({
@@ -33,11 +33,13 @@ describe('SharePlanButton', () => {
   it('writes the URL to clipboard and toasts on Copy', async () => {
     render(<SharePlanButton eventIds={['a']} />)
     fireEvent.click(screen.getByRole('button', { name: /share my plan/i }))
-    fireEvent.click(await screen.findByRole('button', { name: /copy link/i }))
+    await act(async () => {
+      fireEvent.click(await screen.findByRole('button', { name: /copy link/i }))
+    })
     expect(navigator.clipboard.writeText).toHaveBeenCalledTimes(1)
     const copied = (navigator.clipboard.writeText as ReturnType<typeof vi.fn>).mock.calls[0][0]
     expect(copied).toMatch(/\/plan\/share#.+/)
-    expect(toastFn).toHaveBeenCalled()
+    expect(toastFn).toHaveBeenCalledWith('Link copied — paste it in your DM')
   })
 
   it('encodes the optional sender name into the URL', async () => {
