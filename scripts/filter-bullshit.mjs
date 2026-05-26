@@ -121,9 +121,10 @@ for (const ev of events) {
 }
 
 // Strip the _score helper before writing
-const finalKept = kept.map(e => {
-  const { _score, ...rest } = e
-  return rest
+const finalKept = kept.map((e) => {
+  const out = { ...e }
+  delete out._score
+  return out
 })
 
 fs.writeFileSync(SRC, JSON.stringify(finalKept, null, 2) + '\n')
