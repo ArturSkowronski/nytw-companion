@@ -7,6 +7,7 @@ import { detectConflicts } from '@/lib/conflicts'
 import { MyPlanEmptyState } from '@/components/MyPlanEmptyState'
 import { MyPlanTimeline } from '@/components/MyPlanTimeline'
 import { MyPlanMapLoader } from '@/components/MyPlanMapLoader'
+import { SharePlanButton } from '@/components/SharePlanButton'
 import { IcalDownloadButton } from '@/components/IcalDownloadButton'
 import type { Event, PlanItem } from '@/lib/types'
 import type { DayKey } from '@/lib/time'
@@ -91,7 +92,10 @@ export function MyPlanClient({ events, initialTab, initialDay }: MyPlanClientPro
             {counts.waitlist} waitlist · {counts.interested} interested
           </p>
         </div>
-        <IcalDownloadButton items={items} events={events} />
+        <div className="flex gap-2">
+          <SharePlanButton eventIds={planEvents.map((p) => p.event.id)} />
+          <IcalDownloadButton items={items} events={events} />
+        </div>
       </header>
 
       <div
