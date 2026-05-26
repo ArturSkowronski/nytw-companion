@@ -46,7 +46,10 @@ describe('Landing page', () => {
   it('renders "Why we built this" section with author signature', () => {
     render(<HomePage />)
     expect(screen.getByRole('heading', { level: 2, name: /why we built this/i })).toBeInTheDocument()
-    expect(screen.getByText(/artur skowro/i)).toBeInTheDocument()
+    // Author signature line in the editorial footer of the section.
+    // (Artur is also named in the PartnerInvite blurb, so we match the
+    // mono-font byline specifically.)
+    expect(screen.getByText(/—\s*Artur Skowro/i)).toBeInTheDocument()
   })
 
   it("renders \"What we don't do\" with three bullets", () => {
