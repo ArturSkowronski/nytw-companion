@@ -3,7 +3,111 @@
 // tone of the rest of the site — explicitly labelled "Made by VirtusLab".
 import Image from 'next/image'
 import { SectionHead } from '@/components/SectionHead'
-import { PARTNER_EVENTS } from '@/lib/partner-events'
+import { PARTNER_EVENTS, type PartnerEvent } from '@/lib/partner-events'
+
+function SpeakerChip({ name, url, initials }: { name: string; url: string; initials: string }) {
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 border border-[#262626] hover:border-[#FF5B25] bg-[#0B0B0B] px-2 py-1 text-xs text-[#9B9B9B] hover:text-[#F5F5F5] transition-colors"
+      aria-label={`${name} on LinkedIn`}
+    >
+      <span
+        aria-hidden="true"
+        className="inline-flex w-5 h-5 items-center justify-center rounded-full border border-[#FF5B25] text-[10px] font-mono text-[#FF5B25]"
+      >
+        {initials}
+      </span>
+      <span className="font-mono">{name}</span>
+      <span aria-hidden="true" className="text-[#FF5B25]">↗</span>
+    </a>
+  )
+}
+
+function Card({ ev }: { ev: PartnerEvent }) {
+  const enabled = !!ev.rsvp_url
+
+  return (
+    <article
+      className={`group flex flex-col overflow-hidden border bg-[#0B0B0B] transition-colors h-full ${
+        enabled ? 'border-[#262626] hover:border-[#FF5B25]' : 'border-[#1A1A1A] opacity-70'
+      }`}
+    >
+      {ev.cover_url && (
+        <a
+          href={ev.rsvp_url ?? '#meet-us'}
+          target={enabled ? '_blank' : undefined}
+          rel={enabled ? 'noopener noreferrer' : undefined}
+          className="relative aspect-[16/9] w-full bg-[#1A1A1A] overflow-hidden block"
+          aria-label={`${ev.title} — open RSVP`}
+        >
+          <Image
+            src={ev.cover_url}
+            alt={`${ev.title} — event cover`}
+            fill
+            sizes="(min-width: 768px) 50vw, 100vw"
+            className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+            unoptimized
+          />
+          <span className="absolute top-3 left-3 font-mono text-[10px] uppercase tracking-[0.18em] text-[#F5F5F5] bg-[#000000]/80 backdrop-blur px-2 py-1">
+            {ev.eyebrow}
+          </span>
+        </a>
+      )}
+      <div className="flex flex-col gap-3 p-5 flex-1">
+        {!ev.cover_url && (
+          <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#FF5B25]">
+            {ev.eyebrow}
+          </p>
+        )}
+        <h3 className="font-mono text-lg leading-snug text-[#F5F5F5]">
+          {enabled ? (
+            <a
+              href={ev.rsvp_url!}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#FF5B25] transition-colors"
+            >
+              {ev.title}
+            </a>
+          ) : (
+            ev.title
+          )}
+        </h3>
+        {ev.speakers.length > 0 && (
+          <ul className="flex flex-wrap items-center gap-2">
+            {ev.speakers.map((sp) => (
+              <li key={sp.url}>
+                <SpeakerChip {...sp} />
+              </li>
+            ))}
+          </ul>
+        )}
+        <p className="text-sm text-[#9B9B9B] leading-relaxed">{ev.blurb}</p>
+        <div className="mt-auto flex items-center justify-between gap-3 pt-3 border-t border-[#1A1A1A] text-xs font-mono text-[#737373]">
+          <span>
+            {ev.when ?? 'Date TBD'}
+            {ev.where ? ` · ${ev.where}` : ''}
+          </span>
+          {enabled ? (
+            <a
+              href={ev.rsvp_url!}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#FF5B25] hover:underline"
+            >
+              RSVP →
+            </a>
+          ) : (
+            <span className="text-[#FF5B25]">soon</span>
+          )}
+        </div>
+      </div>
+    </article>
+  )
+}
 
 export function PartnerInvite() {
   const events = PARTNER_EVENTS
@@ -30,71 +134,11 @@ export function PartnerInvite() {
         </p>
 
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {events.map((ev) => {
-            const enabled = !!ev.rsvp_url
-            const baseClasses =
-              'group flex flex-col overflow-hidden border bg-[#0B0B0B] transition-colors h-full'
-            const stateClasses = enabled
-              ? 'border-[#262626] hover:border-[#FF5B25]'
-              : 'border-[#1A1A1A] opacity-70'
-
-            const card = (
-              <>
-                {ev.cover_url && (
-                  <div className="relative aspect-[16/9] w-full bg-[#1A1A1A] overflow-hidden">
-                    <Image
-                      src={ev.cover_url}
-                      alt={`${ev.title} — event cover`}
-                      fill
-                      sizes="(min-width: 768px) 50vw, 100vw"
-                      className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
-                      unoptimized
-                    />
-                    <span className="absolute top-3 left-3 font-mono text-[10px] uppercase tracking-[0.18em] text-[#F5F5F5] bg-[#000000]/80 backdrop-blur px-2 py-1">
-                      {ev.eyebrow}
-                    </span>
-                  </div>
-                )}
-                <div className="flex flex-col gap-3 p-5 flex-1">
-                  {!ev.cover_url && (
-                    <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#FF5B25]">
-                      {ev.eyebrow}
-                    </p>
-                  )}
-                  <h3 className="font-mono text-lg leading-snug text-[#F5F5F5]">
-                    {ev.title}
-                  </h3>
-                  <p className="text-sm text-[#9B9B9B] leading-relaxed">{ev.blurb}</p>
-                  <div className="mt-auto flex items-center justify-between gap-3 pt-3 border-t border-[#1A1A1A] text-xs font-mono text-[#737373]">
-                    <span>
-                      {ev.when ?? 'Date TBD'}
-                      {ev.where ? ` · ${ev.where}` : ''}
-                    </span>
-                    <span className="text-[#FF5B25]">{enabled ? 'RSVP →' : 'soon'}</span>
-                  </div>
-                </div>
-              </>
-            )
-
-            return (
-              <li key={ev.id}>
-                {enabled ? (
-                  <a
-                    href={ev.rsvp_url!}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`${baseClasses} ${stateClasses}`}
-                  >
-                    {card}
-                  </a>
-                ) : (
-                  <div className={`${baseClasses} ${stateClasses}`} aria-disabled="true">
-                    {card}
-                  </div>
-                )}
-              </li>
-            )
-          })}
+          {events.map((ev) => (
+            <li key={ev.id}>
+              <Card ev={ev} />
+            </li>
+          ))}
         </ul>
       </div>
     </section>

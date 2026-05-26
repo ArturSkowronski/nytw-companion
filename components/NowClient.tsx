@@ -9,6 +9,7 @@ import { NextUpCard } from '@/components/NextUpCard'
 import { AfterThisCard } from '@/components/AfterThisCard'
 import { SuggestionsCard } from '@/components/SuggestionsCard'
 import { RetroCard } from '@/components/RetroCard'
+import { PartnerNowHint } from '@/components/PartnerNowHint'
 import { Button } from '@/components/ui/button'
 import type { Event } from '@/lib/types'
 import type { LatLng } from '@/lib/geo'
@@ -97,6 +98,7 @@ export function NowClient({ events }: NowClientProps) {
 
   return (
     <div className="space-y-4">
+      <PartnerNowHint now={now} />
       {upcoming ? (
         <>
           <NextUpCard event={upcoming} now={now} geo={geo} />

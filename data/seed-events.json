@@ -2222,19 +2222,22 @@
     "tags": [
       "ai-infra",
       "devtools",
-      "platform-eng"
+      "platform-eng",
+      "founder-stories"
     ],
     "audience_tags": [
-      "engineer"
+      "engineer",
+      "cto",
+      "founder"
     ],
     "format": "other",
     "capacity": null,
     "is_invite_only": false,
     "has_free_food": false,
     "has_free_drinks": false,
-    "is_editors_pick": false,
-    "editors_pick_blurb": null,
-    "is_virtuslab_event": false,
+    "is_editors_pick": true,
+    "editors_pick_blurb": "Disclosure: VirtusLab built this tool, and this is our event. Artur + Tomek on the engineering patterns that survived a year of shipping AI-assisted code across enterprise clients — plus 30 free demo copies of their Manning book.",
+    "is_virtuslab_event": true,
     "source": "tech-week.com",
     "source_url": "https://tech-week.com/calendar/nyc",
     "image_url": "https://partiful.imgix.net/external/user/AWwvoutHk1OjFIiagLtQzMDgDxW2/aKCopnPRMwbJE-iGIhmjB?w=1000&h=1000&fit=clip"
@@ -3079,19 +3082,23 @@
     "rsvp_platform": "partiful",
     "tags": [
       "devtools",
-      "platform-eng"
+      "platform-eng",
+      "ai-infra",
+      "agentic-ai"
     ],
     "audience_tags": [
-      "engineer"
+      "engineer",
+      "cto",
+      "founder"
     ],
     "format": "other",
     "capacity": null,
     "is_invite_only": false,
     "has_free_food": false,
     "has_free_drinks": false,
-    "is_editors_pick": false,
-    "editors_pick_blurb": null,
-    "is_virtuslab_event": false,
+    "is_editors_pick": true,
+    "editors_pick_blurb": "Disclosure: VirtusLab built this tool, and this is our event. Live demo of VISDOM — what an AI-native SDLC looks like in practice, with a maturity assessment on a real delivery pipeline. For CTOs, platform engineers, and senior eng past the demo-vs-CI/CD gap.",
+    "is_virtuslab_event": true,
     "source": "tech-week.com",
     "source_url": "https://tech-week.com/calendar/nyc",
     "image_url": "https://partiful.imgix.net/external/user/AWwvoutHk1OjFIiagLtQzMDgDxW2/RLVDQbQGb4eOMhAZwfgyz?w=1000&h=1000&fit=clip"
