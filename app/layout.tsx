@@ -4,6 +4,7 @@ import { JetBrains_Mono, Inter } from 'next/font/google'
 import { Toaster } from '@/components/ui/sonner'
 import { Analytics } from '@vercel/analytics/next'
 import { MyPlanWidget } from '@/components/MyPlanWidget'
+import { PartnerToastTrigger } from '@/components/PartnerToastTrigger'
 import { SiteNav } from '@/components/SiteNav'
 import { SiteJsonLd } from '@/components/SiteJsonLd'
 import { StatusBar } from '@/components/StatusBar'
@@ -60,6 +61,7 @@ export default function RootLayout({
         <SiteNav />
         {children}
         <MyPlanWidget />
+        <PartnerToastTrigger />
         <Toaster
           theme="dark"
           toastOptions={{

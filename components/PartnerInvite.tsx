@@ -2,6 +2,7 @@
 // Surfaces the VirtusLab events at NYTW without breaking the editorial
 // tone of the rest of the site — explicitly labelled "Made by VirtusLab".
 import Image from 'next/image'
+import { AttentionPulse } from '@/components/AttentionPulse'
 import { SectionHead } from '@/components/SectionHead'
 import { PARTNER_EVENTS, type PartnerEvent } from '@/lib/partner-events'
 
@@ -121,7 +122,9 @@ export function PartnerInvite() {
     >
       <div className="max-w-5xl mx-auto space-y-8">
         <div className="flex items-start justify-between gap-6 flex-wrap">
-          <SectionHead num="03" label="Disclosure" title="Like this tool? Come say hi at NYTW." />
+          <AttentionPulse>
+            <SectionHead num="03" label="Disclosure" title="Like this tool? Come say hi at NYTW." />
+          </AttentionPulse>
           <p className="font-mono text-xs uppercase tracking-[0.12em] text-[#FF5B25] pt-1">
             Made by VirtusLab
           </p>
