@@ -12,14 +12,14 @@ export function VirtusLabFooter() {
           Hosting at NYTW Tue Jun 2:{' '}
           <Link
             href="/#meet-us"
-            className="text-[#9B9B9B] hover:text-[#FF5B25] underline underline-offset-4 decoration-[#262626] hover:decoration-[#FF5B25]"
+            className="text-[#9B9B9B] hover:text-[#92C83E] underline underline-offset-4 decoration-[#262626] hover:decoration-[#92C83E]"
           >
             Visdom session
           </Link>{' '}
           and{' '}
           <Link
             href="/#meet-us"
-            className="text-[#9B9B9B] hover:text-[#FF5B25] underline underline-offset-4 decoration-[#262626] hover:decoration-[#FF5B25]"
+            className="text-[#9B9B9B] hover:text-[#92C83E] underline underline-offset-4 decoration-[#262626] hover:decoration-[#92C83E]"
           >
             book launch with Tomek
           </Link>

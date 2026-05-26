@@ -6,6 +6,7 @@ import { toast } from 'sonner'
 import { EventDetailModal } from '@/components/EventDetailModal'
 import { usePlanStore } from '@/lib/plan-store'
 import { formatStartTime, formatEndTime } from '@/lib/events'
+import { accentFor, accentRgba } from '@/lib/event-accent'
 import type { Event } from '@/lib/types'
 
 interface EventCardProps {
@@ -17,6 +18,9 @@ export function EventCard({ event, onTagClick }: EventCardProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const { items, addItem } = usePlanStore()
   const isInPlan = items.some((i) => i.event_id === event.id)
+  const accent = accentFor(event)
+  const accentBg = accentRgba(event, 0.14)
+  const accentHover = accentRgba(event, 0.03)
 
   function handleSave(e?: React.MouseEvent) {
     if (e) e.stopPropagation()
@@ -30,10 +34,11 @@ export function EventCard({ event, onTagClick }: EventCardProps) {
       <article
         data-testid="event-card"
         onClick={() => setIsModalOpen(true)}
-        className="grid grid-cols-[90px_1fr] md:grid-cols-[90px_1fr_240px_auto] gap-5 py-5 border-t border-[#1A1A1A] hover:bg-[#FF5B25]/[0.03] transition-colors cursor-pointer group"
+        style={{ ['--accent-hover-bg' as string]: accentHover }}
+        className="grid grid-cols-[90px_1fr] md:grid-cols-[90px_1fr_240px_auto] gap-5 py-5 border-t border-[#1A1A1A] hover:bg-[var(--accent-hover-bg)] transition-colors cursor-pointer group"
       >
         {/* Time column */}
-        <div className="font-mono text-xs text-[#FF5B25] font-bold tracking-wide pt-1">
+        <div className="font-mono text-xs font-bold tracking-wide pt-1" style={{ color: accent }}>
           {formatStartTime(event.starts_at)}
           <span className="block text-[#737373] font-normal mt-1">
             – {formatEndTime(event.ends_at)}
@@ -43,8 +48,11 @@ export function EventCard({ event, onTagClick }: EventCardProps) {
         {/* Body column */}
         <div className="col-start-2 md:col-start-2 min-w-0">
           {event.is_editors_pick && (
-            <span className="inline-block font-mono text-[10px] uppercase tracking-[0.14em] bg-[#FF5B25]/[0.14] text-[#FF5B25] px-1.5 py-0.5 mb-2">
-              Editor&apos;s Pick
+            <span
+              className="inline-block font-mono text-[10px] uppercase tracking-[0.14em] px-1.5 py-0.5 mb-2"
+              style={{ backgroundColor: accentBg, color: accent }}
+            >
+              {event.is_virtuslab_event ? 'Hosted by us' : "Editor's Pick"}
             </span>
           )}
           <h4 className="font-mono font-bold text-base leading-snug mb-1 text-[#F5F5F5]">
@@ -65,7 +73,9 @@ export function EventCard({ event, onTagClick }: EventCardProps) {
                     type="button"
                     onClick={() => onTagClick(tag)}
                     aria-label={`Filter by tag ${tag}`}
-                    className="text-[10px] text-[#737373] hover:text-[#FF5B25] font-mono"
+                    className="text-[10px] text-[#737373] font-mono transition-colors"
+                    onMouseEnter={(e) => (e.currentTarget.style.color = accent)}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = '')}
                   >
                     #{tag}
                   </button>
@@ -99,7 +109,8 @@ export function EventCard({ event, onTagClick }: EventCardProps) {
             <button
               type="button"
               onClick={handleSave}
-              className="font-mono text-xs uppercase tracking-wide text-[#FF5B25] hover:underline pt-1 opacity-60 group-hover:opacity-100 transition-opacity"
+              className="font-mono text-xs uppercase tracking-wide hover:underline pt-1 opacity-60 group-hover:opacity-100 transition-opacity"
+              style={{ color: accent }}
             >
               Save
             </button>

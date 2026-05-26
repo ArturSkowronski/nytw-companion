@@ -133,12 +133,13 @@
 
 /* Single-cycle pulse fired by IntersectionObserver when the disclosure
    section first enters viewport. Animation runs once, then leaves the
-   element in its natural styling — no continuous attention-grabbing. */
+   element in its natural styling — no continuous attention-grabbing.
+   VirtusLab lime green to match the other VL-event accents on the page. */
 @keyframes attention-pulse {
-  0%   { box-shadow: 0 0 0 0 rgba(255, 91, 37, 0); }
-  20%  { box-shadow: 0 0 0 6px rgba(255, 91, 37, 0.35); }
-  60%  { box-shadow: 0 0 0 12px rgba(255, 91, 37, 0.0); }
-  100% { box-shadow: 0 0 0 0 rgba(255, 91, 37, 0); }
+  0%   { box-shadow: 0 0 0 0 rgba(146, 200, 62, 0); }
+  20%  { box-shadow: 0 0 0 6px rgba(146, 200, 62, 0.35); }
+  60%  { box-shadow: 0 0 0 12px rgba(146, 200, 62, 0.0); }
+  100% { box-shadow: 0 0 0 0 rgba(146, 200, 62, 0); }
 }
 .attention-pulse-once {
   animation: attention-pulse 1.5s ease-out 1 both;

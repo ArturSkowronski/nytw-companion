@@ -69,8 +69,15 @@ export function EventDetailModal({ event, open, onClose }: EventDetailModalProps
               </Badge>
             )}
             {event.is_virtuslab_event && (
-              <Badge className="bg-[#FF5B25]/[0.14] text-[#FF5B25] border-[#FF5B25]/30 text-xs">
-                Featured
+              <Badge
+                className="text-xs"
+                style={{
+                  backgroundColor: 'rgba(146, 200, 62, 0.14)',
+                  color: '#92C83E',
+                  borderColor: 'rgba(146, 200, 62, 0.30)',
+                }}
+              >
+                Hosted by us
               </Badge>
             )}
             {event.is_invite_only && (
@@ -158,7 +165,12 @@ export function EventDetailModal({ event, open, onClose }: EventDetailModalProps
         {/* Actions */}
         <div className="flex gap-2 flex-wrap">
           <Button
-            className="bg-[#FF5B25] hover:bg-[#e85a25] text-white font-mono"
+            className="text-white font-mono"
+            style={
+              event.is_virtuslab_event
+                ? { backgroundColor: '#92C83E', color: '#0A0A0A' }
+                : { backgroundColor: '#FF5B25' }
+            }
             onClick={handleOpenRsvp}
           >
             Open RSVP →

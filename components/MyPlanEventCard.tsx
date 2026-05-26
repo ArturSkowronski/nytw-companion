@@ -3,6 +3,7 @@
 import { forwardRef, useState } from 'react'
 import { EventDetailModal } from '@/components/EventDetailModal'
 import { formatStartTime, formatEndTime } from '@/lib/events'
+import { accentFor, accentRgba } from '@/lib/event-accent'
 import type { Event, PlanItem } from '@/lib/types'
 
 const STATUS_LABEL: Record<PlanItem['status'], string> = {
@@ -31,6 +32,9 @@ interface MyPlanEventCardProps {
 export const MyPlanEventCard = forwardRef<HTMLDivElement, MyPlanEventCardProps>(
   function MyPlanEventCard({ planItem, event }, ref) {
     const [isModalOpen, setIsModalOpen] = useState(false)
+    const accent = accentFor(event)
+    const accentBg = accentRgba(event, 0.14)
+    const accentHover = accentRgba(event, 0.03)
 
     return (
       <>
@@ -38,9 +42,10 @@ export const MyPlanEventCard = forwardRef<HTMLDivElement, MyPlanEventCardProps>(
           ref={ref}
           data-testid="my-plan-event-card"
           onClick={() => setIsModalOpen(true)}
-          className="grid grid-cols-[90px_1fr] md:grid-cols-[90px_1fr_240px_auto] gap-5 py-5 border-t border-[#1A1A1A] hover:bg-[#FF5B25]/[0.03] transition-colors cursor-pointer"
+          style={{ ['--accent-hover-bg' as string]: accentHover }}
+          className="grid grid-cols-[90px_1fr] md:grid-cols-[90px_1fr_240px_auto] gap-5 py-5 border-t border-[#1A1A1A] hover:bg-[var(--accent-hover-bg)] transition-colors cursor-pointer"
         >
-          <div className="font-mono text-xs text-[#FF5B25] font-bold tracking-wide pt-1">
+          <div className="font-mono text-xs font-bold tracking-wide pt-1" style={{ color: accent }}>
             {formatStartTime(event.starts_at)}
             <span className="block text-[#737373] font-normal mt-1">
               – {formatEndTime(event.ends_at)}
@@ -49,8 +54,11 @@ export const MyPlanEventCard = forwardRef<HTMLDivElement, MyPlanEventCardProps>(
 
           <div className="col-start-2 md:col-start-2 min-w-0">
             {event.is_editors_pick && (
-              <span className="inline-block font-mono text-[10px] uppercase tracking-[0.14em] bg-[#FF5B25]/[0.14] text-[#FF5B25] px-1.5 py-0.5 mb-2">
-                Editor&apos;s Pick
+              <span
+                className="inline-block font-mono text-[10px] uppercase tracking-[0.14em] px-1.5 py-0.5 mb-2"
+                style={{ backgroundColor: accentBg, color: accent }}
+              >
+                {event.is_virtuslab_event ? 'Hosted by us' : "Editor's Pick"}
               </span>
             )}
             <h4 className="font-mono font-bold text-base leading-snug mb-1 text-[#F5F5F5]">

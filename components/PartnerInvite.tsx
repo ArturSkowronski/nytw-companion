@@ -12,17 +12,17 @@ function SpeakerChip({ name, url, initials }: { name: string; url: string; initi
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 border border-[#262626] hover:border-[#FF5B25] bg-[#0B0B0B] px-2 py-1 text-xs text-[#9B9B9B] hover:text-[#F5F5F5] transition-colors"
+      className="inline-flex items-center gap-2 border border-[#262626] hover:border-[#92C83E] bg-[#0B0B0B] px-2 py-1 text-xs text-[#9B9B9B] hover:text-[#F5F5F5] transition-colors"
       aria-label={`${name} on LinkedIn`}
     >
       <span
         aria-hidden="true"
-        className="inline-flex w-5 h-5 items-center justify-center rounded-full border border-[#FF5B25] text-[10px] font-mono text-[#FF5B25]"
+        className="inline-flex w-5 h-5 items-center justify-center rounded-full border border-[#92C83E] text-[10px] font-mono text-[#92C83E]"
       >
         {initials}
       </span>
       <span className="font-mono">{name}</span>
-      <span aria-hidden="true" className="text-[#FF5B25]">↗</span>
+      <span aria-hidden="true" className="text-[#92C83E]">↗</span>
     </a>
   )
 }
@@ -33,7 +33,7 @@ function Card({ ev }: { ev: PartnerEvent }) {
   return (
     <article
       className={`group flex flex-row gap-4 overflow-hidden border bg-[#0B0B0B] transition-colors h-full p-4 ${
-        enabled ? 'border-[#262626] hover:border-[#FF5B25]' : 'border-[#1A1A1A] opacity-70'
+        enabled ? 'border-[#262626] hover:border-[#92C83E]' : 'border-[#1A1A1A] opacity-70'
       }`}
     >
       {ev.cover_url && (
@@ -55,7 +55,7 @@ function Card({ ev }: { ev: PartnerEvent }) {
         </a>
       )}
       <div className="flex flex-col gap-2 flex-1 min-w-0">
-        <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#FF5B25]">
+        <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#92C83E]">
           {ev.eyebrow}
         </p>
         <h3 className="font-mono text-base leading-snug text-[#F5F5F5]">
@@ -64,7 +64,7 @@ function Card({ ev }: { ev: PartnerEvent }) {
               href={ev.rsvp_url!}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#FF5B25] transition-colors"
+              className="hover:text-[#92C83E] transition-colors"
             >
               {ev.title}
             </a>
@@ -92,12 +92,12 @@ function Card({ ev }: { ev: PartnerEvent }) {
               href={ev.rsvp_url!}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#FF5B25] hover:underline shrink-0"
+              className="text-[#92C83E] hover:underline shrink-0"
             >
               RSVP →
             </a>
           ) : (
-            <span className="text-[#FF5B25] shrink-0">soon</span>
+            <span className="text-[#92C83E] shrink-0">soon</span>
           )}
         </div>
       </div>

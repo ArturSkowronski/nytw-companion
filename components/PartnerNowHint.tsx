@@ -51,16 +51,16 @@ export function PartnerNowHint({ now }: Props) {
 
   return (
     <aside
-      className="bg-[#0B0B0B] border border-[#1A1A1A] border-l-2 border-l-[#FF5B25] rounded-md px-4 py-3 flex items-start justify-between gap-3"
+      className="bg-[#0B0B0B] border border-[#1A1A1A] border-l-2 border-l-[#92C83E] rounded-md px-4 py-3 flex items-start justify-between gap-3"
       aria-label="Also today — VirtusLab sessions"
     >
       <p className="text-xs text-[#9B9B9B] font-mono leading-relaxed">
         Also today, hosted by us:{' '}
-        <Link href="/#meet-us" className="text-[#F5F5F5] hover:text-[#FF5B25] underline underline-offset-4 decoration-[#262626] hover:decoration-[#FF5B25]">
+        <Link href="/#meet-us" className="text-[#F5F5F5] hover:text-[#92C83E] underline underline-offset-4 decoration-[#262626] hover:decoration-[#92C83E]">
           Book launch · 12 PM
         </Link>
         {' / '}
-        <Link href="/#meet-us" className="text-[#F5F5F5] hover:text-[#FF5B25] underline underline-offset-4 decoration-[#262626] hover:decoration-[#FF5B25]">
+        <Link href="/#meet-us" className="text-[#F5F5F5] hover:text-[#92C83E] underline underline-offset-4 decoration-[#262626] hover:decoration-[#92C83E]">
           Visdom session · 4 PM
         </Link>
         .

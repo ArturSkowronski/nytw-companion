@@ -58,8 +58,15 @@ export function EditorsPicksCarousel({ picks }: EditorsPicksCarouselProps) {
 
       <div className="mb-3">
         {pick.is_virtuslab_event && (
-          <Badge className="bg-[#FF5B25]/[0.14] text-[#FF5B25] border-[#FF5B25]/30 text-xs mb-2">
-            Featured
+          <Badge
+            className="text-xs mb-2"
+            style={{
+              backgroundColor: 'rgba(146, 200, 62, 0.14)',
+              color: '#92C83E',
+              borderColor: 'rgba(146, 200, 62, 0.30)',
+            }}
+          >
+            Hosted by us
           </Badge>
         )}
         <h3 className="font-mono font-bold text-[#F5F5F5] text-lg leading-tight mb-1">
@@ -82,7 +89,12 @@ export function EditorsPicksCarousel({ picks }: EditorsPicksCarouselProps) {
         <div className="flex gap-2">
           <Button
             size="sm"
-            className="bg-[#FF5B25] hover:bg-[#e85a25] text-white font-mono text-xs"
+            className="text-white font-mono text-xs"
+            style={
+              pick.is_virtuslab_event
+                ? { backgroundColor: '#92C83E', color: '#0A0A0A' }
+                : { backgroundColor: '#FF5B25' }
+            }
             onClick={(e) => { e.stopPropagation(); window.open(pick.rsvp_url, '_blank', 'noopener,noreferrer'); handleAdd() }}
           >
             Open RSVP →
