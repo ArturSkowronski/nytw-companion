@@ -120,9 +120,22 @@ export function PartnerInvite() {
           <AttentionPulse>
             <SectionHead num="03" label="Disclosure" title="Like this tool? Come say hi at NYTW." />
           </AttentionPulse>
-          <p className="font-mono text-xs uppercase tracking-[0.12em] text-[#FF5B25] pt-1">
-            Made by VirtusLab
-          </p>
+          <a
+            href="https://virtuslab.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block pt-1 transition-opacity hover:opacity-80"
+            aria-label="Made by VirtusLab — visit virtuslab.com"
+          >
+            <Image
+              src="/virtuslab-badge.png"
+              alt="Made by VirtusLab"
+              width={194}
+              height={55}
+              className="h-7 w-auto"
+              priority
+            />
+          </a>
         </div>
         <p className="text-[#9B9B9B] text-base leading-relaxed max-w-3xl">
           We&rsquo;re an AI engineering team from Poland — and we built this companion
