@@ -1,5 +1,6 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen, fireEvent, act } from '@testing-library/react'
+import { decodePlan } from '../../lib/share-encoding'
 
 const { toastFn } = vi.hoisted(() => ({ toastFn: vi.fn() }))
 vi.mock('sonner', () => ({
@@ -47,6 +48,7 @@ describe('SharePlanButton', () => {
     fireEvent.click(screen.getByRole('button', { name: /share my plan/i }))
     fireEvent.change(screen.getByLabelText(/your name/i), { target: { value: 'Marcin' } })
     const input = await screen.findByDisplayValue(/\/plan\/share#.+/) as HTMLInputElement
-    expect(input.value).toMatch(/\/plan\/share#.+/)
+    const hash = input.value.split('#')[1]
+    expect(decodePlan(hash)).toEqual({ ids: ['a'], name: 'Marcin' })
   })
 })

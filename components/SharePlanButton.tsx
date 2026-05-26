@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useMemo, useState, useEffect } from 'react'
 import { toast } from 'sonner'
 import { Button } from '@/components/ui/button'
 import {
@@ -50,7 +50,10 @@ export function SharePlanButton({ eventIds }: SharePlanButtonProps) {
     })
   }
 
-  const canShare = typeof navigator !== 'undefined' && typeof navigator.share === 'function'
+  const [canShare, setCanShare] = useState(false)
+  useEffect(() => {
+    setCanShare(typeof navigator !== 'undefined' && typeof navigator.share === 'function')
+  }, [])
 
   return (
     <>
@@ -77,26 +80,27 @@ export function SharePlanButton({ eventIds }: SharePlanButtonProps) {
           </DialogHeader>
 
           <div className="flex flex-col gap-3">
-            <label className="text-xs font-mono text-[#9B9B9B]">
-              Your name <span className="text-[#737373]">— optional, shown in the link</span>
+            <div className="flex flex-col gap-1">
+              <label htmlFor="share-name" className="text-xs font-mono text-[#9B9B9B]">
+                Your name <span className="text-[#737373]">— optional, shown in the link</span>
+              </label>
               <Input
+                id="share-name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="e.g. Marcin"
-                className="mt-1"
-                aria-label="Your name"
               />
-            </label>
+            </div>
 
-            <label className="text-xs font-mono text-[#9B9B9B]">
-              Share link
+            <div className="flex flex-col gap-1">
+              <label htmlFor="share-link" className="text-xs font-mono text-[#9B9B9B]">Share link</label>
               <Input
+                id="share-link"
                 readOnly
                 value={url}
                 onFocus={(e) => e.currentTarget.select()}
-                className="mt-1"
               />
-            </label>
+            </div>
 
             <div className="flex gap-2 justify-end">
               {canShare && (
