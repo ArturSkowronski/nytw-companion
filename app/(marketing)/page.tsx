@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { EditorsPicksCarousel } from '@/components/EditorsPicksCarousel'
+import { PartnerInvite } from '@/components/PartnerInvite'
 import { SectionHead } from '@/components/SectionHead'
 import { VirtusLabFooter } from '@/components/VirtusLabFooter'
 import seedEvents from '@/data/seed-events.json' with { type: 'json' }
@@ -80,6 +81,9 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* Disclosure: VirtusLab events at NYTW — the conversion stopper. */}
+      <PartnerInvite />
 
       {/* MCP for agents */}
       <section id="mcp" className="px-6 py-16 border-t border-[#1A1A1A]">
