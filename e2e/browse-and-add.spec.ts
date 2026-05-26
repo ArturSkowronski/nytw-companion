@@ -10,8 +10,9 @@ test.beforeEach(async ({ page }) => {
 test('landing → browse → search → modal → add to plan', async ({ page }) => {
   await page.goto('/')
 
-  // Click the primary Browse CTA on the landing hero.
-  await page.getByRole('link', { name: /browse 87 events/i }).click()
+  // Click the primary Browse CTA on the landing hero. Count comes from
+  // seed-events.json, so match any number rather than hardcoding.
+  await page.getByRole('link', { name: /browse \d+ events/i }).click()
   await expect(page).toHaveURL(/\/events/)
 
   // Narrow the list with a search term known to match seed events.
