@@ -53,3 +53,32 @@ describe('SharedPlanEventCard', () => {
     expect(screen.queryByRole('button', { name: /add to my plan/i })).toBeNull()
   })
 })
+
+import { SharedPlanView } from '../../components/SharedPlanView'
+
+describe('SharedPlanView', () => {
+  const events: Event[] = [
+    { ...event, id: 'a', starts_at: '2026-06-03T15:00:00Z', ends_at: '2026-06-03T16:00:00Z' },
+    { ...event, id: 'b', starts_at: '2026-06-04T15:00:00Z', ends_at: '2026-06-04T16:00:00Z' },
+  ]
+
+  it('renders the sender name in the header when provided', () => {
+    render(<SharedPlanView ids={['a']} senderName="Marcin" allEvents={events} />)
+    expect(screen.getByText(/marcin's nytw plan/i)).toBeInTheDocument()
+  })
+
+  it('renders a generic header when no name is provided', () => {
+    render(<SharedPlanView ids={['a']} senderName={undefined} allEvents={events} />)
+    expect(screen.getByText(/shared nytw plan/i)).toBeInTheDocument()
+  })
+
+  it('shows a footer note when some ids are unknown', () => {
+    render(<SharedPlanView ids={['a', 'missing-1', 'missing-2']} senderName={undefined} allEvents={events} />)
+    expect(screen.getByText(/2 events from this plan are no longer available/i)).toBeInTheDocument()
+  })
+
+  it('renders an empty state when ids list is empty', () => {
+    render(<SharedPlanView ids={[]} senderName={undefined} allEvents={events} />)
+    expect(screen.getByText(/this share link is empty/i)).toBeInTheDocument()
+  })
+})
