@@ -25,6 +25,27 @@ export function GET() {
         pushNotifications: false,
         stateTransitionHistory: false,
       },
+      // A2A spec — protocols this agent can be reached on.
+      supportedInterfaces: [
+        {
+          name: 'mcp',
+          transport: 'streamable_http',
+          url: `${SITE_URL}/mcp`,
+          description: 'Model Context Protocol (streamable HTTP). Primary integration surface.',
+        },
+        {
+          name: 'mcp-sse',
+          transport: 'sse',
+          url: `${SITE_URL}/sse`,
+          description: 'MCP SSE transport — for legacy clients that do not speak streamable HTTP yet.',
+        },
+        {
+          name: 'rest',
+          transport: 'https',
+          url: `${SITE_URL}/openapi.json`,
+          description: 'Read-only REST mirror of the MCP tools, documented via OpenAPI 3.1.',
+        },
+      ],
       defaultInputModes: ['text'],
       defaultOutputModes: ['text', 'application/json'],
       skills: [

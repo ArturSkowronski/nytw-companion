@@ -5,8 +5,10 @@ import { Toaster } from '@/components/ui/sonner'
 import { Analytics } from '@vercel/analytics/next'
 import { MyPlanWidget } from '@/components/MyPlanWidget'
 import { SiteNav } from '@/components/SiteNav'
+import { SiteJsonLd } from '@/components/SiteJsonLd'
 import { StatusBar } from '@/components/StatusBar'
 import { SITE_URL } from '@/lib/site-url'
+import { BUILD_INFO } from '@/lib/build-time'
 import './globals.css'
 
 const jetbrainsMono = JetBrains_Mono({
@@ -26,6 +28,12 @@ export const metadata: Metadata = {
   title: "NYTW Engineer's Companion",
   description: "1,000+ events. 168 hours. Plan the week you actually want.",
   manifest: '/manifest.json',
+  other: {
+    // Freshness signal for AI crawlers — picked up alongside the
+    // Last-Modified HTTP header and dateModified in JSON-LD.
+    'last-modified': BUILD_INFO.iso,
+    'article:modified_time': BUILD_INFO.iso,
+  },
 }
 
 export default function RootLayout({
@@ -43,6 +51,7 @@ export default function RootLayout({
         className="bg-[#000000] text-[#F5F5F5] font-sans antialiased min-h-screen"
         suppressHydrationWarning
       >
+        <SiteJsonLd />
         <StatusBar />
         <SiteNav />
         {children}
