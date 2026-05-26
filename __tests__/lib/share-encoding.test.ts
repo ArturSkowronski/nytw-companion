@@ -55,3 +55,12 @@ describe('share-encoding', () => {
     expect(decoded.ids).toEqual(['a', 'b'])
   })
 })
+
+import type { PlanItemSource } from '../../lib/types'
+
+describe('PlanItemSource', () => {
+  it("includes 'share'", () => {
+    const allowed: PlanItemSource[] = ['manual', 'concierge', 'editors_pick', 'map', 'share']
+    expect(allowed).toContain('share')
+  })
+})

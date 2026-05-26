@@ -7,7 +7,7 @@ export type PlanStatus =
   | 'declined'
   | 'attended'
 
-export type PlanItemSource = 'manual' | 'concierge' | 'editors_pick' | 'map'
+export type PlanItemSource = 'manual' | 'concierge' | 'editors_pick' | 'map' | 'share'
 
 export interface PlanItem {
   event_id: string
