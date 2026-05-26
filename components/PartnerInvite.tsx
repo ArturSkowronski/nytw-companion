@@ -32,7 +32,7 @@ function Card({ ev }: { ev: PartnerEvent }) {
 
   return (
     <article
-      className={`group flex flex-col overflow-hidden border bg-[#0B0B0B] transition-colors h-full ${
+      className={`group flex flex-row gap-4 overflow-hidden border bg-[#0B0B0B] transition-colors h-full p-4 ${
         enabled ? 'border-[#262626] hover:border-[#FF5B25]' : 'border-[#1A1A1A] opacity-70'
       }`}
     >
@@ -41,29 +41,24 @@ function Card({ ev }: { ev: PartnerEvent }) {
           href={ev.rsvp_url ?? '#meet-us'}
           target={enabled ? '_blank' : undefined}
           rel={enabled ? 'noopener noreferrer' : undefined}
-          className="relative aspect-[16/9] w-full bg-[#1A1A1A] overflow-hidden block"
+          className="relative w-24 h-24 sm:w-32 sm:h-32 shrink-0 bg-[#1A1A1A] overflow-hidden block"
           aria-label={`${ev.title} — open RSVP`}
         >
           <Image
             src={ev.cover_url}
             alt={`${ev.title} — event cover`}
             fill
-            sizes="(min-width: 768px) 50vw, 100vw"
-            className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+            sizes="128px"
+            className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.05]"
             unoptimized
           />
-          <span className="absolute top-3 left-3 font-mono text-[10px] uppercase tracking-[0.18em] text-[#F5F5F5] bg-[#000000]/80 backdrop-blur px-2 py-1">
-            {ev.eyebrow}
-          </span>
         </a>
       )}
-      <div className="flex flex-col gap-3 p-5 flex-1">
-        {!ev.cover_url && (
-          <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#FF5B25]">
-            {ev.eyebrow}
-          </p>
-        )}
-        <h3 className="font-mono text-lg leading-snug text-[#F5F5F5]">
+      <div className="flex flex-col gap-2 flex-1 min-w-0">
+        <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#FF5B25]">
+          {ev.eyebrow}
+        </p>
+        <h3 className="font-mono text-base leading-snug text-[#F5F5F5]">
           {enabled ? (
             <a
               href={ev.rsvp_url!}
@@ -78,7 +73,7 @@ function Card({ ev }: { ev: PartnerEvent }) {
           )}
         </h3>
         {ev.speakers.length > 0 && (
-          <ul className="flex flex-wrap items-center gap-2">
+          <ul className="flex flex-wrap items-center gap-1.5">
             {ev.speakers.map((sp) => (
               <li key={sp.url}>
                 <SpeakerChip {...sp} />
@@ -86,9 +81,9 @@ function Card({ ev }: { ev: PartnerEvent }) {
             ))}
           </ul>
         )}
-        <p className="text-sm text-[#9B9B9B] leading-relaxed">{ev.blurb}</p>
-        <div className="mt-auto flex items-center justify-between gap-3 pt-3 border-t border-[#1A1A1A] text-xs font-mono text-[#737373]">
-          <span>
+        <p className="text-xs text-[#9B9B9B] leading-relaxed line-clamp-3">{ev.blurb}</p>
+        <div className="mt-auto flex items-center justify-between gap-3 pt-2 border-t border-[#1A1A1A] text-xs font-mono text-[#737373]">
+          <span className="truncate">
             {ev.when ?? 'Date TBD'}
             {ev.where ? ` · ${ev.where}` : ''}
           </span>
@@ -97,12 +92,12 @@ function Card({ ev }: { ev: PartnerEvent }) {
               href={ev.rsvp_url!}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#FF5B25] hover:underline"
+              className="text-[#FF5B25] hover:underline shrink-0"
             >
               RSVP →
             </a>
           ) : (
-            <span className="text-[#FF5B25]">soon</span>
+            <span className="text-[#FF5B25] shrink-0">soon</span>
           )}
         </div>
       </div>
