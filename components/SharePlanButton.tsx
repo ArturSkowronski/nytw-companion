@@ -52,6 +52,7 @@ export function SharePlanButton({ eventIds }: SharePlanButtonProps) {
 
   const [canShare, setCanShare] = useState(false)
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- standard SSR hydration guard: reads navigator only after mount
     setCanShare(typeof navigator !== 'undefined' && typeof navigator.share === 'function')
   }, [])
 
