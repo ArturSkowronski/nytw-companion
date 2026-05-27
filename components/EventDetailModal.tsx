@@ -30,11 +30,14 @@ export function EventDetailModal({ event, open, onClose }: EventDetailModalProps
   const { items, addItem, removeItem } = usePlanStore()
   const isInPlan = items.some((i) => i.event_id === event.id)
 
-  // Update URL hash for deep-linking without navigation
+  // Update URL hash for deep-linking without navigation. Only acts when the
+  // modal is open — otherwise hundreds of closed-modal mounts (one per
+  // EventCard on /events) would each fire replaceState, hitting iOS WebKit's
+  // 100-calls-per-10s limit and crashing the page. Cleanup restores the URL.
   useEffect(() => {
-    if (open) {
-      window.history.replaceState(null, '', `#${event.id}`)
-    } else {
+    if (!open) return
+    window.history.replaceState(null, '', `#${event.id}`)
+    return () => {
       window.history.replaceState(null, '', window.location.pathname + window.location.search)
     }
   }, [open, event.id])
