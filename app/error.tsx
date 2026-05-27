@@ -1,6 +1,8 @@
 'use client'
 
+import { useEffect } from 'react'
 import Link from 'next/link'
+import { reportError } from '@/lib/report-error'
 
 interface ErrorProps {
   error: Error & { digest?: string }
@@ -9,6 +11,10 @@ interface ErrorProps {
 }
 
 export default function GlobalError({ error, reset, heading = 'Something broke.' }: ErrorProps) {
+  useEffect(() => {
+    reportError(error, 'boundary')
+  }, [error])
+
   return (
     <main className="min-h-[60vh] bg-[#000000] text-[#F5F5F5] flex items-center justify-center px-6">
       <div className="max-w-md w-full text-center space-y-4">
