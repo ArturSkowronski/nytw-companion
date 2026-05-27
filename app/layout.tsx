@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import { JetBrains_Mono, Inter } from 'next/font/google'
 import { Toaster } from '@/components/ui/sonner'
 import { Analytics } from '@vercel/analytics/next'
+import { ErrorListeners } from '@/components/ErrorListeners'
+import { GoogleAnalytics } from '@/components/GoogleAnalytics'
 import { MyPlanWidget } from '@/components/MyPlanWidget'
 import { PartnerToastTrigger } from '@/components/PartnerToastTrigger'
 import { SiteNav } from '@/components/SiteNav'
@@ -56,6 +58,8 @@ export default function RootLayout({
         className="bg-[#000000] text-[#F5F5F5] font-sans antialiased min-h-screen"
         suppressHydrationWarning
       >
+        <GoogleAnalytics />
+        <ErrorListeners />
         <SiteJsonLd />
         <StatusBar />
         <SiteNav />

@@ -63,7 +63,7 @@ Connected to Vercel (the wiring itself is done in the Vercel dashboard, not in t
 - **Production branch:** `main`
 - **Preview:** every PR / non-main branch
 - **Required env (prod):** `NEXT_PUBLIC_SITE_URL` (e.g. `https://nytw-companion.vercel.app`)
-- **Optional env:** `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `ANTHROPIC_API_KEY`, `NEXT_PUBLIC_MAPBOX_TOKEN`
+- **Optional env:** `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `ANTHROPIC_API_KEY`, `NEXT_PUBLIC_GA_ID`, `NEXT_PUBLIC_MAPBOX_TOKEN`
 - **Custom domain:** configured in Vercel dashboard. (`nytw.dev` is the preferred target per SPEC.)
 
 ## Healthcheck
@@ -86,6 +86,12 @@ Phase-by-phase design + plan docs live in `docs/superpowers/`:
 
 - `specs/` — design briefs (one per phase)
 - `plans/` — TDD implementation plans (one per phase)
+
+## Environment variables
+
+| Name | Required | Purpose |
+| --- | --- | --- |
+| `NEXT_PUBLIC_GA_ID` | Optional | GA4 Measurement ID (e.g. `G-XXXXXXXXXX`). When unset, no GA script is injected and no analytics requests fire. Set in Vercel Production env to enable. |
 
 ## License
 

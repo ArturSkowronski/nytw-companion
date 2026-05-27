@@ -4,6 +4,7 @@ import { render } from '@testing-library/react'
 // Mock next/script — it renders a placeholder we can query.
 vi.mock('next/script', () => ({
   default: ({ src, children, id }: { src?: string; children?: string; id?: string }) => (
+    // eslint-disable-next-line @next/next/no-sync-scripts
     <script data-testid={src ? `script-src-${id ?? 'external'}` : `script-inline-${id}`} src={src}>
       {children}
     </script>
