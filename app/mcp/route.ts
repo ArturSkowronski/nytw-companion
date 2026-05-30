@@ -35,7 +35,7 @@ const handler = createMcpHandler(
 // Re-emit the handler's response with CORS headers added. Rebuilding via
 // `new Response(res.body, …)` passes the body stream through untouched, so
 // SSE (text/event-stream) responses keep streaming.
-function withCors(res: Response): Response {
+export function withCors(res: Response): Response {
   const headers = new Headers(res.headers)
   for (const [key, value] of Object.entries(CORS_HEADERS)) headers.set(key, value)
   return new Response(res.body, {
