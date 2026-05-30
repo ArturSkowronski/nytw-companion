@@ -5,9 +5,11 @@ import { PartnerInvite } from '@/components/PartnerInvite'
 import { SectionHead } from '@/components/SectionHead'
 import { VirtusLabFooter } from '@/components/VirtusLabFooter'
 import seedEvents from '@/data/seed-events.json' with { type: 'json' }
+import { SITE_URL } from '@/lib/site-url'
 import type { Event } from '@/lib/types'
 
 const TOTAL_EVENTS = (seedEvents as Event[]).length
+const MCP_ENDPOINT = `${SITE_URL}/mcp`
 
 export const metadata: Metadata = {
   title: "NYTW Engineer's Companion — Tech Week NYC 2026",
@@ -99,7 +101,7 @@ export default function HomePage() {
           <div className="space-y-3">
             <p className="font-mono text-xs uppercase tracking-widest text-[#FF5B25]">Endpoint</p>
             <code className="block bg-[#0B0B0B] border border-[#1A1A1A] rounded-md px-4 py-3 font-mono text-sm text-[#F5F5F5] break-all">
-              https://nytw.dev/mcp
+              {MCP_ENDPOINT}
             </code>
           </div>
 
@@ -119,7 +121,7 @@ export default function HomePage() {
             <pre className="bg-[#0B0B0B] border border-[#1A1A1A] rounded-md px-4 py-3 font-mono text-xs text-[#F5F5F5] overflow-x-auto">{`{
   "mcpServers": {
     "nytw": {
-      "url": "https://nytw.dev/mcp"
+      "url": "${MCP_ENDPOINT}"
     }
   }
 }`}</pre>

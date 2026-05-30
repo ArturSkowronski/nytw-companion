@@ -12,6 +12,7 @@ import {
 } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
 import { encodePlan, MAX_SHARE_EVENTS } from '@/lib/share-encoding'
+import { SITE_URL } from '@/lib/site-url'
 
 interface SharePlanButtonProps {
   eventIds: string[]
@@ -20,7 +21,7 @@ interface SharePlanButtonProps {
 function buildShareUrl(eventIds: string[], name: string): string {
   const payload = encodePlan({ ids: eventIds, name })
   const origin =
-    typeof window !== 'undefined' ? window.location.origin : 'https://nytw.dev'
+    typeof window !== 'undefined' ? window.location.origin : SITE_URL
   return `${origin}/plan/share#${payload}`
 }
 

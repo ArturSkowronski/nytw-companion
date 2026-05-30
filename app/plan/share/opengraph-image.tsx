@@ -1,4 +1,5 @@
 import { ImageResponse } from 'next/og'
+import { SITE_URL } from '@/lib/site-url'
 
 // Note: runtime='edge' caused 1.06 MB function (over Vercel Hobby's 1 MB limit).
 // Default Node.js runtime has a much higher limit and OG images are cached by
@@ -6,6 +7,8 @@ import { ImageResponse } from 'next/og'
 export const alt = `A friend shared their NYTW plan with you — open to see what they picked for Tech Week NYC 2026`
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
+
+const HOST = SITE_URL.replace(/^https?:\/\//, '')
 
 export default async function Image() {
   return new ImageResponse(
@@ -69,7 +72,7 @@ export default async function Image() {
             fontSize: 24,
           }}
         >
-          nytw.dev/plan
+          {HOST}/plan
         </div>
       </div>
     ),
