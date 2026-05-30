@@ -22,7 +22,9 @@ describe('Landing page', () => {
   it('renders the MCP integration section with endpoint and tool list', () => {
     render(<HomePage />)
     expect(screen.getByRole('heading', { level: 2, name: /companion is mcp-native/i })).toBeInTheDocument()
-    expect(screen.getAllByText(/nytw\.dev\/mcp/i).length).toBeGreaterThan(0)
+    // Endpoint is derived from SITE_URL (localhost in tests, the Vercel URL in
+    // prod), so assert on the /mcp path rather than a hardcoded domain.
+    expect(screen.getAllByText(/\/mcp/i).length).toBeGreaterThan(0)
     expect(screen.getByText(/catalogue_stats/i)).toBeInTheDocument()
     expect(screen.getByText(/search_events/i)).toBeInTheDocument()
   })
